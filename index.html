@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KOPL</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/kopl-animate.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="landing-page">
+  <div class="kopl-fs-anim" id="koplAnim">
+    <img src="https://kopl.dk/onewebmedia/logo%20sort.png" alt="KOPL logo" class="kopl-fs-main">
+    <span class="kopl-fs-words">
+      <span class="kopl-fs-word">KONTEKST</span>
+      <span class="kopl-fs-word">PLAN</span>
+    </span>
+  </div>
+  <header>
+    <nav class="kopl-navbar">
+      <div class="kopl-navbar-inner">
+        <ul class="kopl-nav-links">
+          <li><a href="html/services.html">Ydelser</a></li>
+          <li><a href="html/contact.html">Kontakt</a></li>
+          <li><a href="html/project-grid.html">Projekter</a></li>
+          <li><a href="html/job.html">Job</a></li>
+        </ul>
+        <button class="kopl-nav-toggle" id="koplNavToggle" aria-label="Åbn menu">
+          <span class="kopl-nav-toggle-bar"></span>
+          <span class="kopl-nav-toggle-bar"></span>
+          <span class="kopl-nav-toggle-bar"></span>
+        </button>
+      </div>
+      <div class="kopl-mobile-menu" id="koplMobileMenu">
+        <button class="kopl-mobile-close" id="koplMobileClose" aria-label="Luk menu">&times;</button>
+        <ul>
+          <li><a href="html/services.html">Ydelser</a></li>
+          <li><a href="html/contact.html">Kontakt</a></li>
+          <li><a href="html/project-grid.html">Projekter</a></li>
+          <li><a href="html/job.html">Job</a></li>
+        </ul>
+      </div>
+      <div class="kopl-mobile-overlay" id="koplMobileOverlay"></div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-section">
+      <div class="hero-bg">
+        <img src="https://kopl.dk/onewebmedia/ProjectImages/h%C3%B8m%20m%C3%B8lle%20cover%20billede.jpg" alt="Firskovvej" class="hero-img" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title">God planlægning<br>er forankret i<br>konteksten</h1>
+        <div class="hero-buttons">
+          <a href="html/project-grid.html" class="hero-btn hero-btn-primary">Se projekter</a>
+          <a href="html/contact.html" class="hero-btn hero-btn-secondary">Kontakt os</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    let el = document.getElementById('koplAnim');
+    setTimeout(function(){
+      el.classList.add('kopl-fs-show-words');
+    }, 1100);
+    setTimeout(function(){
+      el.classList.remove('kopl-fs-show-words');
+    }, 3200);
+    setTimeout(function(){
+      el.classList.add('kopl-fs-hide');
+    }, 4200);
+    document.addEventListener('click', function() {
+      if (!el.classList.contains('kopl-fs-hide')) {
+        el.classList.add('kopl-fs-hide');
+      }
+    });
+  </script>
+  <script>
+    const navToggle = document.getElementById('koplNavToggle');
+    const mobileMenu = document.getElementById('koplMobileMenu');
+    const mobileClose = document.getElementById('koplMobileClose');
+    const mobileOverlay = document.getElementById('koplMobileOverlay');
+    navToggle.addEventListener('click', function() {
+      mobileMenu.classList.add('open');
+      mobileOverlay.classList.add('open');
+    });
+    mobileClose.addEventListener('click', function() {
+      mobileMenu.classList.remove('open');
+      mobileOverlay.classList.remove('open');
+    });
+    mobileOverlay.addEventListener('click', function() {
+      mobileMenu.classList.remove('open');
+      mobileOverlay.classList.remove('open');
+    });
+  </script>
+  <div class="kopl-logo-link landing-logo" style="position:fixed;left:1.2rem;bottom:1.2rem;z-index:1200;">
+    <img src="https://kopl.dk/onewebmedia/hvidt%20visitkort_flad.png" alt="KOPL logo" class="kopl-logo" style="height:54px;width:auto;opacity:0.8;filter:drop-shadow(0 1px 8px rgba(0,0,0,0.18));">
+  </div>
+</body>
+</html>

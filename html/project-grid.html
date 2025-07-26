@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projekter – KOPL</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/project-grid.css">
+</head>
+<body>
+  <div class="page-root">
+    <header>
+      <nav class="kopl-navbar">
+        <div class="kopl-navbar-inner">
+          <ul class="kopl-nav-links">
+            <li><a href="services.html">Ydelser</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="project-grid.html">Projekter</a></li>
+            <li><a href="#job">Job</a></li>
+          </ul>
+          <button class="kopl-nav-toggle" id="koplNavToggle" aria-label="Åbn menu">
+            <span class="kopl-nav-toggle-bar"></span>
+            <span class="kopl-nav-toggle-bar"></span>
+            <span class="kopl-nav-toggle-bar"></span>
+          </button>
+        </div>
+        <div class="kopl-mobile-menu" id="koplMobileMenu">
+          <button class="kopl-mobile-close" id="koplMobileClose" aria-label="Luk menu">&times;</button>
+          <ul>
+            <li><a href="services.html">Ydelser</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="contact.html">Projekter</a></li>
+            <li><a href="#job">Job</a></li>
+          </ul>
+        </div>
+        <div class="kopl-mobile-overlay" id="koplMobileOverlay"></div>
+      </nav>
+    </header>
+    <main class="main-content">
+      <div class="headline-row">
+        <div class="headline-content">
+          <h1 class="page-title" style="margin-bottom:0.5rem;">Projekter</h1>
+          <p class="page-intro">Et udvalg af projekter, der viser bredden i vores rådgivning og samarbejde med kommuner og bygherrer.</p>
+        </div>
+        <div class="filter-row">
+          <label for="service-filter" class="filter-label">Filtrer efter ydelse</label>
+          <select id="service-filter" class="filter-select">
+            <option value="">Alle ydelser</option>
+            <option value="Lokalplan">Lokalplan</option>
+            <option value="Forudsætningsnotat">Forudsætningsnotat</option>
+            <option value="Klagenævnspraksis">Klagenævnspraksis</option>
+            <option value="Bebyggelsesplan">Bebyggelsesplan</option>
+            <option value="Projektudvikling">Projektudvikling</option>
+            <option value="Regnvandshåndtering">Regnvandshåndtering</option>
+            <option value="Landzone">Landzone</option>
+            <option value="Mulighedsnotat">Mulighedsnotat</option>
+          </select>
+        </div>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+    </main>
+  </div>
+  <script>
+    const navToggle = document.getElementById('koplNavToggle');
+    const mobileMenu = document.getElementById('koplMobileMenu');
+    const mobileClose = document.getElementById('koplMobileClose');
+    const mobileOverlay = document.getElementById('koplMobileOverlay');
+    navToggle.addEventListener('click', function() {
+      mobileMenu.classList.add('open');
+      mobileOverlay.classList.add('open');
+      navToggle.classList.add('open');
+    });
+    mobileClose.addEventListener('click', function() {
+      mobileMenu.classList.remove('open');
+      mobileOverlay.classList.remove('open');
+      navToggle.classList.remove('open');
+    });
+    mobileOverlay.addEventListener('click', function() {
+      mobileMenu.classList.remove('open');
+      mobileOverlay.classList.remove('open');
+      navToggle.classList.remove('open');
+    });
+  </script>
+  <script>
+    const projects = [
+      {
+        id: "høm-mølle",
+        title: "Lokalplan for Høm Mølle",
+        year: "2024",
+        location: "Høm Mølle, Ringsted",
+        ydelser: "Lokalplan, Forudsætningsnotat, Klagenævnspraksis",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/h%C3%B8m%20m%C3%B8lle%20cover%20billede.jpg"
+      },
+      {
+        id: "oestbirk-boligomraade",
+        title: "Lokalplan for nyt boligområde i Østbirk",
+        year: "2023",
+        location: "Østbirk, Horsens Kommune",
+        ydelser: "Lokalplan, Bebyggelsesplan, Projektudvikling, Regnvandshåndtering",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/%C3%98stbirk.png"
+      },
+      {
+        id: "warehouse-kalundborg",
+        title: "Lokalplan for warehouse",
+        year: "2024",
+        location: "Kalundborg",
+        ydelser: "Lokalplan",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/kalundborg warehouse.png"
+      },
+      {
+        id: "notat-landzone-herlev",
+        title: "Notat om muligheder i landzone",
+        year: "2023",
+        location: "Herlev",
+        ydelser: "Landzone, Mulighedsnotat",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/herlev - mulighedsnotat.png"
+      },
+      // --- Added from table ---
+      {
+        id: "firskovej-rammelokalplan",
+        title: "Rammelokalplan, kommuneplantillæg og miljøvurdering for Firskovej",
+        year: "2024",
+        location: "Lyngby Taarbæk kommune",
+        ydelser: "Lokalplan, Miljøvurdering, Kommuneplantillæg",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Firskovvej.jpg"
+      },
+      {
+        id: "feriecenter-lokalplan-miljovurdering",
+        title: "Lokalplan og Miljøvurdering for Feriecenter",
+        year: "2024",
+        location: "Næstved Kommune",
+        ydelser: "Lokalplan, Kystnærhedszonen, Miljøvurdering, Sommerhusloven",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/feriecenter-enø.jpg"
+      },
+      {
+        id: "kontor-laboratorie-bygherreansogning",
+        title: "Bygherreansøgning for Kontor og laboratorium",
+        year: "2025",
+        location: "Lyngby Taarbæk kommune",
+        ydelser: "Bygherreansøgning",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Bygherreans%C3%B8gning%20for%20Kontor%20og%20laboratorium.jpg"
+      },
+      {
+        id: "fanø-kvalitetssikring-sommerhusomrade",
+        title: "Kvalitetssikring af lokalplan for eksisterende sommerhusområde",
+        year: "2025",
+        location: "Fanø Kommune",
+        ydelser: "Lokalplan, Planrådgivning, Klagepraksis",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Kvalitetssikring%20af%20lokalplan%20for%20eksisterende%20sommerhusomr%C3%A5de.jpg"
+      },
+      {
+        id: "rudersdal-parkeringsnotat",
+        title: "Parkeringsnotat",
+        year: "2000",
+        location: "Rudersdal Kommune",
+        ydelser: "Juridisk notat, Planrådgivning",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Parkeringsnotat.jpg"
+      },
+      {
+        id: "baaring-byudvikling",
+        title: "Byudvikling i Båring",
+        year: "2025",
+        location: "Middelfart kommune",
+        ydelser: "Regnvandshåndtering, Lokalplan, Flagermus, Natur, Bebyggelsesplan, Principskitse",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Byudvikling%20i%20B%C3%A5ring.jpg"
+      },
+      {
+        id: "horsholm-miljovurdering",
+        title: "Miljøvurdering af Hørsholm Kommuneplan",
+        year: "2025",
+        location: "Hørsholm Kommune",
+        ydelser: "Miljøvurdering, Afgrænsningsnotat, Landskab",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Milj%C3%B8vurdering%20af%20H%C3%B8rsholm%20Kommuneplan.jpg"
+      },
+      {
+        id: "sorø-inhouse-radgivning",
+        title: "Inhouse-Rådgivning",
+        year: "2024",
+        location: "Sorø Kommune",
+        ydelser: "Lokalplan, Sagsbehandling, Inhouse-konsulent, Planrådgivning",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Inhouse-R%C3%A5dgivning.jpg"
+      },
+      {
+        id: "vejen-miljovurdering-energiparker",
+        title: "Miljøvurdering af energiparker",
+        year: "2024",
+        location: "Vejen",
+        ydelser: "Miljøvurdering",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Milj%C3%B8vurdering%20af%20energiparker.jpg"
+      },
+      {
+        id: "sorø-asfaltfabrik-lokalplan",
+        title: "Lokalplan for Asfaltfabrik",
+        year: "2024",
+        location: "Sorø Kommune",
+        ydelser: "Lokalplan, Miljøvurdering",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Lokalplan%20for%20Asfaltfabrik.jpg"
+      },
+      {
+        id: "aarhus-dispensation-lokalplan",
+        title: "Dispensation fra lokalplan",
+        year: "2024",
+        location: "Aarhus Kommune",
+        ydelser: "Dispensation, Lokalplan",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Dispensation%20fra%20lokalplan.jpg"
+      },
+      {
+        id: "holbæk-høringssvar-kommuneplan",
+        title: "Høringssvar til kommuneplan",
+        year: "2024",
+        location: "Holbæk Kommune",
+        ydelser: "Kommuneplan, Høringssvar",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/H%C3%B8ringssvar%20til%20kommuneplan.jpg"
+      },
+      {
+        id: "horsholm-landskabsanalyse",
+        title: "Landskabsanalyse Hørsholm Kommune",
+        year: "2024",
+        location: "Hørsholm Kommune",
+        ydelser: "Landskabsanalyse",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Landskabsanalyse%20H%C3%B8rsholm%20Kommune.jpg"
+      },
+      {
+        id: "odense-miljøkonsekvens-solcellepark",
+        title: "Miljøkonsekvensrapport for solcellepark",
+        year: "2024",
+        location: "Odense Kommune",
+        ydelser: "Planrådgivning, Miljøkonsekvensvurdering, Regnvandshåndtering, Landskabsvurdering, Natur og flagermuskortlægning",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Milj%C3%B8konsekvensrapport%20for%20solcellepark.png"
+      },
+      {
+        id: "rudersdal-udvidelsesmuligheder",
+        title: "Notat om udvidelsesmuligheder",
+        year: "2024",
+        location: "Rudersdal kommune",
+        ydelser: "Planrådgivning",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Notat%20om%20udvidelsesmuligheder.jpg"
+      },
+      {
+        id: "gribskov-troldebakkerne-regnvand",
+        title: "Regnvandshåndtering for Troldebakkerne",
+        year: "2024",
+        location: "Gribskov Kommune",
+        ydelser: "Regnvandshåndtering",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Regnvandsh%C3%A5ndtering%20for%20Troldebakkerne.jpg"
+      },
+      {
+        id: "gribskov-troldebakkerne-miljovurdering",
+        title: "Miljøvurdering af lokalplan, Troldebakkerne",
+        year: "2024",
+        location: "Gribskov Kommune",
+        ydelser: "Miljøvurdering",
+        imageUrl: "https://kopl.dk/onewebmedia/logo%20sort.png"
+      },
+      {
+        id: "aalborg-aflastningscenter",
+        title: "Aflastningscenter",
+        year: "2023",
+        location: "Aalborg Kommune",
+        ydelser: "Miljøvurdering, Bygherreansøgning, Regnvandshåndtering",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Aflastningscenter.jpg"
+      },
+      {
+        id: "esbjerg-guldager-byudvikling",
+        title: "Byudvikling i Guldager",
+        year: "2023",
+        location: "Esbjerg Kommune",
+        ydelser: "Bebyggelsesplan, Planrådgivning",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Byudvikling%20i%20Guldager.jpg"
+      },
+      {
+        id: "hvidovre-boliger-butik",
+        title: "Boliger og butik",
+        year: "2023",
+        location: "Hvidovre Kommune",
+        ydelser: "Planrådgivning, Regnvandshåndtering, Miljøvurdering",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Boliger%20og%20butik.jpg"
+      },
+      {
+        id: "gribskov-troldebakkerne-projektudvikling",
+        title: "Projektudvikling og lokalplan for boligområde, Troldebakkerne",
+        year: "2023",
+        location: "Gribskov Kommune",
+        ydelser: "Lokalplan, Bebyggelsesplan, Projektudvikling",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Projektudvikling%20og%20lokalplan%20for%20boligomr%C3%A5de%2C%20Troldebakkerne.jpg"
+      },
+      {
+        id: "lyngby-tracet-lokalplan-miljovurdering",
+        title: "Lokalplan og miljøvurdering for Tracéet",
+        year: "2023",
+        location: "Lyngby-Taarbæk kommune",
+        ydelser: "Lokalplan, Miljøvurdering, Bygherreansøgning",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Lokalplan%20og%20milj%C3%B8vurdering%20for%20Trac%C3%A9et.jpg"
+      },
+      {
+        id: "glostrup-boliger-erhverv",
+        title: "Lokalplan for boliger og erhverv",
+        year: "2023",
+        location: "Glostrup Kommune",
+        ydelser: "Lokalplan",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Lokalplan%20for%20boliger%20og%20erhverv.jpg"
+      },
+      {
+        id: "sorø-boliger",
+        title: "Lokalplan for boliger i Sorø",
+        year: "2023",
+        location: "Sorø Kommune",
+        ydelser: "Lokalplan, Regnvandshåndtering",
+        imageUrl: "https://kopl.dk/onewebmedia/ProjectImages/Lokalplan%20for%20boliger%20i%20Sor%C3%B8.jpg"
+      }
+    ];
+
+    const grid = document.getElementById('projects-grid');
+    const serviceFilter = document.getElementById('service-filter');
+
+    function renderProjects(filteredProjects) {
+      grid.innerHTML = '';
+      filteredProjects.forEach(project => {
+        const a = document.createElement('a');
+        a.className = 'project-card';
+        a.href = `project-${project.id}.html`;
+        a.innerHTML = `
+          <div class="project-image-wrap">
+            <img src="${project.imageUrl}" alt="${project.title}" />
+            <div class="project-overlay">
+              <div class="project-title">${project.title}</div>
+              <div class="project-meta">
+                <div><span class="project-meta-label">ÅR</span> <span class="project-meta-value">${project.year}</span></div>
+                <div><span class="project-meta-label">LOKATION</span> <span class="project-meta-value">${project.location}</span></div>
+                <div><span class="project-meta-label">YDELSE</span> <span class="project-meta-value">${project.ydelser}</span></div>
+              </div>
+            </div>
+          </div>
+        `;
+        grid.appendChild(a);
+      });
+      // Mobile: add click/tap to toggle overlay and require second tap to follow link
+      if (window.innerWidth <= 767) {
+        document.querySelectorAll('.project-card').forEach(card => {
+          card.addEventListener('click', function(e) {
+            if (!this.classList.contains('active')) {
+              e.preventDefault();
+              document.querySelectorAll('.project-card.active').forEach(c => c.classList.remove('active'));
+              this.classList.add('active');
+            } else {
+              // Second tap: allow navigation
+              // No preventDefault, link will be followed
+            }
+          });
+        });
+        // Hide overlay when clicking outside
+        document.body.addEventListener('click', function(e) {
+          if (!e.target.closest('.project-card')) {
+            document.querySelectorAll('.project-card.active').forEach(c => c.classList.remove('active'));
+          }
+        });
+      }
+    }
+
+    function filterProjectsByService(service) {
+      if (!service) {
+        renderProjects(projects);
+        return;
+      }
+      const filtered = projects.filter(project => {
+        // Split ydelser by comma, trim, and check if any match the selected service
+        return project.ydelser.split(',').map(s => s.trim()).includes(service);
+      });
+      renderProjects(filtered);
+    }
+
+    // Initial render
+    renderProjects(projects);
+
+    // Event listener for dropdown
+    serviceFilter.addEventListener('change', function() {
+      filterProjectsByService(this.value);
+    });
+  </script>
+  <a href="index.html" class="kopl-logo-link landing-logo" style="position:fixed;left:1.2rem;bottom:1.2rem;z-index:1200;">
+    <img src="https://kopl.dk/onewebmedia/hvidt%20visitkort_flad.png" alt="KOPL logo" class="kopl-logo" style="height:54px;width:auto;opacity:0.8;filter:drop-shadow(0 1px 8px rgba(0,0,0,0.18));">
+  </a>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ydelser – KOPL</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="kopl-navbar">
+      <div class="kopl-navbar-inner">
+        <ul class="kopl-nav-links">
+          <li><a href="services.html">Ydelser</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+          <li><a href="project-grid.html">Projekter</a></li>
+          <li><a href="#job">Job</a></li>
+        </ul>
+        <button class="kopl-nav-toggle" id="koplNavToggle" aria-label="Åbn menu">
+          <span class="kopl-nav-toggle-bar"></span>
+          <span class="kopl-nav-toggle-bar"></span>
+          <span class="kopl-nav-toggle-bar"></span>
+        </button>
+      </div>
+      <div class="kopl-mobile-menu" id="koplMobileMenu">
+        <button class="kopl-mobile-close" id="koplMobileClose" aria-label="Luk menu">&times;</button>
+        <ul>
+          <li><a href="services.html">Ydelser</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+          <li><a href="project-grid.html">Projekter</a></li>
+          <li><a href="job.html">Job</a></li>
+        </ul>
+      </div>
+      <div class="kopl-mobile-overlay" id="koplMobileOverlay"></div>
+    </nav>
+  </header>
+  <script>
+    const navToggle = document.getElementById('koplNavToggle');
+    const mobileMenu = document.getElementById('koplMobileMenu');
+    const mobileClose = document.getElementById('koplMobileClose');
+    const mobileOverlay = document.getElementById('koplMobileOverlay');
+    navToggle.addEventListener('click', function() {
+      mobileMenu.classList.add('open');
+      mobileOverlay.classList.add('open');
+      navToggle.classList.add('open');
+    });
+    mobileClose.addEventListener('click', function() {
+      mobileMenu.classList.remove('open');
+      mobileOverlay.classList.remove('open');
+      navToggle.classList.remove('open');
+    });
+    mobileOverlay.addEventListener('click', function() {
+      mobileMenu.classList.remove('open');
+      mobileOverlay.classList.remove('open');
+      navToggle.classList.remove('open');
+    });
+  </script>
+</body>
+</html>
