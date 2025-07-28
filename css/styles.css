@@ -41,13 +41,30 @@ body, html {
   z-index: 3;
   text-align: center;
   color: #fff;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 1rem 1rem 1.5rem 1rem;
+  padding: 1.5rem 1rem 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.hero-logo {
+  margin-bottom: 1.5rem;
+}
+
+.kopl-hero-logo {
+  width: 180px;
+  height: auto;
+  filter: drop-shadow(0 1px 12px rgba(0,0,0,0.18));
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 600px) {
+  .kopl-hero-logo {
+    width: 220px;
+  }
 }
 .hero-title {
   font-size: 3rem;
@@ -63,7 +80,7 @@ body, html {
 .hero-buttons {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 1.5rem;
   align-items: center;
   justify-content: center;
 }
@@ -109,7 +126,7 @@ body, html {
   }
   .hero-buttons {
     flex-direction: row;
-    gap: 1.2rem;
+    gap: 2.2rem;
   }
   
 }
@@ -155,7 +172,6 @@ body, html {
 }
 .kopl-nav-links a {
   text-decoration: none;
-  color: #222;
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 0.15em;
@@ -167,6 +183,13 @@ body, html {
   position: relative;
   font-family: inherit;
 }
+.kopl-nav-links-black {
+  color: black;
+}
+.kopl-nav-links-white {
+  color: #ffffff;
+}
+
 .kopl-nav-links a::after {
   content: '';
   display: block;

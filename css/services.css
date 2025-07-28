@@ -1,0 +1,216 @@
+.main-services {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 0 1.5rem;
+}
+
+.about-services-section {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.services-title {
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 0.9;
+    color: #222;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    font-family: system-ui, ui-sans-serif, Arial, sans-serif;
+}
+
+.services-intro {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #444;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+/* Service navigation */
+.service-nav {
+    position: sticky;
+    top: 60px;
+    background: #fff;
+    z-index: 90;
+    padding: 0.5rem 0;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.service-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    gap: 1.5rem;
+}
+
+.service-nav ul::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Opera */
+}
+
+.service-tab {
+    white-space: nowrap;
+    padding: 0.6rem 0.2rem;
+    cursor: pointer;
+    color: #555;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.service-tab::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #222;
+    transition: width 0.3s ease;
+}
+
+.service-tab:hover {
+    color: #222;
+}
+
+.service-tab.active {
+    color: #222;
+    font-weight: 500;
+}
+
+.service-tab.active::after {
+    width: 100%;
+}
+
+/* Service categories */
+.service-category {
+    display: none;
+    padding: 1rem 0 3rem 0;
+}
+
+.service-category.active {
+    display: block;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.service-category-title {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #222;
+    font-family: 'Space Grotesk', ui-sans-serif, system-ui, Arial, sans-serif;
+}
+
+/* Service cards */
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    min-height: 250px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.service-card:hover .service-card-inner {
+    border-color: rgba(0,0,0,0.15);
+}
+
+.service-card:hover h3 {
+    color: #000;
+}
+
+.service-card-inner {
+    padding: 2rem;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 8px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+    color: #222;
+    font-family: 'Space Grotesk', ui-sans-serif, system-ui, Arial, sans-serif;
+}
+
+.service-card p {
+    color: #555;
+    line-height: 1.7;
+    font-size: 1.05rem;
+    margin: 0;
+    flex-grow: 1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .services-title {
+        font-size: 3.5rem;
+    }
+
+    .service-nav {
+        top: 50px;
+    }
+
+    .service-tab {
+        font-size: 1rem;
+        padding: 0.5rem 0.1rem;
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .service-card {
+        min-height: 220px;
+    }
+
+    .service-card-inner {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .services-title {
+        font-size: 2.8rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .service-card p {
+        font-size: 1rem;
+    }
+}

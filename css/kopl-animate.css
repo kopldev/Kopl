@@ -71,6 +71,13 @@ body, html {
 .kopl-fs-anim.kopl-fs-show-words .kopl-fs-word:nth-child(2) {
   transition-delay: 0.25s;
 }
+
+/* Ny klasse til at flytte logoet til center */
+.kopl-fs-anim.kopl-fs-center-logo .kopl-fs-main {
+  transform: translateY(-250px); /* Justér dette tal for at flytte logoet op/ned */
+  transition: transform 1.5s cubic-bezier(.16,.84,.44,1);
+}
+
 @media (max-width: 600px) {
   .kopl-fs-main{
     font-size: 14vw;
@@ -78,6 +85,6 @@ body, html {
     min-width: 80px;
   }
   .kopl-fs-word{
-    font-size: 4vw;
+    font-size: 10vw;
   }
 } 
