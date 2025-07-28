@@ -20,10 +20,10 @@
     <nav class="kopl-navbar">
       <div class="kopl-navbar-inner">
         <ul class="kopl-nav-links">
-          <li><a href="html/services.html">Ydelser</a></li>
-          <li><a href="html/contact.html">Kontakt</a></li>
-          <li><a href="html/project-grid.html">Projekter</a></li>
-          <li><a href="html/job.html">Job</a></li>
+          <li><a class="kopl-nav-links-white" href="html/services.html">Ydelser</a></li>
+          <li><a class="kopl-nav-links-white" href="html/contact.html">Kontakt</a></li>
+          <li><a class="kopl-nav-links-white" href="html/project-grid.html">Projekter</a></li>
+          <li><a class="kopl-nav-links-white" href="html/job.html">Job</a></li>
         </ul>
         <button class="kopl-nav-toggle" id="koplNavToggle" aria-label="Åbn menu">
           <span class="kopl-nav-toggle-bar"></span>
@@ -50,6 +50,9 @@
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
+        <div class="hero-logo">
+          <img src="https://kopl.dk/onewebmedia/hvidt%20visitkort_flad.png" alt="KOPL logo" class="kopl-hero-logo">
+        </div>
         <h1 class="hero-title">God planlægning<br>er forankret i<br>konteksten</h1>
         <div class="hero-buttons">
           <a href="html/project-grid.html" class="hero-btn hero-btn-primary">Se projekter</a>
@@ -66,6 +69,9 @@
     setTimeout(function(){
       el.classList.remove('kopl-fs-show-words');
     }, 3200);
+    setTimeout(function(){
+      el.classList.add('kopl-fs-center-logo');
+    }, 4300);
     setTimeout(function(){
       el.classList.add('kopl-fs-hide');
     }, 4200);
@@ -93,8 +99,5 @@
       mobileOverlay.classList.remove('open');
     });
   </script>
-  <div class="kopl-logo-link landing-logo" style="position:fixed;left:1.2rem;bottom:1.2rem;z-index:1200;">
-    <img src="https://kopl.dk/onewebmedia/hvidt%20visitkort_flad.png" alt="KOPL logo" class="kopl-logo" style="height:54px;width:auto;opacity:0.8;filter:drop-shadow(0 1px 8px rgba(0,0,0,0.18));">
-  </div>
 </body>
 </html>

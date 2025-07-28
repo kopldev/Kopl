@@ -13,10 +13,10 @@
       <nav class="kopl-navbar">
         <div class="kopl-navbar-inner">
           <ul class="kopl-nav-links">
-            <li><a href="services.html">Ydelser</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
-            <li><a href="project-grid.html">Projekter</a></li>
-            <li><a href="#job">Job</a></li>
+            <li><a class="kopl-nav-links-black" href="services.html">Ydelser</a></li>
+            <li><a class="kopl-nav-links-black" href="contact.html">Kontakt</a></li>
+            <li><a class="kopl-nav-links-black" href="project-grid.html">Projekter</a></li>
+            <li><a class="kopl-nav-links-black" href="#job">Job</a></li>
           </ul>
           <button class="kopl-nav-toggle" id="koplNavToggle" aria-label="Åbn menu">
             <span class="kopl-nav-toggle-bar"></span>
@@ -318,7 +318,7 @@
       filteredProjects.forEach(project => {
         const a = document.createElement('a');
         a.className = 'project-card';
-        a.href = `project-${project.id}.html`;
+        a.href = `projects/project-${project.id}.html`;
         a.innerHTML = `
           <div class="project-image-wrap">
             <img src="${project.imageUrl}" alt="${project.title}" />
@@ -377,8 +377,8 @@
       filterProjectsByService(this.value);
     });
   </script>
-  <a href="index.html" class="kopl-logo-link landing-logo" style="position:fixed;left:1.2rem;bottom:1.2rem;z-index:1200;">
-    <img src="https://kopl.dk/onewebmedia/hvidt%20visitkort_flad.png" alt="KOPL logo" class="kopl-logo" style="height:54px;width:auto;opacity:0.8;filter:drop-shadow(0 1px 8px rgba(0,0,0,0.18));">
-  </a>
 </body>
+<a href="../index.html" class="kopl-logo-link landing-logo" style="position:fixed;left:1.2rem;bottom:1.2rem;z-index:1200;">
+  <img src="https://kopl.dk/onewebmedia/hvidt%20visitkort_flad_sort%20tekst.png" alt="KOPL logo" class="kopl-logo" style="height:54px;width:auto;opacity:0.8;filter:drop-shadow(0 1px 8px rgba(0,0,0,0.18));">
+</a>
 </html>

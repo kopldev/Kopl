@@ -5,16 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ydelser – KOPL</title>
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/services.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <nav class="kopl-navbar">
       <div class="kopl-navbar-inner">
         <ul class="kopl-nav-links">
-          <li><a href="services.html">Ydelser</a></li>
-          <li><a href="contact.html">Kontakt</a></li>
-          <li><a href="project-grid.html">Projekter</a></li>
-          <li><a href="#job">Job</a></li>
+          <li><a class="kopl-nav-links-black active" href="services.html">Ydelser</a></li>
+          <li><a class="kopl-nav-links-black" href="contact.html">Kontakt</a></li>
+          <li><a class="kopl-nav-links-black" href="project-grid.html">Projekter</a></li>
+          <li><a class="kopl-nav-links-black" href="job.html">Job</a></li>
         </ul>
         <button class="kopl-nav-toggle" id="koplNavToggle" aria-label="Åbn menu">
           <span class="kopl-nav-toggle-bar"></span>
@@ -34,6 +36,250 @@
       <div class="kopl-mobile-overlay" id="koplMobileOverlay"></div>
     </nav>
   </header>
+  <main class="main-services">
+    <section class="about-services-section">
+      <h1 class="services-title">Ydelser</h1>
+      <p class="services-intro">KOPL tilbyder en bred vifte af ydelser inden for projektudvikling, miljøvurdering, planrådgivning og andre områder. Vælg en kategori nedenfor for at se vores konkrete kompetencer.</p>
+    </section>
+
+    <!-- Service navigation bar -->
+    <nav class="service-nav">
+      <ul id="service-tabs">
+        <li class="service-tab active" data-service="projektudvikling">Projektudvikling</li>
+        <li class="service-tab" data-service="miljovurdering">Miljøvurdering</li>
+        <li class="service-tab" data-service="planradgivning">Planrådgivning</li>
+        <li class="service-tab" data-service="bygherreradgivning">Bygherrerådgivning</li>
+        <li class="service-tab" data-service="natur-miljo">Natur og Miljø</li>
+        <li class="service-tab" data-service="projektering">Projektering</li>
+        <li class="service-tab" data-service="regnvand-klima">Regnvandshåndtering og Klimasikring</li>
+      </ul>
+    </nav>
+
+    <section class="services-content">
+      <!-- Projektudvikling indhold -->
+      <div class="service-category active" id="projektudvikling">
+        <h2 class="service-category-title">Projektudvikling</h2>
+        <div class="service-cards">
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Juridiske notater</h3>
+              <p>KOPL tilbyder som del af projektudviklingen udarbejdelse af juridiske notater, der understøtter beslutningsprocesser og sikrer overholdelse af gældende lovgivning og regler. Vi udarbejder notater med fokus på relevant lovgivning og praksis, herunder afgørelser fra Planklagenævnet og Miljø- og Fødevareklagenævnet. Notaterne kan omfatte emner som landzoneregler, sommerhusloven samt andre relevante bestemmelser, der har betydning for projektets forløb. Med disse juridiske analyser hjælper KOPL med at skabe klarhed og tryghed i forhold til planlægnings- og miljøretlige krav i projektudviklingen.
+              </p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Due diligence</h3>
+              <p>KOPL bidrager med udarbejdelse af Due Diligence ved at gennemføre grundige juridiske, miljømæssige og planmæssige undersøgelser af et projekt eller en ejendom. Vi identificerer potentielle risici og barrierer i forhold til lovgivning, naturbeskyttelse, miljøforhold og lokalplaner, så kunden får et klart og fyldestgørende overblik over projektets eller investeringens muligheder og udfordringer. Denne indsats giver kunden øget sikkerhed ved beslutningstagning, mindsker risikoen for uforudsete problemer og sikrer, at investeringer eller projektudvikling sker på et oplyst og solidt grundlag. Dermed bidrager KOPL til at skabe tryghed og økonomisk forudsigelighed gennem hele processen.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Bebyggelsesplaner</h3>
+              <p>Udvikling af bebyggelsesplaner er en af vores specialiteter. Vores bebyggelsesplaner udarbejdes altid på baggrund af et grundigt forarbejde, hvor den gældende planlægning, miljøretlige bindinger m.m. gennemgås, hvilket sikrer realiserbarhed. Med udgangspunktet i stedet, den givne kontekst og bygherres ønsker udarbejdes bebyggelsesplaner af høj kvalitet og som grundlag for lokalplaner og efterfølgende detaljering.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Principskitser</h3>
+              <p>KOPL udarbejder principskitser som en integreret del af projektudviklingen, hvor skitserne fungerer som et visuelt og konkret redskab i dialogen med myndighederne. Principskitserne bruges til at fastlægge og illustrere vigtige elementer som forsyningskorridorer, spredningskorridorer, principiel placering af veje og stier samt sikring af arealer til håndtering af overfladevand. Ved at præsentere disse nøgleelementer tidligt i processen skaber KOPL klarhed og fælles forståelse mellem alle parter, hvilket understøtter en effektiv og målrettet myndighedsbehandling og bidrager til, at projektet kan udvikles på et solidt og velkoordineret grundlag.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Dialog med myndigheder</h3>
+              <p>KOPL’s unikke tilgang til projektudvikling bygger på en tidlig og aktiv dialog med myndighederne. Ved at involvere myndighederne fra begyndelsen sikrer vi, at projektet udvikles med fuld forståelse for gældende krav og forventninger, hvilket minimerer risikoen for forsinkelser og ændringer senere i processen. Vores særlige styrke ligger i vores dybdegående indsigt i myndighedernes arbejdsgange og beslutningsprocesser, hvilket gør os i stand til at navigere effektivt i komplekse sagsforløb. Denne indsigt skaber en tæt og konstruktiv samarbejdsform, der bidrager til at skabe realistiske, velunderbyggede og juridisk holdbare projekter – til gavn for både kunden og myndighederne.</p> </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Miljøvurdering indhold -->
+      <div class="service-category" id="miljovurdering">
+        <h2 class="service-category-title">Miljøvurdering</h2>
+        <div class="service-cards">
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Miljøkonsekvensrapporter (VVM)</h3>
+              <p>Vi udarbejder miljøkonsekvensrapporter for projekter, der kan påvirke miljøet væsentligt. Dette omfatter en grundig analyse af projektets potentielle påvirkning på luft, vand, jord, biodiversitet, kulturarv, landskab og befolkning. Vi sikrer en solid teknisk og videnskabelig vurdering med input fra relevante specialister, og præsenterer resultaterne i en velstruktureret og letforståelig rapport. Vores VVM-rapporter lever op til gældende lovgivning og er gennemarbejdede med høj faglig kvalitet, så de kan danne grundlag for en myndighedsgodkendelse.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Miljøvurdering af planer</h3>
+              <p>Vi gennemfører miljøvurderinger af kommuneplaner, lokalplaner og sektorplaner i henhold til gældende lovgivning.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Miljøscreening</h3>
+              <p>Vi foretager miljøscreening af projekter og planer for at vurdere, om der er behov for en fuld miljøvurdering.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Bæredygtighedsvurderinger</h3>
+              <p>Vi vurderer projekters bæredygtighed ud fra miljømæssige, sociale og økonomiske parametre.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Planrådgivning indhold -->
+      <div class="service-category" id="planradgivning">
+        <h2 class="service-category-title">Planrådgivning</h2>
+        <div class="service-cards">
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Lokalplaner</h3>
+              <p>Vi udarbejder lokalplaner, der sikrer den ønskede udvikling i overensstemmelse med kommuneplanen og anden lovgivning.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Kommuneplanlægning</h3>
+              <p>Vi bistår kommuner med kommuneplantillæg, rammeændringer og strategisk planlægning.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Dispensationer</h3>
+              <p>Vi hjælper med at opnå dispensationer fra gældende planer, når projektet kræver det.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Planproces-rådgivning</h3>
+              <p>Vi guider gennem hele planprocessen fra idé til godkendelse med fokus på effektive processer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bygherrerådgivning indhold -->
+      <div class="service-category" id="bygherreradgivning">
+        <h2 class="service-category-title">Bygherrerådgivning</h2>
+        <div class="service-cards">
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Projektledelse</h3>
+              <p>Vi varetager projektledelse fra idé til færdigt projekt med fokus på tid, økonomi og kvalitet.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Myndighedsbehandling</h3>
+              <p>Vi håndterer dialog og ansøgninger til relevante myndigheder og sikrer alle nødvendige tilladelser.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Udbudsprocesser</h3>
+              <p>Vi hjælper med udbud af opgaver, evaluering af tilbud og kontraktforhandlinger.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Økonomistyring</h3>
+              <p>Vi sikrer økonomisk overblik og styring gennem hele projektforløbet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Natur og Miljø indhold -->
+      <div class="service-category" id="natur-miljo">
+        <h2 class="service-category-title">Natur og Miljø</h2>
+        <div class="service-cards">
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Naturregistreringer</h3>
+              <p>Vi kortlægger og vurderer naturværdier og beskyttede naturtyper som grundlag for planlægning og projektering.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Natura 2000-vurderinger</h3>
+              <p>Vi udarbejder væsentligheds- og konsekvensvurderinger i forhold til Natura 2000-områder.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Biodiversitetsplaner</h3>
+              <p>Vi udarbejder strategier og konkrete tiltag for at fremme biodiversitet i by- og landskabsprojekter.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Miljøgodkendelser</h3>
+              <p>Vi hjælper med at opnå miljøgodkendelser til virksomheder og anlæg i henhold til miljøbeskyttelsesloven.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projektering indhold -->
+      <div class="service-category" id="projektering">
+        <h2 class="service-category-title">Projektering</h2>
+        <div class="service-cards">
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Infrastrukturprojektering</h3>
+              <p>Vi projekterer veje, stier og pladser med fokus på funktionalitet, æstetik og bæredygtighed.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Landskabsprojektering</h3>
+              <p>Vi designer og projekterer landskaber, parker og udearealer der skaber værdi for mennesker og miljø.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Ledningskoordinering</h3>
+              <p>Vi koordinerer ledningsarbejder og sikrer optimal placering af forsyningsledninger i nye projekter.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Terrænbearbejdning</h3>
+              <p>Vi udvikler løsninger til terrænregulering, der optimerer arealudnyttelse og sikrer god vandafledning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Regnvandshåndtering og Klimasikring indhold -->
+      <div class="service-category" id="regnvand-klima">
+        <h2 class="service-category-title">Regnvandshåndtering og Klimasikring</h2>
+        <div class="service-cards">
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>LAR-løsninger</h3>
+              <p>Vi projekterer Lokal Afledning af Regnvand med fokus på at skabe merværdi i form af rekreative og naturmæssige kvaliteter. Vores løsninger integrerer håndtering af regnvand direkte i byrummet gennem grønne tage, regnbede, permeable belægninger og forsinkelsesbasiner. Vi designer med hensyntagen til både hydrauliske forhold, driftsøkonomi, æstetik og biodiversitet, så løsningerne bliver robuste og fremtidssikrede. Vores tværfaglige tilgang sikrer, at både tekniske og visuelle kvaliteter går hånd i hånd.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Klimasikringsstrategier</h3>
+              <p>Vi udarbejder strategier for klimasikring af byområder og enkeltprojekter mod oversvømmelse og ekstremregn.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Hydrauliske beregninger</h3>
+              <p>Vi udfører beregninger af vandmængder og dimensionering af anlæg til håndtering af regnvand.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-inner">
+              <h3>Blå-grønne løsninger</h3>
+              <p>Vi integrerer vand og beplantning i byrum og landskaber for at skabe rekreativ værdi og klimarobusthed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <script>
     const navToggle = document.getElementById('koplNavToggle');
     const mobileMenu = document.getElementById('koplMobileMenu');
@@ -54,6 +300,64 @@
       mobileOverlay.classList.remove('open');
       navToggle.classList.remove('open');
     });
+
+    // Service tabs funktionalitet
+    document.addEventListener('DOMContentLoaded', function() {
+      const serviceTabs = document.querySelectorAll('.service-tab');
+      const serviceCategories = document.querySelectorAll('.service-category');
+
+      // Funktion til at vise den valgte service kategori
+      function showServiceCategory(serviceId) {
+        // Skjul alle service kategorier
+        serviceCategories.forEach(category => {
+          category.classList.remove('active');
+        });
+
+        // Vis den valgte kategori
+        const selectedCategory = document.getElementById(serviceId);
+        if (selectedCategory) {
+          selectedCategory.classList.add('active');
+
+          // Scroll til kategori-overskriften med en lille forsinkelse
+          setTimeout(() => {
+            selectedCategory.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 100);
+        }
+
+        // Opdater aktiv tab
+        serviceTabs.forEach(tab => {
+          if (tab.dataset.service === serviceId) {
+            tab.classList.add('active');
+          } else {
+            tab.classList.remove('active');
+          }
+        });
+      }
+
+      // Tilføj event listeners til alle service tabs
+      serviceTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          const serviceId = this.dataset.service;
+          showServiceCategory(serviceId);
+        });
+      });
+
+      // Vis standard-kategorien ved indlæsning (første kategori)
+      showServiceCategory('projektudvikling');
+
+      // Håndter URL hash for direkte links til specifikke services
+      if (window.location.hash) {
+        const serviceId = window.location.hash.substring(1);
+        const validServices = Array.from(serviceTabs).map(tab => tab.dataset.service);
+
+        if (validServices.includes(serviceId)) {
+          showServiceCategory(serviceId);
+        }
+      }
+    });
   </script>
 </body>
+<a href="../index.html" class="kopl-logo-link landing-logo" style="position:fixed;left:1.2rem;bottom:1.2rem;z-index:1200;">
+  <img src="https://kopl.dk/onewebmedia/hvidt%20visitkort_flad_sort%20tekst.png" alt="KOPL logo" class="kopl-logo" style="height:54px;width:auto;opacity:0.8;filter:drop-shadow(0 1px 8px rgba(0,0,0,0.18));">
+</a>
 </html>
