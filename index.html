@@ -1,103 +1,181 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>KOPL</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/kopl-animate.css">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>KOPL</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/kopl-animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body class="landing-page">
-  <div class="kopl-fs-anim" id="koplAnim">
+<div class="kopl-fs-anim" id="koplAnim">
     <img src="https://kopl.dk/onewebmedia/logo%20sort.png" alt="KOPL logo" class="kopl-fs-main">
     <span class="kopl-fs-words">
       <span class="kopl-fs-word">KONTEKST</span>
       <span class="kopl-fs-word">PLAN</span>
     </span>
-  </div>
-  <header>
+</div>
+<header>
     <nav class="kopl-navbar">
-      <div class="kopl-navbar-inner">
-        <ul class="kopl-nav-links">
-          <li><a class="kopl-nav-links-white" href="html/services.html">Ydelser</a></li>
-          <li><a class="kopl-nav-links-white" href="html/contact.html">Kontakt</a></li>
-          <li><a class="kopl-nav-links-white" href="html/project-grid.html">Projekter</a></li>
-          <li><a class="kopl-nav-links-white" href="html/job.html">Job</a></li>
-        </ul>
-        <button class="kopl-nav-toggle" id="koplNavToggle" aria-label="Åbn menu">
-          <span class="kopl-nav-toggle-bar"></span>
-          <span class="kopl-nav-toggle-bar"></span>
-          <span class="kopl-nav-toggle-bar"></span>
-        </button>
-      </div>
-      <div class="kopl-mobile-menu" id="koplMobileMenu">
-        <button class="kopl-mobile-close" id="koplMobileClose" aria-label="Luk menu">&times;</button>
-        <ul>
-          <li><a href="html/services.html">Ydelser</a></li>
-          <li><a href="html/contact.html">Kontakt</a></li>
-          <li><a href="html/project-grid.html">Projekter</a></li>
-          <li><a href="html/job.html">Job</a></li>
-        </ul>
-      </div>
-      <div class="kopl-mobile-overlay" id="koplMobileOverlay"></div>
+        <div class="kopl-navbar-inner">
+            <ul class="kopl-nav-links">
+                <li><a class="kopl-nav-links" href="html/services.html">Ydelser</a></li>
+                <li><a class="kopl-nav-links" href="html/contact.html">Kontakt</a></li>
+                <li><a class="kopl-nav-links" href="html/project-grid.html">Projekter</a></li>
+                <li><a class="kopl-nav-links" href="html/job.html">Job</a></li>
+            </ul>
+            <button class="kopl-nav-toggle" id="koplNavToggle" aria-label="Åbn menu">
+                <span class="kopl-nav-toggle-bar"></span>
+                <span class="kopl-nav-toggle-bar"></span>
+                <span class="kopl-nav-toggle-bar"></span>
+            </button>
+        </div>
+        <div class="kopl-mobile-menu" id="koplMobileMenu">
+            <button class="kopl-mobile-close" id="koplMobileClose" aria-label="Luk menu">&times;</button>
+            <ul>
+                <li><a href="html/services.html">Ydelser</a></li>
+                <li><a href="html/contact.html">Kontakt</a></li>
+                <li><a href="html/project-grid.html">Projekter</a></li>
+                <li><a href="html/job.html">Job</a></li>
+            </ul>
+        </div>
+        <div class="kopl-mobile-overlay" id="koplMobileOverlay"></div>
     </nav>
-  </header>
-  <main>
-    <section class="hero-section">
-      <div class="hero-bg">
-        <img src="https://kopl.dk/onewebmedia/ProjectImages/h%C3%B8m%20m%C3%B8lle%20cover%20billede.jpg" alt="Firskovvej" class="hero-img" />
-        <div class="hero-overlay"></div>
-      </div>
-      <div class="hero-content">
-        <div class="hero-logo">
-          <img src="https://kopl.dk/onewebmedia/hvidt%20visitkort_flad.png" alt="KOPL logo" class="kopl-hero-logo">
+</header>
+<main class="hero-container">
+    <section class="hero-section-full">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
         </div>
-        <h1 class="hero-title">God planlægning<br>er forankret i<br>konteksten</h1>
-        <div class="hero-buttons">
-          <a href="html/project-grid.html" class="hero-btn hero-btn-primary">Se projekter</a>
-          <a href="html/contact.html" class="hero-btn hero-btn-secondary">Kontakt os</a>
+        <div class="hero-content-centered">
+            <div class="hero-logo-container">
+                <img src="https://kopl.dk/onewebmedia/logo%20sort.png" alt="KOPL logo" class="hero-logo-stretched">
+            </div>
+            <h1 class="hero-title">Vi gør det komplekse enkelt <br> – og det mulige virkeligt</h1>
+            <div class="scroll-down-container">
+                <a href="#about-section" class="scroll-down-arrow">
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 13l5 5 5-5"/>
+                        <path d="M7 7l5 5 5-5"/>
+                    </svg>
+                </a>
+            </div>
         </div>
-      </div>
     </section>
-  </main>
-  <script>
+
+    <section id="about-section" class="about-section">
+        <div class="about-container">
+            <h2 class="about-title">Om KOPL</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hos KOPL brænder vi for fysisk planlægning og miljøvurdering, fordi det er her, fremtiden formes.
+                        Med høj faglighed og solid erfaring hjælper vi kommuner, bygherrer og pensionskasser sikkert
+                        gennem komplekse plan- og miljøvurderingsprocesser. Vi tager ansvar hele vejen – fra første
+                        analyse til endelig myndighedsgodkendelse – og sikrer, at projekterne lander præcist og
+                        realiserbart.</p>
+                    <p>Vi leverer tværfaglig rådgivning i dybden. Vores løsninger er ikke hyldevarer, men resultatet af
+                        tværfagligt samarbejde, indsigt og overblik. Vi favner både klassiske og komplekse opgaver, og
+                        vi arbejder altid med ét mål: at sikre, at det, vi anbefaler, kan føres ud i livet. Det er ikke
+                        bare en ambition. Det er et løfte.</p>
+                </div>
+            </div>
+            <div class="scroll-side-container">
+                <a href="html/services.html" class="scroll-side-arrow">
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 13l5 5 5-5"/>
+                        <path d="M7 7l5 5 5-5"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
     let el = document.getElementById('koplAnim');
-    setTimeout(function(){
-      el.classList.add('kopl-fs-show-words');
+    setTimeout(function () {
+        el.classList.add('kopl-fs-show-words');
     }, 1100);
-    setTimeout(function(){
-      el.classList.remove('kopl-fs-show-words');
+    setTimeout(function () {
+        el.classList.remove('kopl-fs-show-words');
     }, 3200);
-    setTimeout(function(){
-      el.classList.add('kopl-fs-center-logo');
+    setTimeout(function () {
+        el.classList.add('kopl-fs-center-logo');
     }, 4300);
-    setTimeout(function(){
-      el.classList.add('kopl-fs-hide');
-    }, 4200);
-    document.addEventListener('click', function() {
-      if (!el.classList.contains('kopl-fs-hide')) {
+    setTimeout(function () {
         el.classList.add('kopl-fs-hide');
-      }
+    }, 4200);
+    document.addEventListener('click', function () {
+        if (!el.classList.contains('kopl-fs-hide')) {
+            el.classList.add('kopl-fs-hide');
+        }
     });
-  </script>
-  <script>
+
+    // Smooth scroll handler for the arrow
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                // For browsers that don't support smooth scrolling natively
+                if (typeof window.scrollTo !== 'function' || !('scrollBehavior' in document.documentElement.style)) {
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    const startPosition = window.pageYOffset;
+                    const distance = targetPosition - startPosition;
+                    const duration = 800; // ms
+                    let start = null;
+
+                    window.requestAnimationFrame(step);
+
+                    function step(timestamp) {
+                        if (!start) start = timestamp;
+                        const progress = timestamp - start;
+                        const easeInOutQuad = progress => {
+                            return progress < 0.5 ? 2 * progress * progress : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+                        };
+
+                        window.scrollTo(0, startPosition + distance * easeInOutQuad(Math.min(progress / duration, 1)));
+
+                        if (progress < duration) {
+                            window.requestAnimationFrame(step);
+                        }
+                    }
+                } else {
+                    // For browsers with native smooth scrolling
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+        });
+    });
+</script>
+<script>
     const navToggle = document.getElementById('koplNavToggle');
     const mobileMenu = document.getElementById('koplMobileMenu');
     const mobileClose = document.getElementById('koplMobileClose');
     const mobileOverlay = document.getElementById('koplMobileOverlay');
-    navToggle.addEventListener('click', function() {
-      mobileMenu.classList.add('open');
-      mobileOverlay.classList.add('open');
+    navToggle.addEventListener('click', function () {
+        mobileMenu.classList.add('open');
+        mobileOverlay.classList.add('open');
     });
-    mobileClose.addEventListener('click', function() {
-      mobileMenu.classList.remove('open');
-      mobileOverlay.classList.remove('open');
+    mobileClose.addEventListener('click', function () {
+        mobileMenu.classList.remove('open');
+        mobileOverlay.classList.remove('open');
     });
-    mobileOverlay.addEventListener('click', function() {
-      mobileMenu.classList.remove('open');
-      mobileOverlay.classList.remove('open');
+    mobileOverlay.addEventListener('click', function () {
+        mobileMenu.classList.remove('open');
+        mobileOverlay.classList.remove('open');
     });
-  </script>
+</script>
+
+<script src="js/index.js"></script>
 </body>
 </html>
