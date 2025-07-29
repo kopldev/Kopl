@@ -107,7 +107,7 @@
     font-weight: 400;
     margin-bottom: 1rem;
     color: #222;
-    font-family: 'Space Grotesk', ui-sans-serif, system-ui, Arial, sans-serif;
+    font-family: ui-sans-serif, system-ui, Arial, sans-serif;
 }
 
 .service-category-description {
@@ -162,7 +162,7 @@
     margin-top: 0;
     margin-bottom: 1.2rem;
     color: #222;
-    font-family: 'Space Grotesk', ui-sans-serif, system-ui, Arial, sans-serif;
+    font-family: system-ui, ui-sans-serif, Arial, sans-serif;
 }
 
 .service-card p {

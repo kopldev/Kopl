@@ -101,7 +101,7 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 0.7rem 2rem;
+  padding: 1.5rem 2rem;
   position: relative;
 }
 

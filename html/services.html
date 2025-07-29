@@ -46,7 +46,7 @@
     <!-- Service navigation bar -->
     <nav class="service-nav">
         <ul id="service-tabs">
-            <li class="service-tab active" data-service="projektudvikling">Projektudvikling</li>
+            <li class="service-tab" data-service="projektudvikling">Projektudvikling</li>
             <li class="service-tab" data-service="miljovurdering">Miljøvurdering</li>
             <li class="service-tab" data-service="planradgivning">Planrådgivning</li>
             <li class="service-tab" data-service="bygherreradgivning">Bygherrerådgivning</li>
@@ -60,6 +60,12 @@
         <!-- Projektudvikling indhold -->
         <div class="service-category active" id="projektudvikling">
             <h2 class="service-category-title">Projektudvikling</h2>
+            <p class="service-category-description">KOPL bidrager i projektudviklingsfasen med analyser og rådgivning,
+                der sikrer et korrekt udgangspunkt for udvikling af området. Vi hjælper projektudviklere og kommuner med
+                at sikre, at byggeretter og øvrige forudsætninger er på plads, så udviklingscasen hænger sammen fra
+                start. Vores indsats omfatter både juridiske vurderinger og tekniske analyser, der danner grundlag for
+                strategiske beslutninger.
+            </p>
             <div class="service-cards">
                 <div class="service-card">
                     <div class="service-card-inner">
@@ -126,13 +132,20 @@
                     <p>Vi hjælper med at udvikle og kvalificere projektidéer, så de tager højde for stedets potentiale,
                         bygherres vision og de planmæssige rammer. Gennem konceptudvikling skaber vi helhedsorienterede
                         løsninger, der kombinerer funktion, æstetik og økonomi. Vi sikrer, at projektet fra start står
-                        på et solidt grundlag og kan realiseres inden for gældende regler og muligheder.</p></div>
+                        på et solidt grundlag og kan realiseres inden for gældende regler og muligheder.</p>
+                </div>
             </div>
         </div>
 
         <!-- Miljøvurdering indhold -->
         <div class="service-category" id="miljovurdering">
             <h2 class="service-category-title">Miljøvurdering</h2>
+            <p class="service-category-description">Miljøvurdering er en kernekompetence hos KOPL, hvor vi udarbejder
+                miljørapporter og miljøkonsekvensrapporter af høj kvalitet. Som firma besidder vi en bred vifte af
+                fagligheder, og sammen med vores store erfaring inden for miljøvurdering sikrer det korrekt og rettidig
+                håndtering af de enkelte miljøparametre i processen. Vi varetager miljøvurderingsprocessen fra
+                indledende screening til endelig vedtagelse af plandokumenterne.
+            </p>
             <div class="service-cards">
                 <div class="service-card">
                     <div class="service-card-inner">
@@ -323,6 +336,16 @@
         <!-- Natur og Miljø indhold -->
         <div class="service-category" id="natur-miljo">
             <h2 class="service-category-title">Natur og Miljø</h2>
+            <p class="service-category-description">Hos KOPL ser vi natur- og miljøhensyn som en integreret del af
+                bæredygtig planlægning og projektudvikling. Derfor rådgiver vi inden for natur- og miljøforhold, som et
+                centralt element i vores arbejde med lokalplanlægning og miljøvurderinger af planer og projekter (VVM og
+                SMV). Natur- og miljøhensyn er ofte afgørende for, om en plan kan realiseres – og i hvilken form. Derfor
+                sikrer vores rådgivning, at lovgivningen overholdes, herunder naturbeskyttelsesloven,
+                habitatbekendtgørelsen og vandrammedirektivet. Vi vurderer naturværdier og miljøpåvirkninger fagligt og
+                tidligt i processen, samtidig med at myndighedskrav og dokumentationsbehov imødekommes. Projekter og
+                planer tilpasses løbende, så konflikter med natur og miljø minimeres. Ved at kombinere planfaglighed med
+                specialviden om natur og miljø skaber vi løsninger, der både er lovmedholdelige og robuste i praksis.
+            </p>
             <div class="service-cards">
                 <div class="service-card">
                     <div class="service-card-inner">
@@ -500,9 +523,9 @@
                 selectedCategory.classList.add('active');
 
                 // Scroll til kategori-overskriften med en lille forsinkelse
-                setTimeout(() => {
-                    selectedCategory.scrollIntoView({behavior: 'smooth', block: 'start'});
-                }, 100);
+                // setTimeout(() => {
+                //     selectedCategory.scrollIntoView({behavior: 'smooth', block: 'start'});
+                // }, 100);
             }
 
             // Opdater aktiv tab
@@ -522,9 +545,6 @@
                 showServiceCategory(serviceId);
             });
         });
-
-        // Vis standard-kategorien ved indlæsning (første kategori)
-        showServiceCategory('projektudvikling');
 
         // Håndter URL hash for direkte links til specifikke services
         if (window.location.hash) {
