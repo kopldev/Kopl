@@ -129,6 +129,7 @@ header {
   text-transform: uppercase;
   color: #888;
   margin-bottom: 1.5rem;
+  margin-top: 0;
 }
 
 .overview-desc {
@@ -277,12 +278,13 @@ header {
 }
 
 .gallery-scroll img {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   object-fit: cover;
   flex-shrink: 0;
   scroll-snap-align: start;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .gallery-scroll img:hover {
