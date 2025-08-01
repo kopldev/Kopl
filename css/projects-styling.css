@@ -6,20 +6,24 @@ html, body {
   font-family: system-ui, Arial, sans-serif;
   min-height: 100vh;
 }
+
 .page-root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   background: #fff;
 }
+
 header {
   border-bottom: 1px solid #e5e7eb;
   padding: 2rem 1.5rem;
 }
+
 .header-inner {
   max-width: 80rem;
   margin: 0 auto;
 }
+
 .studio-title {
   font-size: 1rem;
   font-weight: 500;
@@ -28,6 +32,7 @@ header {
   color: #222;
   margin: 0;
 }
+
 .main-content {
   max-width: 80rem;
   margin-left: auto;
@@ -37,6 +42,7 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 .project-title {
   font-size: 3rem;
   font-weight: 300;
@@ -45,11 +51,7 @@ header {
   margin-bottom: 2rem;
   margin-top: 0;
 }
-@media (min-width: 768px) {
-  .project-title {
-    font-size: 4.5rem;
-  }
-}
+
 .project-details {
   display: flex;
   flex-wrap: wrap;
@@ -60,9 +62,11 @@ header {
   letter-spacing: 0.04em;
   margin-bottom: 4rem;
 }
+
 .project-detail-block {
   min-width: 20px;
 }
+
 .project-detail-label {
   display: block;
   text-transform: uppercase;
@@ -72,25 +76,34 @@ header {
   font-weight: 500;
   margin-bottom: 0.3em;
 }
+
 .project-detail-value {
   margin: 0;
   font-size: 0.9em;
   color: #444;
 }
+
+.project-layout {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
 .hero-image-wrap {
   width: 100%;
   max-width: 100%;
   margin-bottom: 5rem;
 }
+
 .hero-image-aspect {
   position: relative;
   width: 100%;
   aspect-ratio: 4/3;
   background: #f3f4f6;
   overflow: hidden;
-  border-radius: 0.5rem;
   transition: box-shadow 0.3s;
 }
+
 .hero-image-aspect img {
   width: 100%;
   height: 100%;
@@ -98,21 +111,17 @@ header {
   display: block;
   transition: transform 0.7s cubic-bezier(.4,0,.2,1);
 }
+
 .hero-image-aspect:hover img {
   transform: scale(1.05);
 }
+
 .project-overview-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2.5rem;
+  display: flex;
+  flex-direction: column;
   max-width: 65rem;
 }
-@media (min-width: 768px) {
-  .project-overview-grid {
-    grid-template-columns: 1fr 2fr;
-    gap: 4rem;
-  }
-}
+
 .overview-label {
   font-size: 1rem;
   font-weight: 500;
@@ -121,6 +130,7 @@ header {
   color: #888;
   margin-bottom: 1.5rem;
 }
+
 .overview-desc {
   font-size: 1.18rem;
   line-height: 1.7;
@@ -128,6 +138,7 @@ header {
   font-weight: 300;
   margin: 0;
 }
+
 .back-nav {
   margin-top: 3rem;
   padding-top: 3rem;
@@ -135,6 +146,7 @@ header {
   text-align: left;
   padding-bottom: 4rem;
 }
+
 .back-btn {
   display: inline-flex;
   align-items: center;
@@ -150,33 +162,31 @@ header {
   outline: none;
   text-transform: uppercase;
 }
+
 .back-btn:hover {
   color: #444;
 }
+
 .back-btn svg {
   width: 1.1em;
   height: 1.1em;
   margin-right: 0.5em;
   transition: transform 0.2s;
 }
+
 .back-btn:hover svg {
   transform: translateX(-0.25em);
 }
 
 .project-lead-section {
-  margin-top: 4rem;
+  width: 500px;
+  margin: 0 auto;
   padding-top: 2rem;
   display: grid;
   justify-items: start;
   grid-template-columns: 1fr;
   max-width: 65rem;
   gap: 2.5rem;
-}
-@media (min-width: 768px) {
-  .project-lead-section {
-    grid-template-columns: 1fr 2fr;
-    gap: 4rem;
-  }
 }
 
 .section-title {
@@ -200,6 +210,7 @@ header {
   align-self: stretch;
   transition: box-shadow 0.2s, transform 0.2s;
 }
+
 .project-lead-card:hover {
   box-shadow: 0 16px 32px rgba(240, 176, 176, 0.1);
   transform: translateY(-4px) scale(1.01);
@@ -247,4 +258,71 @@ header {
   font-weight: 300;
   color: #4b5563;
   margin: 0.25rem 0;
+}
+
+.image-gallery {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  overflow-x: auto;
+}
+
+.gallery-scroll {
+  display: flex;
+  gap: 1.5rem;
+  padding-bottom: 0.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  justify-content: center;
+}
+
+.gallery-scroll img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+}
+
+.gallery-scroll img:hover {
+  transform: scale(1.05);
+}
+
+/* Optional scrollbar styling */
+.gallery-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gallery-scroll::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+/* ---------- Responsive layout ---------- */
+@media (min-width: 768px) {
+  .project-layout {
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .project-title {
+    font-size: 4.5rem;
+  }
+
+  .hero-image-wrap {
+    flex: 1;
+    max-width: 50%;
+    margin-bottom: 0;
+  }
+
+  .project-overview-grid {
+    flex: 1;
+    max-width: none;
+  }
+
+  .project-lead-section {
+    display: flex;
+    flex-direction: column;
+  }
 }
