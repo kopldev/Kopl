@@ -13,17 +13,6 @@ html, body {
   flex-direction: column;
   background: #fff;
 }
-
-header {
-  border-bottom: 1px solid #e5e7eb;
-  padding: 2rem 1.5rem;
-}
-
-.header-inner {
-  max-width: 80rem;
-  margin: 0 auto;
-}
-
 .studio-title {
   font-size: 1rem;
   font-weight: 500;
@@ -60,7 +49,7 @@ header {
   color: #444;
   font-weight: 500;
   letter-spacing: 0.04em;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .project-detail-block {
@@ -181,7 +170,7 @@ header {
 
 .project-lead-section {
   width: 500px;
-  margin: 0 auto;
+  margin: 4rem;
   padding-top: 2rem;
   display: grid;
   justify-items: start;
@@ -309,12 +298,12 @@ header {
   }
 
   .project-title {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
   }
 
   .hero-image-wrap {
     flex: 1;
-    max-width: 50%;
+    max-width: 40%;
     margin-bottom: 0;
   }
 

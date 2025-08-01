@@ -10,6 +10,14 @@ body {
   padding: 4rem 1rem 2rem 1rem;
   border-bottom: 1px solid #e5e7eb;
 }
+.page-title{
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 0.9;
+  color: #222;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
 .contact-header h1 {
   font-size: 2.8rem;
   font-weight: 700;
@@ -35,9 +43,9 @@ body {
   flex-wrap: wrap;
   gap: 3rem;
   margin-bottom: 3.5rem;
-  margin-top: 6rem;
   align-items: flex-start;
   min-height: 50vh;
+  padding: 4rem 1.5rem 0 1.5rem;
 }
 .about-text {
   flex: 2 1 320px;
@@ -150,6 +158,11 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+@media (max-width: 700px) {
+  .about-section{
+    padding: 0 20px;
+  }
+}
 .team-card {
   background: #fff;
   border: 1px solid #e5e7eb;
@@ -246,7 +259,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Space Grotesk', system-ui, Arial, sans-serif;
+  font-family: system-ui, Arial, sans-serif;
 }
 
 .contact-info-row[href*="linkedin"] svg {
