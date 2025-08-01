@@ -328,3 +328,85 @@ header {
     flex-direction: column;
   }
 }
+@media (max-width: 767px) {
+
+  /* Wrapper/main-content får lidt padding til siderne */
+  .main-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100%;
+  }
+
+  /* Projekt titel mindre på mobil */
+  .project-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Projekt detaljer bliver stablet lodret med lidt afstand */
+  .project-details {
+    flex-direction: row;
+    gap: 0.8rem;
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Project layout bliver lodret */
+  .project-layout {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Hero billede fylder 100% bredde og maks bredde fjernes */
+  .hero-image-wrap {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  /* Projekt oversigt fylder hele bredden */
+  .project-overview-grid {
+    max-width: 100%;
+  }
+
+  /* Billedgalleri - gør billederne mindre, så de kan scrolle på mobil */
+  .gallery-scroll {
+    justify-content: flex-start; /* så billederne starter fra venstre */
+  }
+
+  .gallery-scroll img {
+    width: 140px;
+    height: 105px;
+  }
+
+  /* Projekt lead sektionen fylder næsten hele bredden */
+  .project-lead-section {
+    width: 90%;
+    max-width: none;
+    margin: 0 auto 3rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .project-lead-card {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .lead-image {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1rem;
+  }
+
+  /* Tekst i lead-info centreres */
+  .lead-info {
+    align-items: center;
+  }
+
+  /* Kontakt-knappen og andre elementer forbliver som de er eller kan tilpasses efter behov */
+}
