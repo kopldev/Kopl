@@ -7,12 +7,6 @@ html, body {
   min-height: 100vh;
 }
 
-.page-root {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-}
 .studio-title {
   font-size: 1rem;
   font-weight: 500;
@@ -250,7 +244,6 @@ html, body {
 }
 
 .image-gallery {
-  margin-top: 3rem;
   margin-bottom: 5rem;
   overflow-x: auto;
 }
@@ -276,17 +269,12 @@ html, body {
 }
 
 .gallery-scroll img:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 /* Optional scrollbar styling */
 .gallery-scroll::-webkit-scrollbar {
-  height: 8px;
-}
-
-.gallery-scroll::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 4px;
+  display: none;
 }
 
 /* ---------- Responsive layout ---------- */
@@ -322,6 +310,7 @@ html, body {
   .main-content {
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-top: 1rem;
     max-width: 100%;
   }
 
@@ -362,8 +351,8 @@ html, body {
   }
 
   .gallery-scroll img {
-    width: 140px;
-    height: 105px;
+    width: 300px;
+    height: 300px;
   }
 
   /* Projekt lead sektionen fylder næsten hele bredden */

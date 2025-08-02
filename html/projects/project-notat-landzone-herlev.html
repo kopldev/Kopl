@@ -1,78 +1,118 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Notat om muligheder i landzone</title>
-  <link rel="stylesheet" href="../../css/projects-styling.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Notat om muligheder i landzone</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/projects-styling.css">
 </head>
 <body>
-  <div class="page-root">
+
     <header>
-      <div class="header-inner">
-        <img src="https://kopl.dk/onewebmedia/logo%20sort.png" alt="KOPL logo" style="height:38px; vertical-align:middle; margin:0;" />
-      </div>
+        <nav class="kopl-navbar">
+            <a href="../../index.html"><img class="kopl-nav-logo"
+                                            src="https://kopl.dk/onewebmedia/hvidt%20visitkort_flad_sort%20tekst.png"
+                                            alt="logo"></a>
+            <div class="kopl-navbar-inner">
+                <ul class="kopl-nav-links">
+                    <li><a class="kopl-nav-links-black" href="../services.html">Ydelser</a></li>
+                    <li><a class="kopl-nav-links-black" href="../contact.html">Kontakt</a></li>
+                    <li><a class="kopl-nav-links-black" href="../project-grid.html">Projekter</a></li>
+                    <li><a class="kopl-nav-links-black" href="#job">Job</a></li>
+                </ul>
+                <button class="kopl-nav-toggle" id="koplNavToggle" aria-label="Åbn menu">
+                    <span class="kopl-nav-toggle-bar"></span>
+                    <span class="kopl-nav-toggle-bar"></span>
+                    <span class="kopl-nav-toggle-bar"></span>
+                </button>
+            </div>
+            <div class="kopl-mobile-menu" id="koplMobileMenu">
+                <button class="kopl-mobile-close" id="koplMobileClose" aria-label="Luk menu">&times;</button>
+                <ul>
+                    <li><a href="services.html">Ydelser</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="project-grid.html">Projekter</a></li>
+                    <li><a href="#job">Job</a></li>
+                </ul>
+            </div>
+            <div class="kopl-mobile-overlay" id="koplMobileOverlay"></div>
+        </nav>
     </header>
     <main class="main-content">
-      <section>
-        <h2 class="project-title">Notat om muligheder i landzone</h2>
-        <div class="project-details">
-          <div class="project-detail-block">
-            <span class="project-detail-label">ÅR</span>
-            <p class="project-detail-value">2023</p>
-          </div>
-          <div class="project-detail-block">
-            <span class="project-detail-label">LOKATION</span>
-            <p class="project-detail-value">Herlev</p>
-          </div>
-          <div class="project-detail-block">
-            <span class="project-detail-label">YDELSE</span>
-            <p class="project-detail-value">Landzone, Mulighedsnotat</p>
-          </div>
-        </div>
-      </section>
-      <div class="hero-image-wrap">
-        <div class="hero-image-aspect">
-          <img src="https://kopl.dk/onewebmedia/ProjectImages/herlev - mulighedsnotat.png" alt="Notat om muligheder i landzone" />
-        </div>
-      </div>
-      <section class="project-overview-grid">
-        <div>
-          <h2 class="overview-label">PROJEKT BESKRIVELSE</h2>
-        </div>
-        <div>
-          <p class="overview-desc">
-            I Herlev har KOPL udarbejdet et notat om muligheder i landzone. Notatet belyser de juridiske og planmæssige rammer for udvikling i landzone og giver konkrete anbefalinger til, hvordan kommunen kan arbejde strategisk med arealanvendelse og udviklingsmuligheder. Arbejdet har haft fokus på at skabe overblik og sikre et solidt grundlag for fremtidige beslutninger.
-          </p>
-        </div>
-      </section>
-      <div class="project-lead-section">
-        <div class="section-title">Projekt Kontakt</div>
-        <div class="project-lead-card">
-          <div class="lead-image">
-            <img src="https://kopl.dk/onewebmedia/Profilbilleder/ah%20profil%20-%20hvid%20baggrund.png" alt="LEAD_NAME" />
-          </div>
-          <div class="lead-info">
-            <div class="lead-name-title">
-              <h3>Anne Hinge</h3>
-              <p class="title">CEO</p>
+        <section>
+            <h2 class="project-title">Notat om muligheder i landzone</h2>
+            <div class="project-details">
+                <div class="project-detail-block">
+                    <span class="project-detail-label">ÅR</span>
+                    <p class="project-detail-value">2023</p>
+                </div>
+                <div class="project-detail-block">
+                    <span class="project-detail-label">LOKATION</span>
+                    <p class="project-detail-value">Herlev</p>
+                </div>
+                <div class="project-detail-block">
+                    <span class="project-detail-label">YDELSE</span>
+                    <p class="project-detail-value">Landzone, Mulighedsnotat</p>
+                </div>
             </div>
-            <div class="lead-contact">
-              <p>+45 61742261</p>
-              <p>ah@kopl.dk</p>
+        </section>
+        <div class="project-layout">
+            <div class="hero-image-wrap">
+                <div class="hero-image-aspect">
+                    <img src="https://kopl.dk/onewebmedia/ProjectImages/herlev - mulighedsnotat.png"
+                         alt="Notat om muligheder i landzone"/>
+                </div>
             </div>
-          </div>
+            <section class="project-overview-grid">
+                <div>
+                    <h2 class="overview-label">PROJEKT BESKRIVELSE</h2>
+                </div>
+                <div>
+                    <p class="overview-desc">
+                        I Herlev har KOPL udarbejdet et notat om muligheder i landzone. Notatet belyser de juridiske og
+                        planmæssige rammer for udvikling i landzone og giver konkrete anbefalinger til, hvordan kommunen
+                        kan arbejde strategisk med arealanvendelse og udviklingsmuligheder. Arbejdet har haft fokus på
+                        at skabe overblik og sikre et solidt grundlag for fremtidige beslutninger.
+                    </p>
+                </div>
+            </section>
         </div>
-      </div>
-      <div class="back-nav">
-        <button class="back-btn" onclick="window.history.back()">
-          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-          </svg>
-          Tilbage til projekter
-        </button>
-      </div>
+        <div class="image-gallery">
+            <div class="gallery-scroll">
+                <img src="https://kopl.dk/onewebmedia/ProjectImages/Aflastningscenter.jpg" alt="Galleri billede 1"/>
+                <img src="https://kopl.dk/onewebmedia/ProjectImages/Boliger%20og%20butik.jpg" alt="Galleri billede 2"/>
+                <img src="https://kopl.dk/onewebmedia/ProjectImages/Bygherreans%C3%B8gning%20for%20Kontor%20og%20laboratorium.jpg" alt="Galleri billede 3"/>
+                <img src="https://kopl.dk/onewebmedia/ProjectImages/Byudvikling%20i%20Guldager.jpg" alt="Galleri billede 4"/>
+            </div>
+        </div>
+        <div class="project-lead-section">
+            <div class="section-title">Projekt Kontakt</div>
+            <div class="project-lead-card">
+                <div class="lead-image">
+                    <img src="https://kopl.dk/onewebmedia/Profilbilleder/ah%20profil%20-%20hvid%20baggrund.png"
+                         alt="LEAD_NAME"/>
+                </div>
+                <div class="lead-info">
+                    <div class="lead-name-title">
+                        <h3>Anne Hinge</h3>
+                        <p class="title">CEO</p>
+                    </div>
+                    <div class="lead-contact">
+                        <p>+45 61742261</p>
+                        <p>ah@kopl.dk</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="back-nav">
+            <button class="back-btn" onclick="window.history.back()">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+                Tilbage til projekter
+            </button>
+        </div>
     </main>
-  </div>
 </body>
 </html>
