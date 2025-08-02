@@ -34,18 +34,23 @@ body {
   line-height: 1.6;
 }
 .contact-main {
-  max-width: 1100px;
+  max-width: 80rem;
   margin: 0 auto;
   padding: 3rem 1rem 2rem 1rem;
 }
-.about-section {
+.about-section-contact {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 3rem;
   margin-bottom: 3.5rem;
-  align-items: flex-start;
-  min-height: 50vh;
-  padding: 4rem 1.5rem 0 1.5rem;
+}
+.contact-intro{
+  font-size: 1.18rem;
+  line-height: 1.6;
+  color: #444;
+  max-width: 50rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
 }
 .about-text {
   flex: 2 1 320px;
@@ -65,12 +70,14 @@ body {
   line-height: 1.7;
 }
 .contact-card {
+  display: flex;
+  flex-direction: row;
   background: #fff;
-  border: 1px solid #000000;
+  gap: 6rem;
   border-radius: 0.2em;
   padding: 2.2rem 2rem 2rem 2rem;
-  min-width: 260px;
-  max-width: 340px;
+  min-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 .contact-card h3 {
@@ -132,10 +139,10 @@ body {
 }
 .team-section h2 {
   text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 0.7rem;
+  font-size: 2.2rem;
+  font-weight: 300;
   color: #111;
+  margin-bottom: 2rem;
 }
 .team-section p {
   text-align: center;
@@ -159,8 +166,25 @@ body {
   }
 }
 @media (max-width: 700px) {
+  .contact-main{
+    padding-top: 0  ;
+  }
+  .page-title{
+    font-size: 3rem;
+  }
   .about-section{
     padding: 0 20px;
+  }
+  .contact-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    gap: 3rem;
+    border-radius: 0.2em;
+    padding: 2.2rem 2rem 2rem 2rem;
+    min-width: 240px;
+    max-width: 340px;
+    margin: 0 auto;
   }
 }
 .team-card {
