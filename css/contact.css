@@ -201,7 +201,7 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 20px;
-  gap: 20px;
+  gap: 5px;
 }
 
 .team-img-wrap {
@@ -229,7 +229,6 @@ body {
 .team-info {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
   text-align: left;
   width: 100%;
   flex: 1;
@@ -238,7 +237,7 @@ body {
   font-size: 1.4rem;
   font-weight: 300;
   color: #111;
-  margin-bottom: 0.4em;
+
   margin-top: 0.4em;
 }
 

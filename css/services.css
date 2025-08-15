@@ -132,12 +132,10 @@
     font-weight: 500;
 }
 
-/* Gør container synlig når en undermenu er aktiv */
 .service-subnav-container.show {
     display: flex;
 }
 
-/* Service categories */
 .service-category {
     display: none;
     padding: 1rem 0 3rem 0;
