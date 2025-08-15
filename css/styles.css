@@ -36,6 +36,7 @@ body, html {
   z-index: 10;
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 20rem;
   width: 85%;
   padding-top: 5vh;
 }
@@ -80,7 +81,13 @@ body, html {
 
 @media (min-width: 600px) {
   .hero-title {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 0.9;
+    color: #222;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    font-family: system-ui, ui-sans-serif, Arial, sans-serif;
   }
 }
 /* Navigation Styles */
@@ -91,6 +98,7 @@ body, html {
   gap: 2rem;
   padding: 0 4rem 0 4rem;
 }
+
 
 .kopl-nav-logo {
   height: clamp(2.5rem, 6vw, 4.5rem); /* skalerer responsivt */
@@ -285,9 +293,13 @@ body, html {
   }
 
   .hero-title {
-    font-size: 1.8rem;
-    margin-top: 1rem;
-    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 0.9;
+    color: #222;
+    margin-bottom: 5rem;
+    margin-top: 0;
+    font-family: system-ui, ui-sans-serif, Arial, sans-serif;
   }
   .scroll-down-container{
     margin-bottom: 5rem;
@@ -306,7 +318,7 @@ header {
 /* Scroll Down Arrow */
 .scroll-down-container {
   position: absolute;
-  bottom: 100px;
+  bottom: 300px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
@@ -392,10 +404,10 @@ header {
 }
 
 .about-title {
-  font-size: 2.8rem;
-  margin-bottom: 40px;
+  font-size: 4.5rem;
+  margin-bottom: 20px;
   font-family: system-ui, ui-sans-serif, system-ui, Arial, sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   text-align: center;
   letter-spacing: -0.02em;
 }
@@ -408,11 +420,15 @@ header {
 .about-text {
   flex: 1;
 }
-
+/*1.2rem på mobile*/
 .about-text p {
-  font-size: 1.5rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 0.9;
+  color: #222;
+
+  margin-top: 0;
+  font-family: system-ui, ui-sans-serif, Arial, sans-serif;
 }
 
 .about-services {
@@ -472,6 +488,12 @@ header {
 
   .about-services h3 {
     font-size: 1.5rem;
+  }
+  .about-text p{
+    font-size: 1.2rem;
+  }
+  .scroll-down-container {
+    bottom: 250px;
   }
 }
 

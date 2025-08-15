@@ -10,7 +10,9 @@
 <body>
 <header>
     <nav class="kopl-navbar">
-        <a href="../../index.html"><img class="kopl-nav-logo" src="https://kopl.dk/onewebmedia/hvidt%20visitkort_flad_sort%20tekst.png" alt="logo"></a>
+        <a href="../../index.html"><img class="kopl-nav-logo"
+                                        src="https://kopl.dk/onewebmedia/hvidt%20visitkort_flad_sort%20tekst.png"
+                                        alt="logo"></a>
         <div class="kopl-navbar-inner">
             <ul class="kopl-nav-links">
                 <li><a class="kopl-nav-links-black" href="../services.html">Ydelser</a></li>
@@ -68,13 +70,16 @@
             </div>
             <div>
                 <p class="overview-desc">
-                    Dette minimalistiske boligprojekt udforsker forholdet mellem indre og ydre rum gennem nøje
-                    orkestrerede volumener og naturligt lys. Designfilosofien er centreret omkring reduktion og
-                    klarhed, hvor hvert element tjener både en funktionel og æstetisk rolle. Projektet søger at
-                    skabe en harmonisk balance mellem arkitektur og omgivelser, hvor lys og skygge bliver aktive
-                    medspillere i rummets udtryk. Materialevalget er nedtonet og præcist, og konstruktionen er tænkt
-                    med fokus på enkelhed og ærlighed. Hver detalje er bearbejdet med omtanke for at fremhæve
-                    rumlighedens kvalitet og styrke forbindelsen mellem huset og dets kontekst.
+                    I Ringsted Kommune har vi bestået ejerne af Høm Mølle og kommunen med udarbejdelse af en ny
+                    lokalplan. Lokaplanen overfører dele af området til landzone og indeholder dispensationer fra
+                    beskyttelseslinjer.
+                    Høm Mølle ligger i et område med store beskyttelsesinteresser, herunder beskyttede naturtyper,
+                    åbeskyttelseslinje og bevaringsværdige landskaber. Planlægningen er derfor sket med stor respekt for
+                    områdets natur- og landskab, så nye aktiviteter kan indpasses uden forringelse af de eksisterende
+                    kvaliteter.
+                    KOPL har rådgivet om hele planprocessen – fra afgrænsning af de ønskede aktiviteter i forhold til
+                    lovgivningen, til håndtering af dispensationer, naturhensyn og trafikforhold.
+                    "
                 </p>
             </div>
         </section>
@@ -83,8 +88,10 @@
         <div class="gallery-scroll">
             <img src="https://kopl.dk/onewebmedia/ProjectImages/Aflastningscenter.jpg" alt="Galleri billede 1"/>
             <img src="https://kopl.dk/onewebmedia/ProjectImages/Boliger%20og%20butik.jpg" alt="Galleri billede 2"/>
-            <img src="https://kopl.dk/onewebmedia/ProjectImages/Bygherreans%C3%B8gning%20for%20Kontor%20og%20laboratorium.jpg" alt="Galleri billede 3"/>
-            <img src="https://kopl.dk/onewebmedia/ProjectImages/Byudvikling%20i%20Guldager.jpg" alt="Galleri billede 4"/>
+            <img src="https://kopl.dk/onewebmedia/ProjectImages/Bygherreans%C3%B8gning%20for%20Kontor%20og%20laboratorium.jpg"
+                 alt="Galleri billede 3"/>
+            <img src="https://kopl.dk/onewebmedia/ProjectImages/Byudvikling%20i%20Guldager.jpg"
+                 alt="Galleri billede 4"/>
         </div>
     </div>
     <div class="project-lead-section">
@@ -122,17 +129,17 @@
     const mobileMenu = document.getElementById('koplMobileMenu');
     const mobileClose = document.getElementById('koplMobileClose');
     const mobileOverlay = document.getElementById('koplMobileOverlay');
-    navToggle.addEventListener('click', function() {
+    navToggle.addEventListener('click', function () {
         mobileMenu.classList.add('open');
         mobileOverlay.classList.add('open');
         navToggle.classList.add('open');
     });
-    mobileClose.addEventListener('click', function() {
+    mobileClose.addEventListener('click', function () {
         mobileMenu.classList.remove('open');
         mobileOverlay.classList.remove('open');
         navToggle.classList.remove('open');
     });
-    mobileOverlay.addEventListener('click', function() {
+    mobileOverlay.addEventListener('click', function () {
         mobileMenu.classList.remove('open');
         mobileOverlay.classList.remove('open');
         navToggle.classList.remove('open');
