@@ -48,13 +48,28 @@
           <select id="service-filter" class="filter-select">
             <option value="">Alle ydelser</option>
             <option value="Lokalplan">Lokalplan</option>
-            <option value="Forudsætningsnotat">Forudsætningsnotat</option>
             <option value="Klagenævnspraksis">Klagenævnspraksis</option>
+            <option value="Landsplanlægning">Landsplanlægning</option>
+            <option value="Fingerplan">Fingerplan</option>
             <option value="Bebyggelsesplan">Bebyggelsesplan</option>
             <option value="Projektudvikling">Projektudvikling</option>
             <option value="Regnvandshåndtering">Regnvandshåndtering</option>
+            <option value="Myndighedsrådgivning">Myndighedsrådgivning</option>
             <option value="Landzone">Landzone</option>
             <option value="Mulighedsnotat">Mulighedsnotat</option>
+            <option value="Miljøvurdering">Miljøvurdering</option>
+            <option value="Kommuneplantillæg">Kommuneplantillæg</option>
+            <option value="Kystnærhedszonen">Kystnærhedszonen</option>
+            <option value="Miljøkonsekvensvurdering">Miljøkonsekvensvurdering</option>
+            <option value="Sommerhusloven">Sommerhusloven</option>
+            <option value="Kvalitetssikring af Lokalplan">Kvalitetssikring af Lokalplan</option>
+            <option value="Rådgivning og kvalitetssikring af lokalplan">Rådgivning og kvalitetssikring af lokalplan</option>
+            <option value="Planrådgivning">Planrådgivning</option>
+            <option value="Klagepraksis">Klagepraksis</option>
+            <option value="Afgrænsningsnotat">Afgrænsningsnotat</option>
+            <option value="Landskabsanalyse">Landskabsanalyse</option>
+            <option value="Kommuneplan">Kommuneplan</option>
+            <option value="Landskabsvurdering">Landskabsvurdering</option>
           </select>
         </div>
       </div>
@@ -374,7 +389,7 @@
       }
       const filtered = projects.filter(project => {
         // Split ydelser by comma, trim, and check if any match the selected service
-        return project.services.split(',').map(s => s.trim()).includes(service);
+        return project.services.map(s => s.trim()).includes(service);
       });
       renderProjects(filtered);
     }
