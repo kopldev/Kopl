@@ -147,7 +147,10 @@ const projects = [
         services: ['Afgrænsningsnotat', 'Miljøvurdering'],
         heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Milj%C3%B8vurdering%20af%20H%C3%B8rsholm%20Kommuneplan.jpg',
         description: 'I forbindelse med revision af kommuneplanen (Kommuneplan 2025) har KOPL bistået Hørsholm Kommune med miljøvurdering af ”Strategi for Grøn Zone”, som er en arealanvendelsesstrategi, der skal danne grundlag for fremtidige planer og projekter inden for forsyning, vedvarende energi (VE) og skovrejsning i kommunen. Miljøvurderingen blev udført på et strategisk og overordnet niveau som passede til planlægningens karakter. Fokus var på potentielle påvirkninger af natur, arealanvendelse, vand og landskab samt strategiens forhold til overordnede klima- og miljøbeskyttelsesmål, herunder Statens Klimamål og FN’s Verdensmål. I tråd med planlægningens overordnede karakter ledte miljøvurderingen frem til en række anbefalinger til den videre planlægning for den grønne zone.',
-        images: ['', '', '', ''],
+        images: ['https://kopl.dk/onewebmedia/ProjectImages/250001%2C%20Milj%C3%B8vurdering%20H%C3%B8rsholm%20Kommuneplan/250001_Karakteromr%208_3.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/250001%2C%20Milj%C3%B8vurdering%20H%C3%B8rsholm%20Kommuneplan/250001%20Kort_H%C3%B8rsholm%20lille.jpeg',
+            'https://kopl.dk/onewebmedia/ProjectImages/250001%2C%20Milj%C3%B8vurdering%20H%C3%B8rsholm%20Kommuneplan/250001%20H%C3%B8rsholm%20Milij%C3%B8vurdering-Gr%C3%B8nzone%20for%20teknisk%20anl%C3%A6g%20figur%20kopier.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/250001%2C%20Milj%C3%B8vurdering%20H%C3%B8rsholm%20Kommuneplan/250001%20H%C3%B8rsholm%20Milij%C3%B8vurdering-Drikkevand%20%2B%20BNBO%20kopier.jpg'],
         contact: 'nynne-joergensen'
     },
     {
@@ -169,7 +172,10 @@ const projects = [
         services: ['Landskabsanalyse', 'Kommuneplan'],
         heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Landskabsanalyse%20H%C3%B8rsholm%20Kommune.jpg',
         description: 'KOPL har bistået Hørsholm Kommune med udarbejdelse af en landskabsanalyse for det åbne land. Analysen danner grundlag for kommunens ”Strategi for Grøn Zone”, som er en del af Kommuneplan 2025. Landskabsanalysen indeholder en overordnet analyse af hele kommunen med fokus på sammenspillet mellem natur- og kulturgrundlaget og inddeler kommunen i karakterområder. 4 områder er analyseret på et detaljeret niveau, som på sigt skal dække hele kommunens areal. Landskabsanalysens rolle i forhold til Grøn zone er at belyse landskabets sårbarhed overfor placering af tekniske anlæg og skovrejsning, og hvor nænsomt man skal gå til værks, når der udvikles i området. Analysen opstiller anbefalinger til, hvordan og med hvilke hensyn der fremadrettet kan arbejdes med tiltag for den grønne omstilling.',
-        images: ['', '', '', ''],
+        images: ['https://kopl.dk/onewebmedia/ProjectImages/240040%2C%20Landskabsanalyse%20H%C3%B8rsholm%20Kommune/All%C3%A9%20Kettinge%20kopier.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/240040%2C%20Landskabsanalyse%20H%C3%B8rsholm%20Kommune/H%C3%B8rsholm%20Kommune-Arealanvendelse%20v5.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/240040%2C%20Landskabsanalyse%20H%C3%B8rsholm%20Kommune/Heste%20kopier.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/240040%2C%20Landskabsanalyse%20H%C3%B8rsholm%20Kommune/H%C3%B8rsholm%20Kommune-Geologi-Terr%C3%A6n%20v2.jpg'],
         contact: 'nynne-joergensen'
     },
     {
@@ -180,7 +186,10 @@ const projects = [
         services: ['miljøvurdering', 'afgrænsningsnotat', 'landskabsvurdering'],
         heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Regnvandsh%C3%A5ndtering%20for%20Troldebakkerne.jpg',
         description: 'KOPL har bistået Gribskov Kommune med miljøvurdering af forslag til kommuneplantillæg og lokalplan for udviklingen af det nye boligområde Troldebakkerne Vest. Miljøvurderingens formål var at sikre, at planlægningen tog hensyn til en bred vifte af miljøfaktorer, herunder natur, trafik, støj, skygger og indblik, grundvand, overfladevand, tilpasning til nedbør, landskab, værdifuldt kulturmiljø og arkæologiske interesser. I planlægningen blev der bl.a. indarbejdet tiltag for at opretholde områdets økologiske funktionalitet som yngle- og rasteområde for spidssnudet frø og flere arter af flagermus.',
-        images: ['', '', '', ''],
+        images: ['https://kopl.dk/onewebmedia/ProjectImages/240014%2C%20Troldebakkerne%20milj%C3%B8vurdering/Vand%20figur.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/240014%2C%20Troldebakkerne%20milj%C3%B8vurdering/Plan.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/240014%2C%20Troldebakkerne%20milj%C3%B8vurdering/Kulturarv%20figur.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/240014%2C%20Troldebakkerne%20milj%C3%B8vurdering/Foto%201.jpg'],
         contact: 'tobias-filskov-petersen'
     }
 ];

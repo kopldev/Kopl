@@ -374,7 +374,7 @@
       }
       const filtered = projects.filter(project => {
         // Split ydelser by comma, trim, and check if any match the selected service
-        return project.ydelser.split(',').map(s => s.trim()).includes(service);
+        return project.services.split(',').map(s => s.trim()).includes(service);
       });
       renderProjects(filtered);
     }

@@ -66,7 +66,7 @@ const contacts = [
         id: 'pernille-birkenfeldt-petersen',
         name: 'Pernille Birkenfeldt Petersen',
         title: 'Ingeniør',
-        skills: ['Regnvandshåndtering', 'recipientvurdering', 'forsyningsledninger', 'miljøvurdering'],
+        skills: ['Regnvandshåndtering', 'recipientvurdering', 'forsyningsinfrastruktur', 'miljøvurdering'],
         email: 'pbp@kopl.dk',
         phone: '+45 66443453',
         image: 'https://kopl.dk/onewebmedia/Profilbilleder/pbp%20profil%20-%20hvid%20baggrund.png'
