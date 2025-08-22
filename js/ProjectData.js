@@ -1,0 +1,186 @@
+const projects = [
+    {
+        id: '250013',
+        title: 'Høm Mølle',
+        year: 2025,
+        location: 'Ringsted',
+        services: ['Lokalplan', 'Klagenævnspraksis'],
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/h%C3%B8m%20m%C3%B8lle%20cover%20billede.jpg',
+        description: 'I Ringsted Kommune har vi bestået ejerne af Høm Mølle og kommunen med udarbejdelse af en ny lokalplan i landzone. Den kommende lokaplan overfører dele af området til byzone og indeholder dispensationer fra beskyttelseslinjer. Som et led i planlægningen er der indledningsvist udarbejdet et forudsætningsnotat med relevant klagenævnspraksis for at afveje konktrete ønsker med afgørelser på området. \n' +
+            'Høm Mølle ligger i et område med store beskyttelsesinteresser, herunder beskyttede naturtyper, åbeskyttelseslinje og bevaringsværdige landskaber. Planlægningen er derfor sket med stor respekt for områdets natur- og landskab, så nye aktiviteter kan indpasses uden forringelse af de eksisterende kvaliteter. \n' +
+            'KOPL har rådgivet om hele plan -og miljøvurderingsprocessen – fra afgrænsning af de ønskede aktiviteter i forhold til lovgivningen, til håndtering af dispensationer, naturhensyn og trafikforhold. \n' +
+            '',
+        images: [
+            '', '', '', ''
+        ],
+        contact: 'muzdah-fallah'
+    },
+    {
+        id: '230050',
+        title: 'Revision af Fingerplan 2019',
+        year: 2023,
+        location: 'Egedal Kommune',
+        services: ['Landsplanlægning', 'Fingerplan'],
+        heroImage: '',
+        description: 'KOPL bistår bygherrer og kommuner i arbejdet med planstrategier, kommuneplaner og vurdering af statslige landsplandirektiver. Vi udarbejder faglige analyser, baggrundsnotater, områders aktuelle anvendelse, potentialer og planmæssige udfordringer.  Et eksempel er vores arbejde i Egedal Kommune, hvor vi udarbejdede et høringssvar til revision af Fingerplan 2019 for et område i den grønne kile.',
+        images: [
+            '',
+            '',
+            '',
+            ''
+        ],
+        contact: 'muzdah-fallah'
+    },
+    {
+        id: '250014',
+        title: 'Lokalplan for nyt boligområde i Østbirk',
+        year: 2025,
+        location: 'Horsens Kommune',
+        services: ['Lokalplan', 'Bebyggelsesplan', 'Projektudvikling', 'Regnvandshåndtering'],
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/%C3%98stbirk.png',
+        description: 'KOPL har bistået Horsens Kommune med at udvikle et nyt boligområde i Øst Birk. KOPL har stået for udarbejdelse af bebyggelsesplanen hvor en lang række bindinger skulle afvejes og indarbejdes. Boligområdet er delvist omfattet af en større skråning og der er forskellige miljømæssige aspekter som støj fra skydebane og vej samt emmisioner fra et nærtliggende svinebrug som er afklaret i planprocessen. Ligeledes har KOPL stået for regnvandshåndterigen i dialog med myndighed og forsyningen samt udarbejdet lokalplan og kommuneplantillæg for området.',
+        images: [
+            '',
+            '',
+            '',
+            ''
+        ],
+        contact: 'frederik-arskov-nannestad'
+    },
+    {
+        id: '240016',
+        title: 'Lokalplan for warehouse',
+        year: 2024,
+        location: 'Kalundborg Kommune',
+        services: ['Lokalplan'],
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/kalundborg warehouse.png',
+        description: 'KOPL har bistået en virksomhed med udabejdelse af kommuneplantillæg og lokalplan for et industri -og lagerformål i den østlige del af Kalundborg. Lokalplanen giver mulighed for at området kan anvendes til erhverv og lagerfaciliteter med tilhørende administration, testfaciliteter, tekniske anlæg og lignende indenfor midicinal-, fødevare og biotekindustrien. Lokalplanen er udarbejdet i dialog med Kallundborg Kommune og  giver blandt andet mulighed for opførelse af en bygning med en længde på mere end 600 m.',
+        images: [
+            '',
+            '',
+            '',
+            ''
+        ],
+        contact: 'tobias-filskov-petersen'
+    },
+    {
+        id: '250025',
+        title: 'CPH Lufthavn',
+        year: 2025,
+        location: 'Tårnby Kommune og Dragør Kommune',
+        services: ['Myndighedsrådgivning'],
+        heroImage: '',
+        description: 'Plan- og Landdistriksstyrelsen har gennem et call-in overtaget planlægningen for Københavns Lufthavn. KOPL har bistået Københavns Lufthavne A/S i arbejdet med det nye plangrundlag, herunder forbredelse af temamøder om centrale planteamer såsom trafik, parkering, detailhandel mv. Vi har leveret faglig sparring, mødefacilitering og koordination mellem statslige og kommunale myndigheder. Med vores erfarning inden for byplanlægning, myndighedsprocesser og tekniske analyser har vi sikret at planlægningen sker på et solidt vidensgrundlag og understøtter lufthavnens rolle som internationalt trafikknudepunkt - med respekt for de miljømæssige og lokale rammer.',
+        images: [
+            '',
+            '',
+            '',
+            ''
+        ],
+        contact: 'muzdah-fallah'
+    },
+    {
+        id: '240010',
+        title: 'Notat om muligheder i landzone',
+        year: 2024,
+        location: 'Herlev Kommune',
+        services: ['Landzone', ' Mulighedsnotat'],
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Notat%20om%20udvidelsesmuligheder.jpg',
+        description: 'KOPL har udarbejedet et mulighedsnotat som redegør for mulighederne på en ejendom i landzone. Ejendommen er omfattet af flere supplerende restriktioner og har ikke status som landbrugsejendom. Ejendommen var sat til salg og ejeren ønskede et notat som redegjorde for mulighederne på ejendommen samt opsamlede kommunens - og klagenæsvnspraksis på området så det blev synligt for for eventuelle køber hvilke muligheder der var på ejendommen.',
+        images: [
+            '',
+            '',
+            '',
+            ''
+        ],
+        contact: 'anne-hinge'
+    },
+    {
+        id: '240012',
+        title: 'Rammelokalplan, kommuneplantillæg og miljøvurdering for Firskovvej',
+        year: 2024,
+        location: 'Lyngby Taarbæk kommune',
+        services: ['Lokalplan', 'Miljøvurdering', 'Kommuneplantillæg'],
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Firskovvej.jpg',
+        description: 'KOPL har bistået Lyngby-Taarbæk Kommune med udarbejdelsen af rammelokalplan og miljøvurdering for Firskovvej - et ambitiøst byomdannelsesprojekt, der skal tranformeres et tidligere erhvervsområde til en tæt, levende og bærdygigt bydel. Planen fastlægger rammerne for en ny struktur med boliger, erhverv og offentlige funktioner i en grøn bymæssig kontekst. KOPL har ydet faglig rådgivning til kommunen om planens anvendelser, bebyggelsesstruktur, grønne strøg og krav om almene boliger - samt sikret at principperne for udviklings- og helhedsplanen for Firskovvejkvarteret er omsat til præcise og anvendelige lokalplanbestemmelser.',
+        images: ['', '', '', ''],
+        contact: 'anne-hinge'
+    },
+    {
+        id: '250023',
+        title: 'Lokalplan og Miljøvurdering for Feriecenter',
+        year: 2025,
+        location: 'Næstved Kommune',
+        services: ['Lokalplan', 'kommuneplantillæg', 'Kystnærhedszonen', 'regnvandshåndtering', 'Miljøvurdering', 'miljøkonsekvensvurdering', 'Sommerhusloven', 'projektudvikling'],
+        heroImage: '',
+        description: 'KOPL har bistået Saltø Gods med udvikling af et nyt feriecenter på Gerbredgård på Enø i Næsved Kommune. Projektet giver mulighed for omdannelse af eksisterende bebyggelse til et feriecenter samt opførelse af feriehuse som kan indgå i feriecentret eller anvendes til private sommerhuse. KOPL har bistået bredt med blandt andet kvalitetssikring og justering af projektgrundlaget, udarbejdet notat om planloven og sommerhusloven, notat om naturforhold og væsentlighedsvurdering, regnvandshåndtering og udledningsforhold herunder dræn, pumpelag og vandrammedirektivet, udarbejdet lokalplan og kommuneplantillæg samt afgrænsningsnotat og miljøvurdering af plan og projekt.',
+        images: ['', '', '', ''],
+        contact: 'gitte-oestergard-samson'
+    },
+    {
+        id: '250024',
+        title: 'Kvalitetssikring af lokalplan for eksisterende sommerhusområde',
+        year: 2025,
+        location: 'Fanø Kommune',
+        services: ['Kvalitetssikring af Lokalplan', 'Rådgivning og kvalitetssikring af lokalplan'],
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Kvalitetssikring%20af%20lokalplan%20for%20eksisterende%20sommerhusomr%C3%A5de.jpg',
+        description: 'KOPL har bistået Fanø Kommune med kvalitetssikring af Lokalplan 138 for Sønderho. Lokalplanen indeholder et nyt krav om, at alle nye sommerhuse skal opføres på skruefundamenter. Tiltaget forebygger problemer med vand og erosion, skåner natur og landskab, samt reducerer CO2 - udledningen. Planen er den første af seks lokalplaner, der tilsammen skal dække alle øens sommerhusområder, hvor samme krav forventes indført. KOPL har foretaget en juridisk og planfaglig gennemgang af bestemmelserne for at sikre præcise bestemmelser, der kan håndhæves, og som er i overensstemmelse med planloven.',
+        images: ['', '', '', ''],
+        contact: 'muzdah-fallah'
+    },
+    {
+        id: '250009',
+        title: 'Parkeringsnotat',
+        year: 2025,
+        location: 'Rudersdal Kommune',
+        services: ['Planrådgivning', 'klagepraksis'],
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Parkeringsnotat.jpg',
+        description: 'KOPL har bistået DTU Science Park A/S med udarbejdelse af et parkeringsnotat til Rudersdal Kommune i forbindelse med opførelse af ny bebyggelse til kontor og laboratorieformål. Ved at sammenholde de forskellige typer anvendelser og deres fordeling på etagemeter blev bebyggelsens faktiske parkeringsbehov beregnet. Grundet bebyggelsens kombinerede formål var det 40% lavere end ved almindeligt kontorbyggeri. Ved at sammenholde kravene til parkering i gældende lokalplan med en opgørelse over de eksisterende parkeringsforhold i området redegjorde notatet også for behovet for anlæg og udlæg af nye parkeringsarealer. Notatet dannede baggrund for en ansøgning om dispensation fra lokalplanens parkeringsnorm. Efterfølgende har KOPL også ydet rådgivning angående høringssvar til ansøgningen.',
+        images: ['', '', '', ''],
+        contact: 'nynne-joergensen'
+    },
+    {
+        id: '250001',
+        title: 'Miljøvurdering af Hørsholm Kommuneplan',
+        year: 2025,
+        location: 'Hørsholm Kommune',
+        services: ['Afgrænsningsnotat', 'Miljøvurdering'],
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Milj%C3%B8vurdering%20af%20H%C3%B8rsholm%20Kommuneplan.jpg',
+        description: 'I forbindelse med revision af kommuneplanen (Kommuneplan 2025) har KOPL bistået Hørsholm Kommune med miljøvurdering af ”Strategi for Grøn Zone”, som er en arealanvendelsesstrategi, der skal danne grundlag for fremtidige planer og projekter inden for forsyning, vedvarende energi (VE) og skovrejsning i kommunen. Miljøvurderingen blev udført på et strategisk og overordnet niveau som passede til planlægningens karakter. Fokus var på potentielle påvirkninger af natur, arealanvendelse, vand og landskab samt strategiens forhold til overordnede klima- og miljøbeskyttelsesmål, herunder Statens Klimamål og FN’s Verdensmål. I tråd med planlægningens overordnede karakter ledte miljøvurderingen frem til en række anbefalinger til den videre planlægning for den grønne zone.',
+        images: ['', '', '', ''],
+        contact: 'nynne-joergensen'
+    },
+    {
+        id: '240058',
+        title: 'Miljøvurdering af energiparker',
+        year: 2024,
+        location: 'Vejen Kommune',
+        services: ['Planrådgivning', 'Afgrænsningsnotat', 'Miljøvurdering'],
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Milj%C3%B8vurdering%20af%20energiparker.jpg',
+        description: 'KOPL har bistået Vejen Kommune med miljøvurdering af to kommuneplantillæg med et samlet omfang på ca. 2000 ha energipark, som skal muliggøre kommunens planer for den grønne omstilling. Kommuneplantillæggene udlægger rammeområder til en bred vifte af anvendelsesformål bl.a. solcelleanlæg, vindmøller, PtX-anlæg og erhverv. Grundet tilpasning af planprocessen til den sideløbende planlægning for de statslige energiparker, som kommunen skal følge, blev kommuneplantillæggene i første omgang reduceret til et mindre omfang, imens resten afventer statens planlægning. Vurderingen af de forventede miljøpåvirkninger er udført med fokus på natur, vand, klima, forsyningssikkerhed, landskab og kulturarv og ledte frem til en række anbefalinger til den videre planlægning.',
+        images: ['', '', '', ''],
+        contact: 'pernille-birkenfeldt-petersen'
+    },
+    {
+        id: '240040',
+        title: 'Landskabsanalyse Hørsholm Kommune',
+        year: 2024,
+        location: 'Hørsholm Kommune',
+        services: ['Landskabsanalyse', 'Kommuneplan'],
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Landskabsanalyse%20H%C3%B8rsholm%20Kommune.jpg',
+        description: 'KOPL har bistået Hørsholm Kommune med udarbejdelse af en landskabsanalyse for det åbne land. Analysen danner grundlag for kommunens ”Strategi for Grøn Zone”, som er en del af Kommuneplan 2025. Landskabsanalysen indeholder en overordnet analyse af hele kommunen med fokus på sammenspillet mellem natur- og kulturgrundlaget og inddeler kommunen i karakterområder. 4 områder er analyseret på et detaljeret niveau, som på sigt skal dække hele kommunens areal. Landskabsanalysens rolle i forhold til Grøn zone er at belyse landskabets sårbarhed overfor placering af tekniske anlæg og skovrejsning, og hvor nænsomt man skal gå til værks, når der udvikles i området. Analysen opstiller anbefalinger til, hvordan og med hvilke hensyn der fremadrettet kan arbejdes med tiltag for den grønne omstilling.',
+        images: ['', '', '', ''],
+        contact: 'nynne-joergensen'
+    },
+    {
+        id: '240014',
+        title: 'Miljøvurdering af lokalplan og kommuneplantillæg, Troldebakkerne',
+        year: 2024,
+        location: 'Gribskov Kommune',
+        services: ['miljøvurdering', 'afgrænsningsnotat', 'landskabsvurdering'],
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Regnvandsh%C3%A5ndtering%20for%20Troldebakkerne.jpg',
+        description: 'KOPL har bistået Gribskov Kommune med miljøvurdering af forslag til kommuneplantillæg og lokalplan for udviklingen af det nye boligområde Troldebakkerne Vest. Miljøvurderingens formål var at sikre, at planlægningen tog hensyn til en bred vifte af miljøfaktorer, herunder natur, trafik, støj, skygger og indblik, grundvand, overfladevand, tilpasning til nedbør, landskab, værdifuldt kulturmiljø og arkæologiske interesser. I planlægningen blev der bl.a. indarbejdet tiltag for at opretholde områdets økologiske funktionalitet som yngle- og rasteområde for spidssnudet frø og flere arter af flagermus.',
+        images: ['', '', '', ''],
+        contact: 'tobias-filskov-petersen'
+    }
+];

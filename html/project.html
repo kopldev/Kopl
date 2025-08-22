@@ -4,20 +4,20 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Høm Mølle</title>
-    <link rel="stylesheet" href="../../css/styles.css">
-    <link rel="stylesheet" href="../../css/projects-styling.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/projects-styling.css">
 </head>
 <body>
 <header>
     <nav class="kopl-navbar">
-        <a href="../../index.html"><img class="kopl-nav-logo"
+        <a href="../index.html"><img class="kopl-nav-logo"
                                         src="https://kopl.dk/onewebmedia/hvidt%20visitkort_flad_sort%20tekst.png"
                                         alt="logo"></a>
         <div class="kopl-navbar-inner">
             <ul class="kopl-nav-links">
-                <li><a class="kopl-nav-links-black" href="../services.html">Ydelser</a></li>
-                <li><a class="kopl-nav-links-black" href="../contact.html">Kontakt</a></li>
-                <li><a class="kopl-nav-links-black" href="../project-grid.html">Projekter</a></li>
+                <li><a class="kopl-nav-links-black" href="services.html">Ydelser</a></li>
+                <li><a class="kopl-nav-links-black" href="contact.html">Kontakt</a></li>
+                <li><a class="kopl-nav-links-black" href="project-grid.html">Projekter</a></li>
                 <li><a class="kopl-nav-links-black" href="#job">Job</a></li>
             </ul>
             <button class="kopl-nav-toggle" id="koplNavToggle" aria-label="Åbn menu">
@@ -40,27 +40,27 @@
 </header>
 <main class="main-content">
     <section>
-        <h2 class="project-title">Høm Mølle</h2>
+        <h2 class="project-title" id="project-title"></h2>
         <div class="project-details">
             <div class="project-detail-block">
                 <span class="project-detail-label">ÅR</span>
-                <p class="project-detail-value">2025</p>
+                <p class="project-detail-value" id="project-detail-value-year"></p>
             </div>
             <div class="project-detail-block">
                 <span class="project-detail-label">LOKATION</span>
-                <p class="project-detail-value">Ringsted</p>
+                <p class="project-detail-value" id="project-detail-value-location"></p>
             </div>
             <div class="project-detail-block">
                 <span class="project-detail-label">YDELSE</span>
-                <p class="project-detail-value">Lokalplan, Klagenævnspraksis</p>
+                <p class="project-detail-value" id="project-detail-value-services"></p>
             </div>
         </div>
     </section>
     <div class="project-layout">
         <div class="hero-image-wrap">
             <div class="hero-image-aspect">
-                <img id="hero"
-                     src="https://kopl.dk/onewebmedia/ProjectImages/h%C3%B8m%20m%C3%B8lle%20cover%20billede.jpg"
+                <img id="hero-image"
+                     src=""
                      alt="Project Title"/>
             </div>
         </div>
@@ -69,45 +69,33 @@
                 <h2 class="overview-label">PROJEKT BESKRIVELSE</h2>
             </div>
             <div>
-                <p class="overview-desc">
-                    I Ringsted Kommune har vi bestået ejerne af Høm Mølle og kommunen med udarbejdelse af en ny
-                    lokalplan. Lokaplanen overfører dele af området til landzone og indeholder dispensationer fra
-                    beskyttelseslinjer.
-                    Høm Mølle ligger i et område med store beskyttelsesinteresser, herunder beskyttede naturtyper,
-                    åbeskyttelseslinje og bevaringsværdige landskaber. Planlægningen er derfor sket med stor respekt for
-                    områdets natur- og landskab, så nye aktiviteter kan indpasses uden forringelse af de eksisterende
-                    kvaliteter.
-                    KOPL har rådgivet om hele planprocessen – fra afgrænsning af de ønskede aktiviteter i forhold til
-                    lovgivningen, til håndtering af dispensationer, naturhensyn og trafikforhold.
-                </p>
+                <p class="overview-desc" id="overview-desc"></p>
             </div>
         </section>
     </div>
     <div class="image-gallery">
         <div class="gallery-scroll">
-            <img src="https://kopl.dk/onewebmedia/ProjectImages/Aflastningscenter.jpg" alt="Galleri billede 1"/>
-            <img src="https://kopl.dk/onewebmedia/ProjectImages/Boliger%20og%20butik.jpg" alt="Galleri billede 2"/>
-            <img src="https://kopl.dk/onewebmedia/ProjectImages/Bygherreans%C3%B8gning%20for%20Kontor%20og%20laboratorium.jpg"
-                 alt="Galleri billede 3"/>
-            <img src="https://kopl.dk/onewebmedia/ProjectImages/Byudvikling%20i%20Guldager.jpg"
-                 alt="Galleri billede 4"/>
+            <img id="gallery-image-one" src="" alt="Galleri billede 1"/>
+            <img id="gallery-image-two" src="" alt="Galleri billede 2"/>
+            <img id="gallery-image-three" src="" alt="Galleri billede 3"/>
+            <img id="gallery-image-four" src="" alt="Galleri billede 4"/>
         </div>
     </div>
     <div class="project-lead-section">
         <div class="section-title">Projekt Kontakt</div>
         <div class="project-lead-card">
             <div class="lead-image">
-                <img src="https://kopl.dk/onewebmedia/Profilbilleder/ah%20profil%20-%20hvid%20baggrund.png"
+                <img id="contact-image" src=""
                      alt="LEAD_NAME"/>
             </div>
             <div class="lead-info">
                 <div class="lead-name-title">
-                    <h3>Anne Hinge</h3>
-                    <p class="title">CEO</p>
+                    <h3 id="contact-name"></h3>
+                    <p class="title" id="contact-title"></p>
                 </div>
                 <div class="lead-contact">
-                    <p>+45 61742261</p>
-                    <p>ah@kopl.dk</p>
+                    <p id="contact-number"></p>
+                    <p id="contact-email"></p>
                 </div>
             </div>
         </div>
@@ -161,4 +149,7 @@
         });
     });
 </script>
-</html> 
+<script src="../js/ProjectData.js"></script>
+<script src="../js/contactData.js"></script>
+<script src="../js/project.js"></script>
+</html>
