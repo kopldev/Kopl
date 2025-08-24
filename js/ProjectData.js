@@ -21,13 +21,13 @@ const projects = [
         year: 2023,
         location: 'Egedal Kommune',
         services: ['Landsplanlægning', 'Fingerplan'],
-        heroImage: '',
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/230050%20Skebjergvej%2044%20-%20Sm%C3%B8rum/fingerplanenkort14.jpg',
         description: 'KOPL bistår bygherrer og kommuner i arbejdet med planstrategier, kommuneplaner og vurdering af statslige landsplandirektiver. Vi udarbejder faglige analyser, baggrundsnotater, områders aktuelle anvendelse, potentialer og planmæssige udfordringer.  Et eksempel er vores arbejde i Egedal Kommune, hvor vi udarbejdede et høringssvar til revision af Fingerplan 2019 for et område i den grønne kile.',
         images: [
-            '',
-            '',
-            '',
-            ''
+            'https://kopl.dk/onewebmedia/ProjectImages/230050%20Skebjergvej%2044%20-%20Sm%C3%B8rum/fingerplanenkort1.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/230050%20Skebjergvej%2044%20-%20Sm%C3%B8rum/fingerplanenkort2.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/230050%20Skebjergvej%2044%20-%20Sm%C3%B8rum/fingerplanenkort3.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/230050%20Skebjergvej%2044%20-%20Sm%C3%B8rum/fingerplanenkort5.jpg'
         ],
         contact: 'muzdah-fallah'
     },
@@ -69,7 +69,7 @@ const projects = [
         year: 2025,
         location: 'Tårnby Kommune og Dragør Kommune',
         services: ['Myndighedsrådgivning'],
-        heroImage: '',
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/250025%2C%20CPH%20lufthavn/Signaturforklaring.jpg',
         description: 'Plan- og Landdistriksstyrelsen har gennem et call-in overtaget planlægningen for Københavns Lufthavn. KOPL har bistået Københavns Lufthavne A/S i arbejdet med det nye plangrundlag, herunder forbredelse af temamøder om centrale planteamer såsom trafik, parkering, detailhandel mv. Vi har leveret faglig sparring, mødefacilitering og koordination mellem statslige og kommunale myndigheder. Med vores erfarning inden for byplanlægning, myndighedsprocesser og tekniske analyser har vi sikret at planlægningen sker på et solidt vidensgrundlag og understøtter lufthavnens rolle som internationalt trafikknudepunkt - med respekt for de miljømæssige og lokale rammer.',
         images: [
             '',
@@ -112,9 +112,12 @@ const projects = [
         year: 2025,
         location: 'Næstved Kommune',
         services: ['Lokalplan', 'kommuneplantillæg', 'Kystnærhedszonen', 'regnvandshåndtering', 'Miljøvurdering', 'miljøkonsekvensvurdering', 'Sommerhusloven', 'projektudvikling'],
-        heroImage: '',
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/250023%20Gerbredg%C3%A5rd%2C%20Feriecenter%20p%C3%A5%20En%C3%B8/g%C3%A5rden.jpg',
         description: 'KOPL har bistået Saltø Gods med udvikling af et nyt feriecenter på Gerbredgård på Enø i Næsved Kommune. Projektet giver mulighed for omdannelse af eksisterende bebyggelse til et feriecenter samt opførelse af feriehuse som kan indgå i feriecentret eller anvendes til private sommerhuse. KOPL har bistået bredt med blandt andet kvalitetssikring og justering af projektgrundlaget, udarbejdet notat om planloven og sommerhusloven, notat om naturforhold og væsentlighedsvurdering, regnvandshåndtering og udledningsforhold herunder dræn, pumpelag og vandrammedirektivet, udarbejdet lokalplan og kommuneplantillæg samt afgrænsningsnotat og miljøvurdering af plan og projekt.',
-        images: ['', '', '', ''],
+        images: ['https://kopl.dk/onewebmedia/ProjectImages/250023%20Gerbredg%C3%A5rd%2C%20Feriecenter%20p%C3%A5%20En%C3%B8/g%C3%A5rdvej.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/250023%20Gerbredg%C3%A5rd%2C%20Feriecenter%20p%C3%A5%20En%C3%B8/have%20og%20s%C3%B8.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/250023%20Gerbredg%C3%A5rd%2C%20Feriecenter%20p%C3%A5%20En%C3%B8/kort.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/250023%20Gerbredg%C3%A5rd%2C%20Feriecenter%20p%C3%A5%20En%C3%B8/strand.jpg'],
         contact: 'gitte-oestergard-samson'
     },
     {
