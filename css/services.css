@@ -101,7 +101,7 @@
     justify-content: center;
     gap: 2rem;
     flex-wrap: nowrap;
-    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .subnav {
@@ -236,6 +236,30 @@
 
 /* Responsive styles */
 @media (max-width: 768px) {
+    .service-subnav-container {
+        overflow-x: auto;
+        overflow-y: hidden;
+        position: relative;
+        justify-content: flex-start;
+        z-index: 1;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+    }
+
+    .service-subnav-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .subnav.active {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 1.5rem;
+    }
+
+    .subnav-item {
+        scroll-snap-align: start;
+    }
+
     .main-services{
         padding-top: 0;
     }
