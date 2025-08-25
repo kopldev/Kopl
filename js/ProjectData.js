@@ -117,7 +117,7 @@ const projects = [
         title: 'Lokalplan og Miljøvurdering for Feriecenter',
         year: 2025,
         location: 'Næstved Kommune',
-        services: ['Lokalplan', 'kommuneplantillæg', 'Kystnærhedszonen', 'regnvandshåndtering', 'Miljøvurdering', 'miljøkonsekvensvurdering', 'Sommerhusloven', 'projektudvikling'],
+        services: ['Lokalplan', 'kommuneplantillæg', 'Kystnærhedszonen', 'regnvandshåndtering', 'Miljøvurdering', 'Miljøkonsekvensvurdering', 'Sommerhusloven', 'projektudvikling'],
         heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/250023%20Gerbredg%C3%A5rd%2C%20Feriecenter%20p%C3%A5%20En%C3%B8/g%C3%A5rden.jpg',
         description: 'KOPL har bistået Saltø Gods med udvikling af et nyt feriecenter på Gerbredgård på Enø i Næsved Kommune. Projektet giver mulighed for omdannelse af eksisterende bebyggelse til et feriecenter samt opførelse af feriehuse som kan indgå i feriecentret eller anvendes til private sommerhuse. KOPL har bistået bredt med blandt andet kvalitetssikring og justering af projektgrundlaget, udarbejdet notat om planloven og sommerhusloven, notat om naturforhold og væsentlighedsvurdering, regnvandshåndtering og udledningsforhold herunder dræn, pumpelag og vandrammedirektivet, udarbejdet lokalplan og kommuneplantillæg samt afgrænsningsnotat og miljøvurdering af plan og projekt.',
         images: ['https://kopl.dk/onewebmedia/ProjectImages/250023%20Gerbredg%C3%A5rd%2C%20Feriecenter%20p%C3%A5%20En%C3%B8/g%C3%A5rdvej.jpg',
