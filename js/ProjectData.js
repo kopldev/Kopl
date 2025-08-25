@@ -39,14 +39,14 @@ const projects = [
         title: 'Lokalplan for nyt boligområde i Østbirk',
         year: 2025,
         location: 'Horsens Kommune',
-        services: ['Lokalplan', 'Bebyggelsesplan', 'Projektudvikling', 'Regnvandshåndtering'],
-        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/%C3%98stbirk.png',
+        services: ['Lokalplan', 'Bebyggelsesplan', 'Projektudvikling', 'Regnvandshåndtering', 'kommuneplantillæg'],
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/250014%20Monbjergvej%20%C3%98stbirk/thumbnail_Kortbilag%204%20Illustrationsplan.jpg',
         description: 'KOPL har bistået Horsens Kommune med at udvikle et nyt boligområde i Østbirk. KOPL har stået for udarbejdelse af bebyggelsesplanen, hvor en lang række bindinger skulle afvejes og indarbejdes. Boligområdet er delvist omfattet af en større skråning indeholdende et beskyttet overdrev og beskyttet jorddige, og der er forskellige miljømæssige aspekter som støj fra skydebane samt emmisioner fra et nærtliggende svinebrug, som er afklaret i planprocessen. Ligeledes har KOPL stået for regnvandshåndteringen i dialog med myndighed og forsyning samt udarbejdet lokalplan og kommuneplantillæg for området.',
         images: [
             'https://kopl.dk/onewebmedia/ProjectImages/250014%20Monbjergvej%20%C3%98stbirk/kopl%20kort%20billede.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/250014%20Monbjergvej%20%C3%98stbirk/Mod_%C3%B8st.jpg',
-            'https://kopl.dk/onewebmedia/ProjectImages/250014%20Monbjergvej%20%C3%98stbirk/Kort%20med%20afgr%C3%A6nsning.jpg',
-            'https://kopl.dk/onewebmedia/ProjectImages/250014%20Monbjergvej%20%C3%98stbirk/kort%20med%20afgr%C3%A6nsning2.jpg'
+            'https://kopl.dk/onewebmedia/ProjectImages/250014%20Monbjergvej%20%C3%98stbirk/Udsigt_mod%20syd%C3%B8st.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/250014%20Monbjergvej%20%C3%98stbirk/thumbnail_Korrekt%20afgr%C3%A6nsning.png'
         ],
         contact: ['frederik-arskov-nannestad', "mette-brix-hedegaard"]
     },
