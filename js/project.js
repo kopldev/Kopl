@@ -80,8 +80,8 @@ function populateProject(project) {
                     <p class="title">${contact.title}</p>
                 </div>
                 <div class="lead-contact">
-                    <p>${contact.phone}</p>
-                    <p>${contact.email}</p>
+                    <p><a href="tel:${contact.phone}">${contact.phone}</a></p>
+                    <p><a href="mailto:${contact.email}">${contact.email}</a></p>
                 </div>
             </div>
         `;
