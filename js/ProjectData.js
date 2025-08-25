@@ -11,7 +11,10 @@ const projects = [
             'KOPL har rådgivet om hele plan -og miljøvurderingsprocessen – fra afgrænsning af de ønskede aktiviteter i forhold til lovgivningen, til håndtering af dispensationer, naturhensyn og trafikforhold. \n' +
             '',
         images: [
-            '', '', '', ''
+            'https://kopl.dk/onewebmedia/ProjectImages/250013%2C%20h%C3%B8m%20m%C3%B8lle/skr%C3%A5v%C3%A6g.jpeg',
+            'https://kopl.dk/onewebmedia/ProjectImages/250013%2C%20h%C3%B8m%20m%C3%B8lle/mursten.jpeg',
+            'https://kopl.dk/onewebmedia/ProjectImages/250013%2C%20h%C3%B8m%20m%C3%B8lle/22052025%20Figur_Kort%20med%20Skovrejsning.jpeg',
+            'https://kopl.dk/onewebmedia/ProjectImages/250013%2C%20h%C3%B8m%20m%C3%B8lle/02062025%20Oversigtskort%20med%20eksisterende%20forhold%20over%20H%C3%B8m%20M%C3%B8lle%2C%20Ringsted%20-%20Kulturhistoriske%20bevaringsv%C3%A6rdier-01.jpeg'
         ],
         contact: ['muzdah-fallah']
     },
@@ -40,10 +43,10 @@ const projects = [
         heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/%C3%98stbirk.png',
         description: 'KOPL har bistået Horsens Kommune med at udvikle et nyt boligområde i Øst Birk. KOPL har stået for udarbejdelse af bebyggelsesplanen hvor en lang række bindinger skulle afvejes og indarbejdes. Boligområdet er delvist omfattet af en større skråning og der er forskellige miljømæssige aspekter som støj fra skydebane og vej samt emmisioner fra et nærtliggende svinebrug som er afklaret i planprocessen. Ligeledes har KOPL stået for regnvandshåndterigen i dialog med myndighed og forsyningen samt udarbejdet lokalplan og kommuneplantillæg for området.',
         images: [
-            '',
-            '',
-            '',
-            ''
+            'https://kopl.dk/onewebmedia/ProjectImages/250014%20Monbjergvej%20%C3%98stbirk/kopl%20kort%20billede.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/250014%20Monbjergvej%20%C3%98stbirk/Mod_%C3%B8st.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/250014%20Monbjergvej%20%C3%98stbirk/Kort%20med%20afgr%C3%A6nsning.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/250014%20Monbjergvej%20%C3%98stbirk/kort%20med%20afgr%C3%A6nsning2.jpg'
         ],
         contact: ['frederik-arskov-nannestad', "mette-brix-hedegaard"]
     },
@@ -53,13 +56,13 @@ const projects = [
         year: 2024,
         location: 'Kalundborg Kommune',
         services: ['Lokalplan'],
-        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/kalundborg warehouse.png',
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/240016%2C%20warehouse%20novo/kort%20oversigt%20masterplan.jpg',
         description: 'KOPL har bistået en virksomhed med udabejdelse af kommuneplantillæg og lokalplan for et industri -og lagerformål i den østlige del af Kalundborg. Lokalplanen giver mulighed for at området kan anvendes til erhverv og lagerfaciliteter med tilhørende administration, testfaciliteter, tekniske anlæg og lignende indenfor midicinal-, fødevare og biotekindustrien. Lokalplanen er udarbejdet i dialog med Kallundborg Kommune og  giver blandt andet mulighed for opførelse af en bygning med en længde på mere end 600 m.',
         images: [
-            '',
-            '',
-            '',
-            ''
+            'https://kopl.dk/onewebmedia/ProjectImages/240016%2C%20warehouse%20novo/kort%20oversigt.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/240016%2C%20warehouse%20novo/planudkast.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/240016%2C%20warehouse%20novo/fra%20siden.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/240016%2C%20warehouse%20novo/kirke.jpg'
         ],
         contact: ['tobias-filskov-petersen', 'anne-hinge', 'nynne-joergensen']
     },
@@ -88,9 +91,9 @@ const projects = [
         heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Notat%20om%20udvidelsesmuligheder.jpg',
         description: 'KOPL har udarbejedet et mulighedsnotat som redegør for mulighederne på en ejendom i landzone. Ejendommen er omfattet af flere supplerende restriktioner og har ikke status som landbrugsejendom. Ejendommen var sat til salg og ejeren ønskede et notat som redegjorde for mulighederne på ejendommen samt opsamlede kommunens - og klagenæsvnspraksis på området så det blev synligt for for eventuelle køber hvilke muligheder der var på ejendommen.',
         images: [
-            '',
-            '',
-            '',
+            'https://kopl.dk/onewebmedia/ProjectImages/240010%2C%20notat%20landzone/kort%20oversigt.png',
+            'https://kopl.dk/onewebmedia/ProjectImages/240010%2C%20notat%20landzone/oversigtbillede%202.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/240010%2C%20notat%20landzone/oversigtskort.jpg',
             ''
         ],
         contact: ['anne-hinge']
@@ -101,9 +104,12 @@ const projects = [
         year: 2024,
         location: 'Lyngby Taarbæk kommune',
         services: ['Lokalplan', 'Miljøvurdering', 'Kommuneplantillæg'],
-        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Firskovvej.jpg',
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/240012%2C%20Firskovvej/oversigtsbillede.png',
         description: 'KOPL har bistået Lyngby-Taarbæk Kommune med udarbejdelsen af rammelokalplan og miljøvurdering for Firskovvej - et ambitiøst byomdannelsesprojekt, der skal tranformeres et tidligere erhvervsområde til en tæt, levende og bærdygigt bydel. Planen fastlægger rammerne for en ny struktur med boliger, erhverv og offentlige funktioner i en grøn bymæssig kontekst. KOPL har ydet faglig rådgivning til kommunen om planens anvendelser, bebyggelsesstruktur, grønne strøg og krav om almene boliger - samt sikret at principperne for udviklings- og helhedsplanen for Firskovvejkvarteret er omsat til præcise og anvendelige lokalplanbestemmelser.',
-        images: ['', '', '', ''],
+        images: ['https://kopl.dk/onewebmedia/ProjectImages/240012%2C%20Firskovvej/oversigtsbillede2.png',
+            'https://kopl.dk/onewebmedia/ProjectImages/240012%2C%20Firskovvej/togbane.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/240012%2C%20Firskovvej/Landskab%204.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/240012%2C%20Firskovvej/tr%C3%A6er.jpg'],
         contact: ['anne-hinge', 'tobias-filskov-petersen', 'gitte-oestergard-samson', 'muzdah-fallah']
     },
     {
@@ -126,7 +132,7 @@ const projects = [
         year: 2025,
         location: 'Fanø Kommune',
         services: ['Kvalitetssikring af Lokalplan', 'Rådgivning og kvalitetssikring af lokalplan'],
-        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Kvalitetssikring%20af%20lokalplan%20for%20eksisterende%20sommerhusomr%C3%A5de.jpg',
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/250024%2C%20kvalitetssikring%20LP%20Fan%C3%B8/oversigtsbillede.png',
         description: 'KOPL har bistået Fanø Kommune med kvalitetssikring af Lokalplan 138 for Sønderho. Lokalplanen indeholder et nyt krav om, at alle nye sommerhuse skal opføres på skruefundamenter. Tiltaget forebygger problemer med vand og erosion, skåner natur og landskab, samt reducerer CO2 - udledningen. Planen er den første af seks lokalplaner, der tilsammen skal dække alle øens sommerhusområder, hvor samme krav forventes indført. KOPL har foretaget en juridisk og planfaglig gennemgang af bestemmelserne for at sikre præcise bestemmelser, der kan håndhæves, og som er i overensstemmelse med planloven.',
         images: ['', '', '', ''],
         contact: ['muzdah-fallah']
@@ -139,7 +145,10 @@ const projects = [
         services: ['Planrådgivning', 'klagepraksis'],
         heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Parkeringsnotat.jpg',
         description: 'KOPL har bistået DTU Science Park A/S med udarbejdelse af et parkeringsnotat til Rudersdal Kommune i forbindelse med opførelse af ny bebyggelse til kontor og laboratorieformål. Ved at sammenholde de forskellige typer anvendelser og deres fordeling på etagemeter blev bebyggelsens faktiske parkeringsbehov beregnet. Grundet bebyggelsens kombinerede formål var det 40% lavere end ved almindeligt kontorbyggeri. Ved at sammenholde kravene til parkering i gældende lokalplan med en opgørelse over de eksisterende parkeringsforhold i området redegjorde notatet også for behovet for anlæg og udlæg af nye parkeringsarealer. Notatet dannede baggrund for en ansøgning om dispensation fra lokalplanens parkeringsnorm. Efterfølgende har KOPL også ydet rådgivning angående høringssvar til ansøgningen.',
-        images: ['', '', '', ''],
+        images: ['https://kopl.dk/onewebmedia/ProjectImages/250009%2C%20Parkeringsnotat/250009%20DTU%20Science%20Park.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/250009%2C%20Parkeringsnotat/figur.png',
+            'https://kopl.dk/onewebmedia/ProjectImages/250009%2C%20Parkeringsnotat/s%C3%B8.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/250009%2C%20Parkeringsnotat/250009%20DTU%20Science%20Park_2.jpg'],
         contact: ['nynne-joergensen', 'anne-hinge']
     },
     {
@@ -162,9 +171,12 @@ const projects = [
         year: 2024,
         location: 'Vejen Kommune',
         services: ['Planrådgivning', 'Afgrænsningsnotat', 'Miljøvurdering'],
-        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Milj%C3%B8vurdering%20af%20energiparker.jpg',
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/240058%2C%20Milj%C3%B8vurdering%20Energiparker%20Vejen/Milj%C3%B8rapport%201.E.25%20og%201.E.26%20-%20Forsiden.jpg',
         description: 'KOPL har bistået Vejen Kommune med miljøvurdering af to kommuneplantillæg med et samlet omfang på ca. 2000 ha energipark, som skal muliggøre kommunens planer for den grønne omstilling. Kommuneplantillæggene udlægger rammeområder til en bred vifte af anvendelsesformål bl.a. solcelleanlæg, vindmøller, PtX-anlæg og erhverv. Grundet tilpasning af planprocessen til den sideløbende planlægning for de statslige energiparker, som kommunen skal følge, blev kommuneplantillæggene i første omgang reduceret til et mindre omfang, imens resten afventer statens planlægning. Vurderingen af de forventede miljøpåvirkninger er udført med fokus på natur, vand, klima, forsyningssikkerhed, landskab og kulturarv og ledte frem til en række anbefalinger til den videre planlægning.',
-        images: ['', '', '', ''],
+        images: ['https://kopl.dk/onewebmedia/ProjectImages/240058%2C%20Milj%C3%B8vurdering%20Energiparker%20Vejen/Milj%C3%B8vurdering%20Vejen.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/240058%2C%20Milj%C3%B8vurdering%20Energiparker%20Vejen/IMG_0288%20kopier.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/240058%2C%20Milj%C3%B8vurdering%20Energiparker%20Vejen/elmast2.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/240058%2C%20Milj%C3%B8vurdering%20Energiparker%20Vejen/IMG_0365%20kopier.jpg'],
         contact: ['pernille-birkenfeldt-petersen', 'nynne-joergensen', 'tobias-filskov-petersen']
     },
     {
