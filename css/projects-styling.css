@@ -181,7 +181,13 @@ html, body {
   text-transform: uppercase;
   align-self: start;
 }
-
+.project-lead-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Dynamiske kolonner */
+  gap: 7.5rem; /* Afstand mellem kortene */
+  margin-top: 2rem;
+  width: 100%;
+}
 .project-lead-card {
   display: flex;
   flex-direction: row;
@@ -189,7 +195,7 @@ html, body {
   background-color: #ffffff;
   padding: 2rem;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
-  width: 80%;
+  width: 100%;
   align-self: stretch;
   transition: box-shadow 0.2s, transform 0.2s;
 }
@@ -383,6 +389,10 @@ html, body {
   /* Tekst i lead-info centreres */
   .lead-info {
     align-items: center;
+  }
+  .project-lead-cards-container {
+    grid-template-columns: 1fr; /* 1 kolonne på tablet/mobil */
+    gap: 2rem;
   }
 
   /* Kontakt-knappen og andre elementer forbliver som de er eller kan tilpasses efter behov */

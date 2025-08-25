@@ -13,7 +13,7 @@ const projects = [
         images: [
             '', '', '', ''
         ],
-        contact: 'muzdah-fallah'
+        contact: ['muzdah-fallah']
     },
     {
         id: '230050',
@@ -29,7 +29,7 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/230050%20Skebjergvej%2044%20-%20Sm%C3%B8rum/fingerplanenkort3.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/230050%20Skebjergvej%2044%20-%20Sm%C3%B8rum/fingerplanenkort5.jpg'
         ],
-        contact: 'muzdah-fallah'
+        contact: ['muzdah-fallah']
     },
     {
         id: '250014',
@@ -45,7 +45,7 @@ const projects = [
             '',
             ''
         ],
-        contact: 'frederik-arskov-nannestad'
+        contact: ['frederik-arskov-nannestad', "mette-brix-hedegaard"]
     },
     {
         id: '240016',
@@ -61,7 +61,7 @@ const projects = [
             '',
             ''
         ],
-        contact: 'tobias-filskov-petersen'
+        contact: ['tobias-filskov-petersen', 'anne-hinge', 'nynne-joergensen']
     },
     {
         id: '250025',
@@ -77,7 +77,7 @@ const projects = [
             '',
             ''
         ],
-        contact: 'muzdah-fallah'
+        contact: ['muzdah-fallah']
     },
     {
         id: '240010',
@@ -93,7 +93,7 @@ const projects = [
             '',
             ''
         ],
-        contact: 'anne-hinge'
+        contact: ['anne-hinge']
     },
     {
         id: '240012',
@@ -104,7 +104,7 @@ const projects = [
         heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Firskovvej.jpg',
         description: 'KOPL har bistået Lyngby-Taarbæk Kommune med udarbejdelsen af rammelokalplan og miljøvurdering for Firskovvej - et ambitiøst byomdannelsesprojekt, der skal tranformeres et tidligere erhvervsområde til en tæt, levende og bærdygigt bydel. Planen fastlægger rammerne for en ny struktur med boliger, erhverv og offentlige funktioner i en grøn bymæssig kontekst. KOPL har ydet faglig rådgivning til kommunen om planens anvendelser, bebyggelsesstruktur, grønne strøg og krav om almene boliger - samt sikret at principperne for udviklings- og helhedsplanen for Firskovvejkvarteret er omsat til præcise og anvendelige lokalplanbestemmelser.',
         images: ['', '', '', ''],
-        contact: 'anne-hinge'
+        contact: ['anne-hinge', 'tobias-filskov-petersen', 'gitte-oestergard-samson', 'muzdah-fallah']
     },
     {
         id: '250023',
@@ -118,7 +118,7 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/250023%20Gerbredg%C3%A5rd%2C%20Feriecenter%20p%C3%A5%20En%C3%B8/have%20og%20s%C3%B8.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/250023%20Gerbredg%C3%A5rd%2C%20Feriecenter%20p%C3%A5%20En%C3%B8/kort.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/250023%20Gerbredg%C3%A5rd%2C%20Feriecenter%20p%C3%A5%20En%C3%B8/strand.jpg'],
-        contact: 'gitte-oestergard-samson'
+        contact: ['gitte-oestergard-samson']
     },
     {
         id: '250024',
@@ -129,7 +129,7 @@ const projects = [
         heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Kvalitetssikring%20af%20lokalplan%20for%20eksisterende%20sommerhusomr%C3%A5de.jpg',
         description: 'KOPL har bistået Fanø Kommune med kvalitetssikring af Lokalplan 138 for Sønderho. Lokalplanen indeholder et nyt krav om, at alle nye sommerhuse skal opføres på skruefundamenter. Tiltaget forebygger problemer med vand og erosion, skåner natur og landskab, samt reducerer CO2 - udledningen. Planen er den første af seks lokalplaner, der tilsammen skal dække alle øens sommerhusområder, hvor samme krav forventes indført. KOPL har foretaget en juridisk og planfaglig gennemgang af bestemmelserne for at sikre præcise bestemmelser, der kan håndhæves, og som er i overensstemmelse med planloven.',
         images: ['', '', '', ''],
-        contact: 'muzdah-fallah'
+        contact: ['muzdah-fallah']
     },
     {
         id: '250009',
@@ -140,7 +140,7 @@ const projects = [
         heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Parkeringsnotat.jpg',
         description: 'KOPL har bistået DTU Science Park A/S med udarbejdelse af et parkeringsnotat til Rudersdal Kommune i forbindelse med opførelse af ny bebyggelse til kontor og laboratorieformål. Ved at sammenholde de forskellige typer anvendelser og deres fordeling på etagemeter blev bebyggelsens faktiske parkeringsbehov beregnet. Grundet bebyggelsens kombinerede formål var det 40% lavere end ved almindeligt kontorbyggeri. Ved at sammenholde kravene til parkering i gældende lokalplan med en opgørelse over de eksisterende parkeringsforhold i området redegjorde notatet også for behovet for anlæg og udlæg af nye parkeringsarealer. Notatet dannede baggrund for en ansøgning om dispensation fra lokalplanens parkeringsnorm. Efterfølgende har KOPL også ydet rådgivning angående høringssvar til ansøgningen.',
         images: ['', '', '', ''],
-        contact: 'nynne-joergensen'
+        contact: ['nynne-joergensen', 'anne-hinge']
     },
     {
         id: '250001',
@@ -154,7 +154,7 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/250001%2C%20Milj%C3%B8vurdering%20H%C3%B8rsholm%20Kommuneplan/250001%20Kort_H%C3%B8rsholm%20lille.jpeg',
             'https://kopl.dk/onewebmedia/ProjectImages/250001%2C%20Milj%C3%B8vurdering%20H%C3%B8rsholm%20Kommuneplan/250001%20H%C3%B8rsholm%20Milij%C3%B8vurdering-Gr%C3%B8nzone%20for%20teknisk%20anl%C3%A6g%20figur%20kopier.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/250001%2C%20Milj%C3%B8vurdering%20H%C3%B8rsholm%20Kommuneplan/250001%20H%C3%B8rsholm%20Milij%C3%B8vurdering-Drikkevand%20%2B%20BNBO%20kopier.jpg'],
-        contact: 'nynne-joergensen'
+        contact: ['nynne-joergensen', 'tobias-filskov-petersen', 'anne-hinge']
     },
     {
         id: '240058',
@@ -165,7 +165,7 @@ const projects = [
         heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Milj%C3%B8vurdering%20af%20energiparker.jpg',
         description: 'KOPL har bistået Vejen Kommune med miljøvurdering af to kommuneplantillæg med et samlet omfang på ca. 2000 ha energipark, som skal muliggøre kommunens planer for den grønne omstilling. Kommuneplantillæggene udlægger rammeområder til en bred vifte af anvendelsesformål bl.a. solcelleanlæg, vindmøller, PtX-anlæg og erhverv. Grundet tilpasning af planprocessen til den sideløbende planlægning for de statslige energiparker, som kommunen skal følge, blev kommuneplantillæggene i første omgang reduceret til et mindre omfang, imens resten afventer statens planlægning. Vurderingen af de forventede miljøpåvirkninger er udført med fokus på natur, vand, klima, forsyningssikkerhed, landskab og kulturarv og ledte frem til en række anbefalinger til den videre planlægning.',
         images: ['', '', '', ''],
-        contact: 'pernille-birkenfeldt-petersen'
+        contact: ['pernille-birkenfeldt-petersen', 'nynne-joergensen', 'tobias-filskov-petersen']
     },
     {
         id: '240040',
@@ -178,8 +178,8 @@ const projects = [
         images: ['https://kopl.dk/onewebmedia/ProjectImages/240040%2C%20Landskabsanalyse%20H%C3%B8rsholm%20Kommune/All%C3%A9%20Kettinge%20kopier.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/240040%2C%20Landskabsanalyse%20H%C3%B8rsholm%20Kommune/H%C3%B8rsholm%20Kommune-Arealanvendelse%20v5.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/240040%2C%20Landskabsanalyse%20H%C3%B8rsholm%20Kommune/Heste%20kopier.jpg',
-            'https://kopl.dk/onewebmedia/ProjectImages/240040%2C%20Landskabsanalyse%20H%C3%B8rsholm%20Kommune/H%C3%B8rsholm%20Kommune-Geologi-Terr%C3%A6n%20v2.jpg'],
-        contact: 'nynne-joergensen'
+            'https://kopl.dk/onewebmedia/ProjectImages/240040%2C%20Landskabsanalyse%20H%C3%B8rsholm%20Kommune/Opslag%20B.jpg'],
+        contact: ['nynne-joergensen']
     },
     {
         id: '240014',
@@ -193,6 +193,6 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/240014%2C%20Troldebakkerne%20milj%C3%B8vurdering/Plan.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/240014%2C%20Troldebakkerne%20milj%C3%B8vurdering/Kulturarv%20figur.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/240014%2C%20Troldebakkerne%20milj%C3%B8vurdering/Foto%201.jpg'],
-        contact: 'tobias-filskov-petersen'
+        contact: ['tobias-filskov-petersen', 'nynne-joergensen', 'pernille-birkenfeldt-petersen', 'anne-hinge']
     }
 ];
