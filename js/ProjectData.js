@@ -128,7 +128,7 @@ const projects = [
         services: ['Kvalitetssikring af Lokalplan', 'Rådgivning og kvalitetssikring af lokalplan'],
         heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/250024%2C%20kvalitetssikring%20LP%20Fan%C3%B8/oversigtsbillede.png',
         description: 'KOPL har bistået Fanø Kommune med kvalitetssikring af Lokalplan 138 for Sønderho. Lokalplanen indeholder et nyt krav om, at alle nye sommerhuse skal opføres på skruefundamenter. Tiltaget forebygger problemer med vand og erosion, skåner natur og landskab, samt reducerer CO2 - udledningen. Planen er den første af seks lokalplaner, der tilsammen skal dække alle øens sommerhusområder, hvor samme krav forventes indført. KOPL har foretaget en juridisk og planfaglig gennemgang af bestemmelserne for at sikre præcise bestemmelser, der kan håndhæves, og som er i overensstemmelse med planloven.',
-        images: ['', '', '', ''],
+        images: [],
         contact: ['muzdah-fallah']
     },
     {
