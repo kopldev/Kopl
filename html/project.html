@@ -73,12 +73,12 @@
             </div>
         </section>
     </div>
-    <div class="image-gallery">
-        <div class="gallery-scroll">
-            <img id="gallery-image-one" src="" alt="Galleri billede 1"/>
-            <img id="gallery-image-two" src="" alt="Galleri billede 2"/>
-            <img id="gallery-image-three" src="" alt="Galleri billede 3"/>
-            <img id="gallery-image-four" src="" alt="Galleri billede 4"/>
+    <div class="image-gallery" id="image-gallery">
+        <div class="gallery-scroll" id="gallery-scroll">
+<!--            <img id="gallery-image-one" src="" alt="Galleri billede 1"/>-->
+<!--            <img id="gallery-image-two" src="" alt="Galleri billede 2"/>-->
+<!--            <img id="gallery-image-three" src="" alt="Galleri billede 3"/>-->
+<!--            <img id="gallery-image-four" src="" alt="Galleri billede 4"/>-->
         </div>
     </div>
     <div class="project-lead-section">
@@ -116,24 +116,6 @@
         mobileMenu.classList.remove('open');
         mobileOverlay.classList.remove('open');
         navToggle.classList.remove('open');
-    });
-
-    const hero = document.getElementById('hero-image');
-    const galleryImages = document.querySelectorAll('.gallery-scroll img');
-
-    galleryImages.forEach(img => {
-        img.addEventListener('click', () => {
-            // Gem nuværende src'er
-            const tempSrc = hero.src;
-            const tempAlt = hero.alt;
-
-            // Byt src og alt mellem hero og det klikede billede
-            hero.src = img.src;
-            hero.alt = img.alt;
-
-            img.src = tempSrc;
-            img.alt = tempAlt;
-        });
     });
 </script>
 <script src="../js/ProjectData.js"></script>

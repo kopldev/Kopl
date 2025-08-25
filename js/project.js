@@ -17,7 +17,6 @@ const project = projects.find(p => p.id === projectId);
 const contactsContainer = document.getElementById("contacts-container");
 
 
-
 if (project) {
     populateProject(project);
 } else {
@@ -31,11 +30,36 @@ function populateProject(project) {
     projectLocation.textContent = project.location;
     services.textContent = project.services.join(", ");
     heroImage.src = project.heroImage;
+    heroImage.alt = project.title;
     projectDescription.textContent = project.description;
-    galleryImageOne.src = project.images[0];
-    galleryImagetwo.src = project.images[1];
-    galleryImagethree.src = project.images[2];
-    galleryImagefour.src = project.images[3];
+
+    const galleryImages = document.getElementById("gallery-scroll");
+    galleryImages.innerHTML = "";
+
+
+    if (project.images && project.images.length > 0) {
+        project.images.forEach((imgSrc, index) => {
+            const img = document.createElement("img");
+            img.src = imgSrc;
+            img.classList.add("gallery-image");
+            img.id = `gallery-image-${index}`;
+            galleryImages.appendChild(img);
+
+            img.addEventListener('click', () => {
+                const tempSrc = heroImage.src;
+                const tempAlt = heroImage.alt;
+
+                heroImage.src = img.src;
+                heroImage.alt = img.alt;
+
+                img.src = tempSrc;
+                img.alt = tempAlt;
+            });
+        })
+
+    }else {
+        const imgContainer = document.getElementById("image-gallery").style.display = "none";
+    }
 
     const projectContacts = contacts.filter(c => project.contact.includes(c.id));
 

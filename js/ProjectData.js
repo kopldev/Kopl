@@ -74,12 +74,7 @@ const projects = [
         services: ['Myndighedsrådgivning'],
         heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/250025%2C%20CPH%20lufthavn/Signaturforklaring.jpg',
         description: 'Plan- og Landdistriksstyrelsen har gennem et call-in overtaget planlægningen for Københavns Lufthavn. KOPL har bistået Københavns Lufthavne A/S i arbejdet med det nye plangrundlag, herunder forbredelse af temamøder om centrale planteamer såsom trafik, parkering, detailhandel mv. Vi har leveret faglig sparring, mødefacilitering og koordination mellem statslige og kommunale myndigheder. Med vores erfarning inden for byplanlægning, myndighedsprocesser og tekniske analyser har vi sikret at planlægningen sker på et solidt vidensgrundlag og understøtter lufthavnens rolle som internationalt trafikknudepunkt - med respekt for de miljømæssige og lokale rammer.',
-        images: [
-            '',
-            '',
-            '',
-            ''
-        ],
+        images: [],
         contact: ['muzdah-fallah']
     },
     {
@@ -94,7 +89,6 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/240010%2C%20notat%20landzone/kort%20oversigt.png',
             'https://kopl.dk/onewebmedia/ProjectImages/240010%2C%20notat%20landzone/oversigtbillede%202.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/240010%2C%20notat%20landzone/oversigtskort.jpg',
-            ''
         ],
         contact: ['anne-hinge']
     },
