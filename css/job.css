@@ -1,0 +1,41 @@
+.slider-gallery {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-gallery .featured img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.slider-gallery button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.slider-gallery .prev {
+    left: 10px;
+}
+
+.slider-gallery .next {
+    right: 10px;
+}
+
+.slider-gallery button:hover {
+    background-color: rgba(0,0,0,0.8);
+}

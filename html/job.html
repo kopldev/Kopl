@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ydelser – KOPL</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/services.css">
+    <link rel="stylesheet" href="../css/job.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="kopl-navbar">
+        <a href="../index.html"><img class="kopl-nav-logo"
+                                     src="https://kopl.dk/onewebmedia/hvidt%20visitkort_flad_sort%20tekst.png"
+                                     alt="logo"></a>
+        <div class="kopl-navbar-inner">
+            <ul class="kopl-nav-links">
+                <li><a class="kopl-nav-links-black active" href="services.html">Ydelser</a></li>
+                <li><a class="kopl-nav-links-black" href="contact.html">Kontakt</a></li>
+                <li><a class="kopl-nav-links-black" href="project-grid.html">Projekter</a></li>
+                <li><a class="kopl-nav-links-black" href="job.html">Job</a></li>
+            </ul>
+            <button class="kopl-nav-toggle" id="koplNavToggle" aria-label="Åbn menu">
+                <span class="kopl-nav-toggle-bar"></span>
+                <span class="kopl-nav-toggle-bar"></span>
+                <span class="kopl-nav-toggle-bar"></span>
+            </button>
+        </div>
+        <div class="kopl-mobile-menu" id="koplMobileMenu">
+            <button class="kopl-mobile-close" id="koplMobileClose" aria-label="Luk menu">&times;</button>
+            <ul>
+                <li><a href="services.html">Ydelser</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="project-grid.html">Projekter</a></li>
+                <li><a href="job.html">Job</a></li>
+            </ul>
+        </div>
+        <div class="kopl-mobile-overlay" id="koplMobileOverlay"></div>
+    </nav>
+</header>
+<main class="main-services">
+    <section class="about-services-section">
+        <h1 class="services-title">Job</h1>
+        <p class="services-intro">Hos KOPL er vi altid på udkig efter dygtige kolleger, der deler vores passion for
+            bæredygtig planlægning, miljøhensyn og værdiskabende ejendomsudvikling. Vi slår løbende nye stillinger op,
+            og vi søger både erfarne specialister og nyuddannede med drive og fagligt overskud. Vi tilbyder et dynamisk
+            og uformelt arbejdsmiljø, hvor du får mulighed for at arbejde tæt sammen med kolleger fra forskellige
+            fagligheder – og hvor du får ansvar og indflydelse fra dag ét. Hold øje med vores ledige stillinger her på
+            siden – måske er det lige netop dig, vi står og mangler.</p>
+    </section>
+    <div class="slider-gallery">
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+
+        <div class="featured">
+            <img id="slider-img" src="https://kopl.dk/onewebmedia/JobImages/IMG_0003.jpg" alt="Billede 1">
+        </div>
+
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+</main>
+<script>
+    const navToggle = document.getElementById('koplNavToggle');
+    const mobileMenu = document.getElementById('koplMobileMenu');
+    const mobileClose = document.getElementById('koplMobileClose');
+    const mobileOverlay = document.getElementById('koplMobileOverlay');
+    navToggle.addEventListener('click', function () {
+        mobileMenu.classList.add('open');
+        mobileOverlay.classList.add('open');
+        navToggle.classList.add('open');
+    });
+    mobileClose.addEventListener('click', function () {
+        mobileMenu.classList.remove('open');
+        mobileOverlay.classList.remove('open');
+        navToggle.classList.remove('open');
+    });
+    mobileOverlay.addEventListener('click', function () {
+        mobileMenu.classList.remove('open');
+        mobileOverlay.classList.remove('open');
+        navToggle.classList.remove('open');
+    });
+
+    const images = [
+        {src: 'https://kopl.dk/onewebmedia/JobImages/IMG_0003.jpg', alt: 'Billede 1'},
+        {src: 'https://kopl.dk/onewebmedia/JobImages/IMG_0004.jpg', alt: 'Billede 2'},
+        {src: 'https://kopl.dk/onewebmedia/JobImages/IMG_0013.jpg', alt: 'Billede 3'},
+        {src: 'https://kopl.dk/onewebmedia/JobImages/IMG_0014.jpg', alt: 'Billede 4'},
+        {src: 'https://kopl.dk/onewebmedia/JobImages/IMG_0015.jpg', alt: 'Billede 5'}
+
+    ];
+
+    let currentIndex = 0;
+
+    function changeImage(direction) {
+        currentIndex += direction;
+
+        if (currentIndex < 0) currentIndex = images.length - 1;
+        if (currentIndex >= images.length) currentIndex = 0;
+
+        const sliderImg = document.getElementById('slider-img');
+        sliderImg.src = images[currentIndex].src;
+        sliderImg.alt = images[currentIndex].alt;
+    }
+</script>
+</body>
+</html>
