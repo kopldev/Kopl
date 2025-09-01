@@ -5,14 +5,14 @@ const projects = [
         year: 2025,
         location: 'Ringsted',
         services: ['Lokalplan', 'Klagenævnspraksis'],
-        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/h%C3%B8m%20m%C3%B8lle%20cover%20billede.jpg',
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/250013%2C%20h%C3%B8m%20m%C3%B8lle/h%C3%B8m%20m%C3%B8lle%20cover%20billede.jpg',
         description: 'I Ringsted Kommune har vi bestået ejerne af Høm Mølle og kommunen med udarbejdelse af en ny lokalplan i landzone. Den kommende lokaplan overfører dele af området til byzone og indeholder dispensationer fra beskyttelseslinjer. Som et led i planlægningen er der indledningsvist udarbejdet et forudsætningsnotat med relevant klagenævnspraksis for at afveje konktrete ønsker med afgørelser på området. \n' +
             'Høm Mølle ligger i et område med store beskyttelsesinteresser, herunder beskyttede naturtyper, åbeskyttelseslinje og bevaringsværdige landskaber. Planlægningen er derfor sket med stor respekt for områdets natur- og landskab, så nye aktiviteter kan indpasses uden forringelse af de eksisterende kvaliteter. \n' +
             'KOPL har rådgivet om hele plan -og miljøvurderingsprocessen – fra afgrænsning af de ønskede aktiviteter i forhold til lovgivningen, til håndtering af dispensationer, naturhensyn og trafikforhold. \n' +
             '',
         images: [
-            'https://kopl.dk/onewebmedia/ProjectImages/250013%2C%20h%C3%B8m%20m%C3%B8lle/skr%C3%A5v%C3%A6g.jpeg',
-            'https://kopl.dk/onewebmedia/ProjectImages/250013%2C%20h%C3%B8m%20m%C3%B8lle/mursten.jpeg',
+            'https://kopl.dk/onewebmedia/ProjectImages/250013%2C%20h%C3%B8m%20m%C3%B8lle/250013_Figur_Natur_%C3%85beskyttelseslinje-ortho.jpeg',
+            'https://kopl.dk/onewebmedia/ProjectImages/250013%2C%20h%C3%B8m%20m%C3%B8lle/02062025%20Oversigtskort%20med%20eksisterende%20forhold%20over%20H%C3%B8m%20M%C3%B8lle%2C%20Ringsted%20-%20%C3%85beskyttelseslinje-01.jpeg',
             'https://kopl.dk/onewebmedia/ProjectImages/250013%2C%20h%C3%B8m%20m%C3%B8lle/22052025%20Figur_Kort%20med%20Skovrejsning.jpeg',
             'https://kopl.dk/onewebmedia/ProjectImages/250013%2C%20h%C3%B8m%20m%C3%B8lle/02062025%20Oversigtskort%20med%20eksisterende%20forhold%20over%20H%C3%B8m%20M%C3%B8lle%2C%20Ringsted%20-%20Kulturhistoriske%20bevaringsv%C3%A6rdier-01.jpeg'
         ],
@@ -98,7 +98,7 @@ const projects = [
         year: 2024,
         location: 'Lyngby Taarbæk kommune',
         services: ['Lokalplan', 'Miljøvurdering', 'Kommuneplantillæg'],
-        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/240012%2C%20Firskovvej/oversigtsbillede.png',
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/240012%2C%20Firskovvej/JPG_Forsidecover%20kopier.jpg',
         description: 'KOPL har bistået Lyngby-Taarbæk Kommune med udarbejdelsen af rammelokalplan og miljøvurdering for Firskovvej - et ambitiøst byomdannelsesprojekt, der skal tranformeres et tidligere erhvervsområde til en tæt, levende og bærdygigt bydel. Planen fastlægger rammerne for en ny struktur med boliger, erhverv og offentlige funktioner i en grøn bymæssig kontekst. KOPL har ydet faglig rådgivning til kommunen om planens anvendelser, bebyggelsesstruktur, grønne strøg og krav om almene boliger - samt sikret at principperne for udviklings- og helhedsplanen for Firskovvejkvarteret er omsat til præcise og anvendelige lokalplanbestemmelser.',
         images: ['https://kopl.dk/onewebmedia/ProjectImages/240012%2C%20Firskovvej/oversigtsbillede2.png',
             'https://kopl.dk/onewebmedia/ProjectImages/240012%2C%20Firskovvej/togbane.jpg',
