@@ -26,6 +26,7 @@ html, body {
   flex-direction: column;
 }
 
+
 .project-title {
   font-size: 3rem;
   font-weight: 300;
@@ -81,22 +82,18 @@ html, body {
 .hero-image-aspect {
   position: relative;
   width: 100%;
-  aspect-ratio: 4/3;
-  background: #f3f4f6;
+  aspect-ratio: 297 / 210;
+  background: #ffffff;
   overflow: hidden;
   transition: box-shadow 0.3s;
 }
 
 .hero-image-aspect img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   display: block;
-  transition: transform 0.7s cubic-bezier(.4,0,.2,1);
-}
 
-.hero-image-aspect:hover img {
-  transform: scale(1.05);
 }
 
 .project-overview-grid {
@@ -266,7 +263,7 @@ html, body {
 }
 
 .gallery-scroll img {
-  height: 300px;
+  height: 500px;
   width: 300px;
   object-fit: cover;
   flex-shrink: 0;
@@ -275,8 +272,33 @@ html, body {
   cursor: pointer;
 }
 
-.gallery-scroll img:hover {
-  transform: scale(1.02);
+.lightbox {
+    display: none; /* skjult som standard */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* Optional scrollbar styling */
@@ -287,7 +309,7 @@ html, body {
 /* ---------- Responsive layout ---------- */
 @media (min-width: 768px) {
   .project-layout {
-    flex-direction: row;
+    flex-direction: column;
     gap: 4rem;
   }
 
@@ -297,7 +319,7 @@ html, body {
 
   .hero-image-wrap {
     flex: 1;
-    max-width: 40%;
+    max-width: 100%;
     margin-bottom: 0;
   }
 

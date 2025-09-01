@@ -4,17 +4,14 @@ let projectLocation = document.getElementById("project-detail-value-location");
 let services = document.getElementById("project-detail-value-services");
 let heroImage = document.getElementById("hero-image");
 let projectDescription = document.getElementById("overview-desc");
-let galleryImageOne = document.getElementById("gallery-image-one");
-let galleryImagetwo = document.getElementById("gallery-image-two");
-let galleryImagethree = document.getElementById("gallery-image-three");
-let galleryImagefour = document.getElementById("gallery-image-four");
-
 
 const projectId = new URLSearchParams(window.location.search).get('id');
-
 const project = projects.find(p => p.id === projectId);
-
 const contactsContainer = document.getElementById("contacts-container");
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.querySelector(".lightbox-img");
+const lightboxClose = document.querySelector(".lightbox .close");
 
 
 if (project) {
@@ -29,13 +26,13 @@ function populateProject(project) {
     year.textContent = project.year;
     projectLocation.textContent = project.location;
     services.textContent = project.services.join(", ");
-    heroImage.src = project.heroImage;
-    heroImage.alt = project.title;
     projectDescription.textContent = project.description;
+    heroImage.src = project.heroImage;
+
+
 
     const galleryImages = document.getElementById("gallery-scroll");
     galleryImages.innerHTML = "";
-
 
     if (project.images && project.images.length > 0) {
         project.images.forEach((imgSrc, index) => {
@@ -46,24 +43,28 @@ function populateProject(project) {
             galleryImages.appendChild(img);
 
             img.addEventListener('click', () => {
-                const tempSrc = heroImage.src;
-                const tempAlt = heroImage.alt;
-
-                heroImage.src = img.src;
-                heroImage.alt = img.alt;
-
-                img.src = tempSrc;
-                img.alt = tempAlt;
+                lightbox.style.display = "flex";
+                lightboxImg.src = img.src;
             });
-        })
-
-    }else {
-        const imgContainer = document.getElementById("image-gallery").style.display = "none";
+        });
+    } else {
+        document.getElementById("image-gallery").style.display = "none";
     }
 
+
+    lightboxClose.addEventListener('click', () => {
+        lightbox.style.display = "none";
+    });
+
+
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            lightbox.style.display = "none";
+        }
+    });
+
+
     const projectContacts = contacts.filter(c => project.contact.includes(c.id));
-
-
     if (Array.isArray(projectContacts)) {
         contactsContainer.innerHTML = "";
 
@@ -90,6 +91,5 @@ function populateProject(project) {
     } else {
         console.warn("projectContacts er ikke et array!");
     }
-
 }
 
