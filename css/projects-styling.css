@@ -116,6 +116,29 @@ body {
   align-items: center;
   justify-content: center;
 }
+.pagination-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 2;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background: rgb(163, 154, 154);
+}
+
 
 @media (max-width: 767px) {
   .hero-image-wrap {
@@ -504,18 +527,18 @@ body {
 
   .hero-image-aspect {
     padding-bottom: 100%;
-    /* 4:3 aspect ratio for mobile */
+ 
   }
 
-  /* Projekt oversigt fylder hele bredden */
+
   .project-overview-grid {
     max-width: 100%;
   }
 
-  /* Billedgalleri - gør billederne mindre, så de kan scrolle på mobil */
+
   .gallery-scroll {
     justify-content: flex-start;
-    /* så billederne starter fra venstre */
+
   }
 
   .gallery-scroll img {
@@ -523,7 +546,7 @@ body {
     height: 500px;
   }
 
-  /* Projekt lead sektionen fylder næsten hele bredden */
+
   .project-lead-section {
     width: 90%;
     max-width: none;

@@ -35,38 +35,57 @@ function populateProject(project) {
     }
     let currentImageIndex = 0;
 
+    const paginationContainer = document.querySelector('.pagination-dots');
+    paginationContainer.innerHTML = '';
+
+    images.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        if (index === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => {
+            const forward = index > currentImageIndex;
+            currentImageIndex = index - 1; // Subtract 1 because showNextImage will increment
+            showNextImage(forward);
+        });
+        paginationContainer.appendChild(dot);
+    });
+
+
     function showHeroImage() {
         heroImage.src = images[currentImageIndex];
     }
 
-  function showNextImage(forward = true) {
-    const oldImage = heroImage.cloneNode(true);
-    oldImage.style.position = 'absolute';
-    oldImage.style.top = '0';
-    oldImage.style.left = '0';
-    heroImage.parentNode.appendChild(oldImage);
+    function showNextImage(forward = true) {
+        const oldImage = heroImage.cloneNode(true);
+        oldImage.style.position = 'absolute';
+        oldImage.style.top = '0';
+        oldImage.style.left = '0';
+        heroImage.parentNode.appendChild(oldImage);
 
-    if (forward) {
-        currentImageIndex++;
-        if (currentImageIndex >= images.length) currentImageIndex = 0;
-        oldImage.classList.add('slide-out-left');
-        heroImage.classList.add('slide-in-left');
-    } else {
-        currentImageIndex--;
-        if (currentImageIndex < 0) currentImageIndex = images.length - 1;
-        oldImage.classList.add('slide-out-right');
-        heroImage.classList.add('slide-in-right');
-    }
-
-    heroImage.src = images[currentImageIndex];
-
-    setTimeout(() => {
-        heroImage.classList.remove('slide-in-left', 'slide-in-right');
-        if (oldImage.parentNode) {
-            oldImage.parentNode.removeChild(oldImage);
+        if (forward) {
+            currentImageIndex++;
+            if (currentImageIndex >= images.length) currentImageIndex = 0;
+            oldImage.classList.add('slide-out-left');
+            heroImage.classList.add('slide-in-left');
+        } else {
+            currentImageIndex--;
+            if (currentImageIndex < 0) currentImageIndex = images.length - 1;
+            oldImage.classList.add('slide-out-right');
+            heroImage.classList.add('slide-in-right');
         }
-    }, 500);
-}
+
+        document.querySelectorAll('.dot').forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentImageIndex);
+        });
+        heroImage.src = images[currentImageIndex];
+
+        setTimeout(() => {
+            heroImage.classList.remove('slide-in-left', 'slide-in-right');
+            if (oldImage.parentNode) {
+                oldImage.parentNode.removeChild(oldImage);
+            }
+        }, 500);
+    }
 
     const arrows = document.querySelectorAll(".arrow");
     arrows[0].addEventListener('click', () => {
@@ -76,7 +95,7 @@ function populateProject(project) {
     arrows[1].addEventListener('click', () => {
         showNextImage(true);
         console.log("clicked");
-        
+
     });
 
     showHeroImage();

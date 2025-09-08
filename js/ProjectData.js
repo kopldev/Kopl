@@ -151,10 +151,10 @@ const projects = [
         year: 2025,
         location: 'Hørsholm Kommune',
         services: ['Afgrænsningsnotat', 'Miljøvurdering'],
-        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Milj%C3%B8vurdering%20af%20H%C3%B8rsholm%20Kommuneplan.jpg',
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/250001%2C%20Milj%C3%B8vurdering%20H%C3%B8rsholm%20Kommuneplan/250001%20Kort_H%C3%B8rsholm%20lille.jpeg',
         description: 'I forbindelse med revision af kommuneplanen (Kommuneplan 2025) har KOPL bistået Hørsholm Kommune med miljøvurdering af ”Strategi for Grøn Zone”, som er en arealanvendelsesstrategi, der skal danne grundlag for fremtidige planer og projekter inden for forsyning, vedvarende energi (VE) og skovrejsning i kommunen. Miljøvurderingen blev udført på et strategisk og overordnet niveau som passede til planlægningens karakter. Fokus var på potentielle påvirkninger af natur, arealanvendelse, vand og landskab samt strategiens forhold til overordnede klima- og miljøbeskyttelsesmål, herunder Statens Klimamål og FN’s Verdensmål. I tråd med planlægningens overordnede karakter ledte miljøvurderingen frem til en række anbefalinger til den videre planlægning for den grønne zone.',
         images: ['https://kopl.dk/onewebmedia/ProjectImages/250001%2C%20Milj%C3%B8vurdering%20H%C3%B8rsholm%20Kommuneplan/250001_Karakteromr%208_3.jpg',
-            'https://kopl.dk/onewebmedia/ProjectImages/250001%2C%20Milj%C3%B8vurdering%20H%C3%B8rsholm%20Kommuneplan/250001%20Kort_H%C3%B8rsholm%20lille.jpeg',
+            'https://kopl.dk/onewebmedia/ProjectImages/Milj%C3%B8vurdering%20af%20H%C3%B8rsholm%20Kommuneplan.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/250001%2C%20Milj%C3%B8vurdering%20H%C3%B8rsholm%20Kommuneplan/250001%20H%C3%B8rsholm%20Milij%C3%B8vurdering-Gr%C3%B8nzone%20for%20teknisk%20anl%C3%A6g%20figur%20kopier.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/250001%2C%20Milj%C3%B8vurdering%20H%C3%B8rsholm%20Kommuneplan/250001%20H%C3%B8rsholm%20Milij%C3%B8vurdering-Drikkevand%20%2B%20BNBO%20kopier.jpg'],
         contact: ['nynne-joergensen', 'tobias-filskov-petersen', 'anne-hinge']
