@@ -90,15 +90,6 @@ const contacts = [
         image: 'https://kopl.dk/onewebmedia/Profilbilleder/mbh%20profil%20-%20hvid%20baggrund.png'
     },
     {
-        id: 'andreas-munksgaard-weir',
-        name: 'Andreas Munksgaard Weir',
-        title: 'Arkitekt',
-        skills: ['Bebyggelsesplaner', 'byplanlægning'],
-        email: 'amw@kopl.dk',
-        phone: '+45 66440190',
-        image: 'https://kopl.dk/onewebmedia/Profilbilleder/Andreas%20sort%20hvid.png'
-    },
-    {
         id: 'luna-lindeneg',
         name: 'Luna Lindeneg',
         title: 'Piccoline',

@@ -88,7 +88,7 @@ html, body {
 }
 .project-image-wrap {
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 0.9;
   background: #f3f4f6;
   overflow: hidden;
   position: relative;

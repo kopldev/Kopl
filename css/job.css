@@ -1,7 +1,6 @@
 .slider-gallery {
     position: relative;
-    max-width: 800px;
-    margin: 40px auto;
+    max-width: 1280px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,23 +8,22 @@
 
 .slider-gallery .featured img {
     width: 100%;
-    max-height: 500px;
+    max-height: 960px;
     object-fit: cover;
-    border-radius: 10px;
 }
 
 .slider-gallery button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
+    background-color: transparent;
     color: white;
     border: none;
     font-size: 30px;
     padding: 10px 15px;
     cursor: pointer;
-    border-radius: 5px;
     user-select: none;
+    transition: background-color 0.5s;
 }
 
 .slider-gallery .prev {
@@ -37,5 +35,50 @@
 }
 
 .slider-gallery button:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.job-intro {
+    font-size: 1.18rem;
+    line-height: 1.6;
+    color: #444;
+    max-width: 80rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.job-postings {
+    max-width: 1280px;
+    margin-top: 2rem;
+}
+
+.job-posting {
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.job-posting-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0 0 1rem 0;
+    color: #222;
+}
+.job-posting-description {
+    font-size: 1.18rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .job-posting {
+        padding: 1.5rem;
+    }
+
+    .job-posting-title {
+        font-size: 1.25rem;
+    }
 }
