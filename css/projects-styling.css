@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background: #fff;
@@ -70,26 +71,131 @@ html, body {
 .project-layout {
   display: flex;
   flex-direction: column;
-  margin-bottom: 5rem;
 }
 
 .hero-image-wrap {
   width: 100%;
   max-width: 100%;
   margin-bottom: 5rem;
+  position: relative;
 }
 
 .hero-image-aspect {
+  position: relative;
   width: 100%;
+  padding-bottom: 100%;
   background: #ffffff;
   overflow: hidden;
 }
 
 .hero-image-aspect img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
   object-fit: contain;
-  display: block;
+  background-color: #ffffff;
+}
 
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  color: rgb(0, 0, 0);
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .hero-image-wrap {
+    margin-bottom: 2rem;
+  }
+
+  .arrow {
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    width: 32px;
+    height: 32px;
+  }
+
+  .hero-image-wrap .arrow:first-of-type {
+    left: 10px;
+  }
+
+  .hero-image-wrap .arrow:last-of-type {
+    right: 10px;
+  }
+
+  .hero-image-aspect {
+    padding-bottom: 75%;
+  }
+}
+
+.slide-out-left {
+  animation: slideOutLeft 0.5s ease-in-out;
+}
+
+.slide-out-right {
+  animation: slideOutRight 0.5s ease-in-out;
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.5s ease-in-out;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.5s ease-in-out;
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
 
 .project-overview-grid {
@@ -174,13 +280,17 @@ html, body {
   text-transform: uppercase;
   align-self: start;
 }
+
 .project-lead-cards-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Dynamiske kolonner */
-  gap: 7.5rem; /* Afstand mellem kortene */
+  grid-template-columns: repeat(3, 1fr);
+  /* Dynamiske kolonner */
+  gap: 7.5rem;
+  /* Afstand mellem kortene */
   margin-top: 2rem;
   width: 100%;
 }
+
 .project-lead-card {
   display: flex;
   flex-direction: row;
@@ -190,12 +300,6 @@ html, body {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
   width: 100%;
   align-self: stretch;
-  transition: box-shadow 0.2s, transform 0.2s;
-}
-
-.project-lead-card:hover {
-  box-shadow: 0 16px 32px rgba(240, 176, 176, 0.1);
-  transform: translateY(-4px) scale(1.01);
 }
 
 .lead-image {
@@ -268,32 +372,33 @@ html, body {
 }
 
 .lightbox {
-    display: none; /* skjult som standard */
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.8);
-    justify-content: center;
-    align-items: center;
+  display: none;
+  /* skjult som standard */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
 }
 
 .lightbox-img {
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: contain;
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
 }
 
 .lightbox .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /* Optional scrollbar styling */
@@ -313,9 +418,25 @@ html, body {
   }
 
   .hero-image-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     flex: 1;
     max-width: 100%;
     margin-bottom: 0;
+    overflow: hidden;
+  }
+
+
+  /* Placering af pilene til venstre og højre */
+  .hero-image-wrap .arrow:first-of-type {
+    left: 0px;
+  }
+
+  .hero-image-wrap .arrow:last-of-type {
+    right: 0px;
   }
 
   .project-overview-grid {
@@ -327,9 +448,10 @@ html, body {
     display: flex;
     flex-direction: column;
   }
-  
+
 
 }
+
 @media (max-width: 767px) {
 
   /* Wrapper/main-content får lidt padding til siderne */
@@ -362,8 +484,27 @@ html, body {
 
   /* Hero billede fylder 100% bredde og maks bredde fjernes */
   .hero-image-wrap {
-    max-width: 100%;
     margin-bottom: 2rem;
+  }
+
+  .arrow {
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    width: 32px;
+    height: 32px;
+  }
+
+  .hero-image-wrap .arrow:first-of-type {
+    left: 10px;
+  }
+
+  .hero-image-wrap .arrow:last-of-type {
+    right: 10px;
+  }
+
+  .hero-image-aspect {
+    padding-bottom: 100%;
+    /* 4:3 aspect ratio for mobile */
   }
 
   /* Projekt oversigt fylder hele bredden */
@@ -373,7 +514,8 @@ html, body {
 
   /* Billedgalleri - gør billederne mindre, så de kan scrolle på mobil */
   .gallery-scroll {
-    justify-content: flex-start; /* så billederne starter fra venstre */
+    justify-content: flex-start;
+    /* så billederne starter fra venstre */
   }
 
   .gallery-scroll img {
@@ -406,14 +548,13 @@ html, body {
     margin-bottom: 1rem;
   }
 
-  /* Tekst i lead-info centreres */
   .lead-info {
     align-items: center;
   }
+
   .project-lead-cards-container {
-    grid-template-columns: 1fr; /* 1 kolonne på tablet/mobil */
+    grid-template-columns: 1fr;
     gap: 2rem;
   }
 
-  /* Kontakt-knappen og andre elementer forbliver som de er eller kan tilpasses efter behov */
 }
