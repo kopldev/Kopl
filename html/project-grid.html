@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projekter – KOPL</title>
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/project-grid.css">
   <link rel="icon" type="image/jpg" href="https://kopl.dk/onewebmedia/k%20sort_Tegnebr%C3%A6t%201.jpg">
 </head>
+
 <body>
   <div class="page-root">
     <header>
       <nav class="kopl-navbar">
-        <a href="../index.html"><img class="kopl-nav-logo" src="https://kopl.dk/onewebmedia/hvidt%20visitkort_flad_sort%20tekst.png" alt="logo"></a>
+        <a href="../index.html"><img class="kopl-nav-logo"
+            src="https://kopl.dk/onewebmedia/hvidt%20visitkort_flad_sort%20tekst.png" alt="logo"></a>
         <div class="kopl-navbar-inner">
           <ul class="kopl-nav-links">
             <li><a class="kopl-nav-links-black" href="services.html">Ydelser</a></li>
@@ -41,58 +44,97 @@
     <main class="main-content">
       <div class="headline-row">
         <div class="headline-content">
-          <h1 class="page-title" style="margin-bottom:0.5rem;">Projekter</h1>
-          <p class="page-intro">Et udvalg af projekter, der viser bredden i vores rådgivning og samarbejde med kommuner og bygherrer.</p>
+          <h1 class="page-title">Projekter</h1>
         </div>
         <div class="filter-row">
-          <label for="service-filter" class="filter-label">Filtrer efter ydelse</label>
-          <select id="service-filter" class="filter-select">
-            <option value="">Alle ydelser</option>
-            <option value="Lokalplan">Lokalplan</option>
-            <option value="Klagenævnspraksis">Klagenævnspraksis</option>
-            <option value="Landsplanlægning">Landsplanlægning</option>
-            <option value="Fingerplan">Fingerplan</option>
-            <option value="Bebyggelsesplan">Bebyggelsesplan</option>
-            <option value="Projektudvikling">Projektudvikling</option>
-            <option value="Regnvandshåndtering">Regnvandshåndtering</option>
-            <option value="Myndighedsrådgivning">Myndighedsrådgivning</option>
-            <option value="Landzone">Landzone</option>
-            <option value="Mulighedsnotat">Mulighedsnotat</option>
-            <option value="Miljøvurdering">Miljøvurdering</option>
-            <option value="Kommuneplantillæg">Kommuneplantillæg</option>
-            <option value="Kystnærhedszonen">Kystnærhedszonen</option>
-            <option value="Miljøkonsekvensvurdering">Miljøkonsekvensvurdering</option>
-            <option value="Sommerhusloven">Sommerhusloven</option>
-            <option value="Kvalitetssikring af Lokalplan">Kvalitetssikring af Lokalplan</option>
-            <option value="Rådgivning og kvalitetssikring af lokalplan">Rådgivning og kvalitetssikring af lokalplan</option>
-            <option value="Planrådgivning">Planrådgivning</option>
-            <option value="Klagenævnspraksis">Klagenævnspraksis</option>
-            <option value="Afgrænsningsnotat">Afgrænsningsnotat</option>
-            <option value="Landskabsanalyse">Landskabsanalyse</option>
-            <option value="Kommuneplan">Kommuneplan</option>
-            <option value="Landskabsvurdering">Landskabsvurdering</option>
-          </select>
+          <div class="custom-select-wrapper">
+            <div id="service-dropdown" class="custom-select">
+              <span class="custom-select-trigger">Alle ydelser</span>
+              <div class="custom-options">
+                <span class="custom-option" data-value="">Alle ydelser</span>
+                <span class="custom-option" data-value="Lokalplan">Lokalplan</span>
+                <span class="custom-option" data-value="Klagenævnspraksis">Klagenævnspraksis</span>
+                <span class="custom-option" data-value="Landsplanlægning">Landsplanlægning</span>
+                <span class="custom-option" data-value="Fingerplan">Fingerplan</span>
+                <span class="custom-option" data-value="Bebyggelsesplan">Bebyggelsesplan</span>
+                <span class="custom-option" data-value="Projektudvikling">Projektudvikling</span>
+                <span class="custom-option" data-value="Regnvandshåndtering">Regnvandshåndtering</span>
+                <span class="custom-option" data-value="Myndighedsrådgivning">Myndighedsrådgivning</span>
+                <span class="custom-option" data-value="Landzone">Landzone</span>
+                <span class="custom-option" data-value="Mulighedsnotat">Mulighedsnotat</span>
+                <span class="custom-option" data-value="Miljøvurdering">Miljøvurdering</span>
+                <span class="custom-option" data-value="Kommuneplantillæg">Kommuneplantillæg</span>
+                <span class="custom-option" data-value="Kystnærhedszonen">Kystnærhedszonen</span>
+                <span class="custom-option" data-value="Miljøkonsekvensvurdering">Miljøkonsekvensvurdering</span>
+                <span class="custom-option" data-value="Sommerhusloven">Sommerhusloven</span>
+                <span class="custom-option" data-value="Kvalitetssikring af Lokalplan">Kvalitetssikring af
+                  Lokalplan</span>
+                <span class="custom-option" data-value="Rådgivning og kvalitetssikring af lokalplan">Rådgivning og
+                  kvalitetssikring af lokalplan</span>
+                <span class="custom-option" data-value="Planrådgivning">Planrådgivning</span>
+                <span class="custom-option" data-value="Afgrænsningsnotat">Afgrænsningsnotat</span>
+                <span class="custom-option" data-value="Landskabsanalyse">Landskabsanalyse</span>
+                <span class="custom-option" data-value="Kommuneplan">Kommuneplan</span>
+                <span class="custom-option" data-value="Landskabsvurdering">Landskabsvurdering</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="projects-grid" id="projects-grid"></div>
     </main>
   </div>
+  <footer class="kopl-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>KOPL ApS</h3>
+        <p>CVR: 44027321</p>
+        <span>Telefon: <a href="tel:+44027321">+45 44027321</a></span>
+        <span>Email: <a href="mailto:info@kopl.dk">info@kopl.dk</a></span>
+        <a href="https://www.kopl.dk/onewebmedia/Generelle%20forretningsbetingelser.pdf">Generelle
+          forretningsbetingelser</a>
+      </div>
+      <div class="footer-section">
+        <h3>Adresse</h3>
+        <p>
+          <a href="https://www.google.com/maps/place/V%C3%A6xthuset+K%C3%B8ge/@55.455483,12.193516,18.25z/data=!4m10!1m2!2m1!1sbaltickaj+1,+2!3m6!1s0x4652f13798c6d99f:0x307124c409385bc0!8m2!3d55.4557926!4d12.1941955!15sCg9iYWx0aWMga2FqIDEsIDKSAQ9idXNpbmVzc19jZW50ZXKqAT8QASoHIgMxIDIoATIeEAEiGtyIG7IkH5zYg6NBo1VUGylW0lVED7dixlEVMhIQAiIOYmFsdGljIGthaiAxIDLgAQA!16s%2Fg%2F11shnyvs01?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank">
+            Baltic Kaj 1, 2.
+          </a>
+        </p>
+        <p>4600 Køge</p>
+        <p>Danmark</p>
+      </div>
+      <div class="footer-section">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="services.html">Ydelser</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+          <li><a href="project-grid.html">Projekter</a></li>
+          <li><a href="job.html">Job</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 KOPL. Alle rettigheder forbeholdes.</p>
+    </div>
+  </footer>
   <script>
     const navToggle = document.getElementById('koplNavToggle');
     const mobileMenu = document.getElementById('koplMobileMenu');
     const mobileClose = document.getElementById('koplMobileClose');
     const mobileOverlay = document.getElementById('koplMobileOverlay');
-    navToggle.addEventListener('click', function() {
+    navToggle.addEventListener('click', function () {
       mobileMenu.classList.add('open');
       mobileOverlay.classList.add('open');
       navToggle.classList.add('open');
     });
-    mobileClose.addEventListener('click', function() {
+    mobileClose.addEventListener('click', function () {
       mobileMenu.classList.remove('open');
       mobileOverlay.classList.remove('open');
       navToggle.classList.remove('open');
     });
-    mobileOverlay.addEventListener('click', function() {
+    mobileOverlay.addEventListener('click', function () {
       mobileMenu.classList.remove('open');
       mobileOverlay.classList.remove('open');
       navToggle.classList.remove('open');
@@ -100,6 +142,32 @@
   </script>
   <script src="../js/ProjectData.js"></script>
   <script>
+
+    const dropdown = document.getElementById("service-dropdown");
+const trigger = dropdown.querySelector(".custom-select-trigger");
+const options = dropdown.querySelectorAll(".custom-option");
+
+trigger.addEventListener("click", () => {
+  dropdown.classList.toggle("opened");
+});
+
+// Luk dropdown hvis klik udenfor
+document.addEventListener("click", (e) => {
+  if (!dropdown.contains(e.target)) {
+    dropdown.classList.remove("opened");
+  }
+});
+
+// Håndter valg
+options.forEach(option => {
+  option.addEventListener("click", () => {
+    trigger.textContent = option.textContent;
+    dropdown.classList.remove("opened");
+
+    // Kald filterfunktion
+    filterProjectsByService(option.dataset.value);
+  });
+});
     const grid = document.getElementById('projects-grid');
     const serviceFilter = document.getElementById('service-filter');
 
@@ -127,7 +195,7 @@
       // Mobile: add click/tap to toggle overlay and require second tap to follow link
       if (window.innerWidth <= 767) {
         document.querySelectorAll('.project-card').forEach(card => {
-          card.addEventListener('click', function(e) {
+          card.addEventListener('click', function (e) {
             if (!this.classList.contains('active')) {
               e.preventDefault();
               document.querySelectorAll('.project-card.active').forEach(c => c.classList.remove('active'));
@@ -139,7 +207,7 @@
           });
         });
         // Hide overlay when clicking outside
-        document.body.addEventListener('click', function(e) {
+        document.body.addEventListener('click', function (e) {
           if (!e.target.closest('.project-card')) {
             document.querySelectorAll('.project-card.active').forEach(c => c.classList.remove('active'));
           }
@@ -163,9 +231,10 @@
     renderProjects(projects);
 
     // Event listener for dropdown
-    serviceFilter.addEventListener('change', function() {
+    serviceFilter.addEventListener('change', function () {
       filterProjectsByService(this.value);
     });
   </script>
 </body>
+
 </html>
