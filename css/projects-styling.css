@@ -96,6 +96,8 @@ body {
   height: 100%;
   object-fit: contain;
   background-color: #ffffff;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .arrow {
@@ -116,27 +118,28 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .pagination-dots {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 8px;
-    z-index: 2;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2;
 }
 
 .dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .dot.active {
-    background: rgb(163, 154, 154);
+  background: rgb(163, 154, 154);
 }
 
 
@@ -166,19 +169,19 @@ body {
 }
 
 .slide-out-left {
-  animation: slideOutLeft 0.5s ease-in-out;
+  animation: slideOutLeft 0.5s ease-in-out forwards;
 }
 
 .slide-out-right {
-  animation: slideOutRight 0.5s ease-in-out;
+  animation: slideOutRight 0.5s ease-in-out forwards;
 }
 
 .slide-in-left {
-  animation: slideInLeft 0.5s ease-in-out;
+  animation: slideInLeft 0.5s ease-in-out forwards;
 }
 
 .slide-in-right {
-  animation: slideInRight 0.5s ease-in-out;
+  animation: slideInRight 0.5s ease-in-out forwards;
 }
 
 @keyframes slideOutLeft {
@@ -527,7 +530,7 @@ body {
 
   .hero-image-aspect {
     padding-bottom: 100%;
- 
+
   }
 
 
