@@ -193,10 +193,10 @@ const projects = [
         year: 2024,
         location: 'Gribskov Kommune',
         services: ['miljøvurdering', 'afgrænsningsnotat', 'landskabsvurdering'],
-        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/Regnvandsh%C3%A5ndtering%20for%20Troldebakkerne.jpg',
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/240014%2C%20Troldebakkerne%20milj%C3%B8vurdering/Plan.jpg',
         description: 'KOPL har bistået Gribskov Kommune med miljøvurdering af forslag til kommuneplantillæg og lokalplan for udviklingen af det nye boligområde Troldebakkerne Vest. Miljøvurderingens formål var at sikre, at planlægningen tog hensyn til en bred vifte af miljøfaktorer, herunder natur, trafik, støj, skygger og indblik, grundvand, overfladevand, tilpasning til nedbør, landskab, værdifuldt kulturmiljø og arkæologiske interesser. I planlægningen blev der bl.a. indarbejdet tiltag for at opretholde områdets økologiske funktionalitet som yngle- og rasteområde for spidssnudet frø og flere arter af flagermus.',
         images: ['https://kopl.dk/onewebmedia/ProjectImages/240014%2C%20Troldebakkerne%20milj%C3%B8vurdering/Vand%20figur.jpg',
-            'https://kopl.dk/onewebmedia/ProjectImages/240014%2C%20Troldebakkerne%20milj%C3%B8vurdering/Plan.jpg',
+            'https://kopl.dk/onewebmedia/ProjectImages/Regnvandsh%C3%A5ndtering%20for%20Troldebakkerne.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/240014%2C%20Troldebakkerne%20milj%C3%B8vurdering/Kulturarv%20figur.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/240014%2C%20Troldebakkerne%20milj%C3%B8vurdering/Foto%201.jpg'],
         contact: ['tobias-filskov-petersen', 'nynne-joergensen', 'pernille-birkenfeldt-petersen', 'anne-hinge']
