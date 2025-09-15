@@ -191,6 +191,9 @@ html {
   opacity: 0;
   pointer-events: none;
   transition: transform 0.5s cubic-bezier(.4, 0, .2, 1), opacity 0.38s cubic-bezier(.4, 0, .2, 1);
+  display: flex;              /* gør menuen til flex container */
+  flex-direction: column;     /* placer ting lodret */
+  justify-content: space-between;
 }
 
 .kopl-mobile-menu.open {
@@ -246,9 +249,15 @@ html {
   display: block;
 }
 
-.kopl-logo-rotated {
-  transform: rotate(90deg);
+.kopl-burger-menu-logo {
+  width: 60%;
+  max-width: 180px;
+  height: auto;
+ margin: auto;
+  align-self: center;
 }
+
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {

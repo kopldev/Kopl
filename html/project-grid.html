@@ -37,6 +37,8 @@
             <li><a href="contact.html">Projekter</a></li>
             <li><a href="job.html">Job</a></li>
           </ul>
+          <img src="https://kopl.dk/onewebmedia/logo%20sort.png" alt="KOPL logo" class="kopl-burger-menu-logo"
+            id="koplBurgerMenuLogo">
         </div>
         <div class="kopl-mobile-overlay" id="koplMobileOverlay"></div>
       </nav>
@@ -75,7 +77,6 @@
                 <span class="custom-option" data-value="Afgrænsningsnotat">Afgrænsningsnotat</span>
                 <span class="custom-option" data-value="Landskabsanalyse">Landskabsanalyse</span>
                 <span class="custom-option" data-value="Kommuneplan">Kommuneplan</span>
-                <span class="custom-option" data-value="Landskabsvurdering">Landskabsvurdering</span>
               </div>
             </div>
           </div>
@@ -141,33 +142,34 @@
     });
   </script>
   <script src="../js/ProjectData.js"></script>
+  <script src="../js/index.js"></script>
   <script>
 
     const dropdown = document.getElementById("service-dropdown");
-const trigger = dropdown.querySelector(".custom-select-trigger");
-const options = dropdown.querySelectorAll(".custom-option");
+    const trigger = dropdown.querySelector(".custom-select-trigger");
+    const options = dropdown.querySelectorAll(".custom-option");
 
-trigger.addEventListener("click", () => {
-  dropdown.classList.toggle("opened");
-});
+    trigger.addEventListener("click", () => {
+      dropdown.classList.toggle("opened");
+    });
 
-// Luk dropdown hvis klik udenfor
-document.addEventListener("click", (e) => {
-  if (!dropdown.contains(e.target)) {
-    dropdown.classList.remove("opened");
-  }
-});
+    // Luk dropdown hvis klik udenfor
+    document.addEventListener("click", (e) => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove("opened");
+      }
+    });
 
-// Håndter valg
-options.forEach(option => {
-  option.addEventListener("click", () => {
-    trigger.textContent = option.textContent;
-    dropdown.classList.remove("opened");
+    // Håndter valg
+    options.forEach(option => {
+      option.addEventListener("click", () => {
+        trigger.textContent = option.textContent;
+        dropdown.classList.remove("opened");
 
-    // Kald filterfunktion
-    filterProjectsByService(option.dataset.value);
-  });
-});
+        // Kald filterfunktion
+        filterProjectsByService(option.dataset.value);
+      });
+    });
     const grid = document.getElementById('projects-grid');
     const serviceFilter = document.getElementById('service-filter');
 

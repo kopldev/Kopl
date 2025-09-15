@@ -1,103 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <link rel="icon" type="image/jpg" href="https://kopl.dk/onewebmedia/k%20sort_Tegnebr%C3%A6t%201.jpg">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/projects-styling.css">
 </head>
+
 <body>
-<header>
-    <nav class="kopl-navbar">
-        <a href="../index.html"><img class="kopl-nav-logo"
-                                     src="https://kopl.dk/onewebmedia/hvidt%20visitkort_flad_sort%20tekst.png"
-                                     alt="logo"></a>
-        <div class="kopl-navbar-inner">
-            <ul class="kopl-nav-links">
-                <li><a class="kopl-nav-links-black" href="services.html">Ydelser</a></li>
-                <li><a class="kopl-nav-links-black" href="contact.html">Kontakt</a></li>
-                <li><a class="kopl-nav-links-black" href="project-grid.html">Projekter</a></li>
-                <li><a class="kopl-nav-links-black" href="job.html">Job</a></li>
-            </ul>
-            <button class="kopl-nav-toggle" id="koplNavToggle" aria-label="Åbn menu">
-                <span class="kopl-nav-toggle-bar"></span>
-                <span class="kopl-nav-toggle-bar"></span>
-                <span class="kopl-nav-toggle-bar"></span>
+    <header>
+        <nav class="kopl-navbar">
+            <a href="../index.html"><img class="kopl-nav-logo"
+                    src="https://kopl.dk/onewebmedia/hvidt%20visitkort_flad_sort%20tekst.png" alt="logo"></a>
+            <div class="kopl-navbar-inner">
+                <ul class="kopl-nav-links">
+                    <li><a class="kopl-nav-links-black" href="services.html">Ydelser</a></li>
+                    <li><a class="kopl-nav-links-black" href="contact.html">Kontakt</a></li>
+                    <li><a class="kopl-nav-links-black" href="project-grid.html">Projekter</a></li>
+                    <li><a class="kopl-nav-links-black" href="job.html">Job</a></li>
+                </ul>
+                <button class="kopl-nav-toggle" id="koplNavToggle" aria-label="Åbn menu">
+                    <span class="kopl-nav-toggle-bar"></span>
+                    <span class="kopl-nav-toggle-bar"></span>
+                    <span class="kopl-nav-toggle-bar"></span>
+                </button>
+            </div>
+            <div class="kopl-mobile-menu" id="koplMobileMenu">
+                <button class="kopl-mobile-close" id="koplMobileClose" aria-label="Luk menu">&times;</button>
+                <ul>
+                    <li><a href="services.html">Ydelser</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="project-grid.html">Projekter</a></li>
+                    <li><a href="job.html">Job</a></li>
+                </ul>
+                <img src="https://kopl.dk/onewebmedia/logo%20sort.png" alt="KOPL logo" class="kopl-burger-menu-logo"
+                    id="koplBurgerMenuLogo">
+            </div>
+            <div class="kopl-mobile-overlay" id="koplMobileOverlay"></div>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section>
+            <h2 class="project-title" id="project-title"></h2>
+            <div class="project-details">
+                <div class="project-detail-block">
+                    <span class="project-detail-label">ÅR</span>
+                    <p class="project-detail-value" id="project-detail-value-year"></p>
+                </div>
+                <div class="project-detail-block">
+                    <span class="project-detail-label">LOKATION</span>
+                    <p class="project-detail-value" id="project-detail-value-location"></p>
+                </div>
+                <div class="project-detail-block">
+                    <span class="project-detail-label">YDELSE</span>
+                    <p class="project-detail-value" id="project-detail-value-services"></p>
+                </div>
+            </div>
+        </section>
+        <div class="project-layout">
+            <div class="hero-image-wrap">
+                <button class="arrow">&larr;</button>
+                <div class="hero-image-aspect">
+                    <img id="hero-image" src="" alt="Project Title" />
+                </div>
+                <div class="pagination-dots"></div>
+                <button class="arrow">&rarr;</button>
+            </div>
+            <section class="project-overview-grid">
+                <div>
+                    <h2 class="overview-label">PROJEKT BESKRIVELSE</h2>
+                </div>
+                <div>
+                    <p class="overview-desc" id="overview-desc"></p>
+                </div>
+
+            </section>
+        </div>
+        <div class="image-gallery" id="image-gallery">
+            <div class="gallery-scroll" id="gallery-scroll">
+            </div>
+        </div>
+        <div class="project-lead-section">
+            <div class="section-title">Projekt Kontakt</div>
+            <div class="project-lead-cards-container" id="contacts-container">
+
+            </div>
+        </div>
+        <div class="back-nav">
+            <button class="back-btn" onclick="window.history.back()">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Tilbage til projekter
             </button>
         </div>
-        <div class="kopl-mobile-menu" id="koplMobileMenu">
-            <button class="kopl-mobile-close" id="koplMobileClose" aria-label="Luk menu">&times;</button>
-            <ul>
-                <li><a href="services.html">Ydelser</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-                <li><a href="project-grid.html">Projekter</a></li>
-                <li><a href="job.html">Job</a></li>
-            </ul>
-        </div>
-        <div class="kopl-mobile-overlay" id="koplMobileOverlay"></div>
-    </nav>
-</header>
-<main class="main-content">
-    <section>
-        <h2 class="project-title" id="project-title"></h2>
-        <div class="project-details">
-            <div class="project-detail-block">
-                <span class="project-detail-label">ÅR</span>
-                <p class="project-detail-value" id="project-detail-value-year"></p>
-            </div>
-            <div class="project-detail-block">
-                <span class="project-detail-label">LOKATION</span>
-                <p class="project-detail-value" id="project-detail-value-location"></p>
-            </div>
-            <div class="project-detail-block">
-                <span class="project-detail-label">YDELSE</span>
-                <p class="project-detail-value" id="project-detail-value-services"></p>
-            </div>
-        </div>
-    </section>
-    <div class="project-layout">
-        <div class="hero-image-wrap">
-            <button class="arrow">&larr;</button>
-            <div class="hero-image-aspect">
-                <img id="hero-image"
-                     src=""
-                     alt="Project Title"/>
-            </div>
-            <div class="pagination-dots"></div>
-            <button class="arrow">&rarr;</button>
-        </div>
-        <section class="project-overview-grid">
-            <div>
-                <h2 class="overview-label">PROJEKT BESKRIVELSE</h2>
-            </div>
-            <div>
-                <p class="overview-desc" id="overview-desc"></p>
-            </div>
-
-        </section>
-    </div>
-    <div class="image-gallery" id="image-gallery">
-        <div class="gallery-scroll" id="gallery-scroll">
-        </div>
-    </div>
-    <div class="project-lead-section">
-        <div class="section-title">Projekt Kontakt</div>
-        <div class="project-lead-cards-container" id="contacts-container">
-
-        </div>
-    </div>
-    <div class="back-nav">
-        <button class="back-btn" onclick="window.history.back()">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-            </svg>
-            Tilbage til projekter
-        </button>
-    </div>
-</main>
-<footer class="kopl-footer">
+    </main>
+    <footer class="kopl-footer">
         <div class="footer-content">
             <div class="footer-section">
                 <h3>KOPL ApS</h3>
@@ -126,6 +127,8 @@
                     <li><a href="project-grid.html">Projekter</a></li>
                     <li><a href="job.html">Job</a></li>
                 </ul>
+                <img src="https://kopl.dk/onewebmedia/logo%20sort.png" alt="KOPL logo" class="kopl-burger-menu-logo"
+                    id="koplBurgerMenuLogo">
             </div>
         </div>
         <div class="footer-bottom">
@@ -158,4 +161,6 @@
 <script src="../js/ProjectData.js"></script>
 <script src="../js/contactData.js"></script>
 <script src="../js/project.js"></script>
+<script src="../js/index.js"></script>
+
 </html>

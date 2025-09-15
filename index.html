@@ -35,6 +35,7 @@
                 <li><a href="html/project-grid.html">Projekter</a></li>
                 <li><a href="html/job.html">Job</a></li>
             </ul>
+            <img src="https://kopl.dk/onewebmedia/logo%20sort.png" alt="KOPL logo" class="kopl-burger-menu-logo" id="koplBurgerMenuLogo">
         </div>
         <div class="kopl-mobile-overlay" id="koplMobileOverlay"></div>
     </nav>
@@ -89,24 +90,24 @@
 </main>
 
 <script>
-    let el = document.getElementById('koplAnim');
-    setTimeout(function () {
-        el.classList.add('kopl-fs-show-words');
-    }, 1100);
-    setTimeout(function () {
-        el.classList.remove('kopl-fs-show-words');
-    }, 3200);
-    setTimeout(function () {
-        el.classList.add('kopl-fs-center-logo');
-    }, 4300);
-    setTimeout(function () {
-        el.classList.add('kopl-fs-hide');
-    }, 4200);
-    document.addEventListener('click', function () {
-        if (!el.classList.contains('kopl-fs-hide')) {
-            el.classList.add('kopl-fs-hide');
-        }
-    });
+    // let el = document.getElementById('koplAnim');
+    // setTimeout(function () {
+    //     el.classList.add('kopl-fs-show-words');
+    // }, 1100);
+    // setTimeout(function () {
+    //     el.classList.remove('kopl-fs-show-words');
+    // }, 3200);
+    // setTimeout(function () {
+    //     el.classList.add('kopl-fs-center-logo');
+    // }, 4300);
+    // setTimeout(function () {
+    //     el.classList.add('kopl-fs-hide');
+    // }, 4200);
+    // document.addEventListener('click', function () {
+    //     if (!el.classList.contains('kopl-fs-hide')) {
+    //         el.classList.add('kopl-fs-hide');
+    //     }
+    // });
 
     // Smooth scroll handler for the arrow
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
