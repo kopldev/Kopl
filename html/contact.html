@@ -417,27 +417,6 @@
     </footer>
     <script src="../js/index.js"></script>
     <script>
-        const navToggle = document.getElementById('koplNavToggle');
-        const mobileMenu = document.getElementById('koplMobileMenu');
-        const mobileClose = document.getElementById('koplMobileClose');
-        const mobileOverlay = document.getElementById('koplMobileOverlay');
-        navToggle.addEventListener('click', function () {
-            mobileMenu.classList.add('open');
-            mobileOverlay.classList.add('open');
-            navToggle.classList.add('open');
-        });
-        mobileClose.addEventListener('click', function () {
-            mobileMenu.classList.remove('open');
-            mobileOverlay.classList.remove('open');
-            navToggle.classList.remove('open');
-        });
-        mobileOverlay.addEventListener('click', function () {
-            mobileMenu.classList.remove('open');
-            mobileOverlay.classList.remove('open');
-            navToggle.classList.remove('open');
-        });
-
-
     </script>
 </body>
 

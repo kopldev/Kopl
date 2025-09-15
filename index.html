@@ -44,9 +44,9 @@
     </header>
     <main class="hero-container">
         <section class="hero-section-full">
-            <div class="hero-bg">
+            <!-- <div class="hero-bg">
                 <div class="hero-overlay"></div>
-            </div>
+            </div> (kan måske slettes?) -->
             <div class="hero-content-centered">
                 <div class="hero-logo-container">
                     <img src="https://kopl.dk/onewebmedia/logo%20sort.png" alt="KOPL logo" class="hero-logo-stretched">
@@ -66,7 +66,7 @@
 
         <section id="about-section" class="about-section">
             <!-- First -->
-            <div class="about-container-first">
+            <div class="about-container-first" id="about-container-first">
                 <div class="about-content">
                     <div class="about-text">
                         <p>Hos KOPL brænder vi for fysisk planlægning og miljøvurdering, fordi det er her, fremtiden
@@ -88,7 +88,7 @@
 
             </div>
             <!-- second -->
-            <div class="about-container-second">
+            <div class="about-container-second" id="about-container-second">
                 <div class="about-content">
                     <div class="about-text">
                         <p>Vores løsninger er ikke hyldevarer, men resultatet
@@ -108,75 +108,9 @@
                         </a>
                     </div>
                 </div>
-
-
             </div>
         </section>
     </main>
-
-    <script>
-        // Smooth scroll handler for the arrow
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-
-                if (targetElement) {
-                    // For browsers that don't support smooth scrolling natively
-                    if (typeof window.scrollTo !== 'function' || !('scrollBehavior' in document.documentElement.style)) {
-                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-                        const startPosition = window.pageYOffset;
-                        const distance = targetPosition - startPosition;
-                        const duration = 800; // ms
-                        let start = null;
-
-                        window.requestAnimationFrame(step);
-
-                        function step(timestamp) {
-                            if (!start) start = timestamp;
-                            const progress = timestamp - start;
-                            const easeInOutQuad = progress => {
-                                return progress < 0.5 ? 2 * progress * progress : 1 - Math.pow(-2 * progress + 2, 2) / 2;
-                            };
-
-                            window.scrollTo(0, startPosition + distance * easeInOutQuad(Math.min(progress / duration, 1)));
-
-                            if (progress < duration) {
-                                window.requestAnimationFrame(step);
-                            }
-                        }
-                    } else {
-                        // For browsers with native smooth scrolling
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                }
-            });
-        });
-    </script>
-    <script>
-        const navToggle = document.getElementById('koplNavToggle');
-        const mobileMenu = document.getElementById('koplMobileMenu');
-        const mobileClose = document.getElementById('koplMobileClose');
-        const mobileOverlay = document.getElementById('koplMobileOverlay');
-        navToggle.addEventListener('click', function () {
-            mobileMenu.classList.add('open');
-            mobileOverlay.classList.add('open');
-        });
-        mobileClose.addEventListener('click', function () {
-            mobileMenu.classList.remove('open');
-            mobileOverlay.classList.remove('open');
-        });
-        mobileOverlay.addEventListener('click', function () {
-            mobileMenu.classList.remove('open');
-            mobileOverlay.classList.remove('open');
-        });
-    </script>
-
     <script src="js/index.js"></script>
 </body>
 
