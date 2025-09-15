@@ -26,22 +26,22 @@ if (burgerMenuLogo) {
 const scrollArrows = document.querySelectorAll('.scroll-down-arrow');
 
 scrollArrows.forEach(arrow => {
-  arrow.addEventListener('click', e => {
-    e.preventDefault();
+    arrow.addEventListener('click', e => {
+        e.preventDefault();
 
-    const targetId = arrow.getAttribute('href');
-    const targetElement = document.querySelector(targetId);
-    console.log(targetElement);
-    
+        const targetId = arrow.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        console.log(targetElement);
 
-    if (targetElement) {
-      targetElement.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center',
-        inline: 'nearest'
-      });
-    }
-  });
+
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center',
+                inline: 'nearest'
+            });
+        }
+    });
 });
 
 window.addEventListener('load', () => {
@@ -50,20 +50,21 @@ window.addEventListener('load', () => {
 
 // Nav bar logic
 const navToggle = document.getElementById('koplNavToggle');
-        const mobileMenu = document.getElementById('koplMobileMenu');
-        const mobileClose = document.getElementById('koplMobileClose');
-        const mobileOverlay = document.getElementById('koplMobileOverlay');
-        navToggle.addEventListener('click', function () {
-            mobileMenu.classList.add('open');
-            mobileOverlay.classList.add('open');
-        });
-        mobileClose.addEventListener('click', function () {
-            mobileMenu.classList.remove('open');
-            mobileOverlay.classList.remove('open');
-        });
-        mobileOverlay.addEventListener('click', function () {
-            mobileMenu.classList.remove('open');
-            mobileOverlay.classList.remove('open');
-        });
+const mobileMenu = document.getElementById('koplMobileMenu');
+const mobileClose = document.getElementById('koplMobileClose');
+const mobileOverlay = document.getElementById('koplMobileOverlay');
+navToggle.addEventListener('click', function () {
+    mobileMenu.classList.add('open');
+    mobileOverlay.classList.add('open');
+});
+mobileClose.addEventListener('click', function () {
+    mobileMenu.classList.remove('open');
+    mobileOverlay.classList.remove('open');
+});
+mobileOverlay.addEventListener('click', function () {
+    mobileMenu.classList.remove('open');
+    mobileOverlay.classList.remove('open');
+});
+
 
 
