@@ -35,3 +35,10 @@
 .note-image:hover {
     transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+    .notes-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

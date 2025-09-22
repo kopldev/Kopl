@@ -364,7 +364,7 @@ html {
 }
 
 .scroll-side-arrow p {
-  width: 30rem;
+  width: 4rem;
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 1.4;
@@ -372,9 +372,8 @@ html {
 
 .scroll-side-arrow svg {
   transform: rotate(270deg);
-  /* Roterer pilen mod højre */
   transition: transform 0.3s;
-  width: 100%;
+  width: 30%;
   height: 100%;
 }
 

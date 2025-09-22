@@ -310,10 +310,9 @@ body {
 .project-lead-cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* Dynamiske kolonner */
   gap: 7.5rem;
-  /* Afstand mellem kortene */
   margin-top: 2rem;
+  margin-bottom: 4rem;
   width: 100%;
 }
 
