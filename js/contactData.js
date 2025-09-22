@@ -111,7 +111,7 @@ const contacts = [
         id: 'anna-emilie-skjerning-hansen',
         name: 'Anna Emilie Skjerning Hansen',
         title: 'Praktikant',
-        skills: ['byplanlægning'],
+        skills: ['Byplanlægning', "Miljøvurdering"],
         email: 'aes@kopl.dk',
         phone: '+45 61746550',
         image: 'https://kopl.dk/onewebmedia/Profilbilleder/Anna%20hvid%20baggrund.jpg'

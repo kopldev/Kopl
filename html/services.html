@@ -1210,8 +1210,6 @@
     </footer>
     <script src="../js/index.js"></script>
     <script>
-        
-        // Service tabs funktionalitet
         document.addEventListener('DOMContentLoaded', function () {
             const serviceTabs = document.querySelectorAll('.service-tab');
             const serviceCategories = document.querySelectorAll('.service-category');
@@ -1220,29 +1218,26 @@
             const subnavItems = document.querySelectorAll('.subnav-item');
 
             function showServiceCategory(serviceId) {
-                // Gem scrollposition
+
                 const scrollPos = window.scrollY;
 
-                // Skjul alle service kategorier
                 serviceCategories.forEach(category => category.classList.remove('active'));
 
-                // Vis den valgte kategori
                 const selectedCategory = document.getElementById(serviceId);
                 if (selectedCategory) {
                     selectedCategory.classList.add('active');
 
-                    // Bevar scrollposition
                     window.scrollTo(0, scrollPos);
 
                     const categoryCards = selectedCategory.querySelectorAll('.service-card');
-                    // Nulstil visning med animation
+
                     categoryCards.forEach(card => {
-                        // Fjern eventuelle tidligere animationsklasser
+
                         card.classList.remove('filtered-in');
-                        // Skjul kortet først
+
                         card.style.display = 'none';
 
-                        // Genaktiver med animation
+
                         setTimeout(() => {
                             card.classList.add('filtered-in');
                             card.style.display = 'block';
@@ -1250,12 +1245,12 @@
                     });
                 }
 
-                // Opdater aktiv tab
+
                 serviceTabs.forEach(tab => {
                     tab.classList.toggle('active', tab.dataset.service === serviceId);
                 });
 
-                // Håndter undermenu
+
                 subnavs.forEach(subnav => subnav.classList.remove('active'));
                 const activeSubnav = document.querySelector(`.subnav[data-service="${serviceId}"]`);
                 if (activeSubnav) {
@@ -1266,7 +1261,7 @@
                 }
             }
 
-            // Tilføj event listeners til alle service tabs
+
             serviceTabs.forEach(tab => {
                 tab.addEventListener('click', function () {
                     const serviceId = this.dataset.service;
@@ -1274,29 +1269,27 @@
                 });
             });
 
-            // Tilføj event listeners til subnavigation items
+
             subnavItems.forEach(item => {
                 item.addEventListener('click', function () {
                     const selectedText = this.textContent.trim();
                     const currentCategory = this.closest('.subnav').getAttribute('data-service');
                     const categoryCards = document.querySelectorAll(`#${currentCategory} .service-card`);
 
-                    // Nulstil alle subnavigation items
                     subnavItems.forEach(subItem => subItem.classList.remove('active'));
 
-                    // Aktiver det valgte item
+
                     this.classList.add('active');
 
-                    // Filtrer kort baseret på det valgte undermenupunkt
+
                     categoryCards.forEach(card => {
                         const cardTitle = card.querySelector('h3').textContent.trim();
                         if (cardTitle === selectedText) {
-                            // Først skjul alle kort
+
                             card.style.display = 'none';
-                            // Fjern eventuelle tidligere animationsklasser
+
                             card.classList.remove('filtered-in');
 
-                            // Genaktiver kort med animation efter en kort forsinkelse
                             setTimeout(() => {
                                 card.classList.add('filtered-in');
                                 card.style.display = 'block';
@@ -1309,7 +1302,7 @@
                 });
             });
 
-            // Håndter URL hash for direkte links til specifikke services
+
             if (window.location.hash) {
                 const serviceId = window.location.hash.substring(1);
                 const validServices = Array.from(serviceTabs).map(tab => tab.dataset.service);
