@@ -192,9 +192,7 @@ html {
   pointer-events: none;
   transition: transform 0.5s cubic-bezier(.4, 0, .2, 1), opacity 0.38s cubic-bezier(.4, 0, .2, 1);
   display: flex;
-  /* gør menuen til flex container */
   flex-direction: column;
-  /* placer ting lodret */
   justify-content: space-between;
 }
 
@@ -274,7 +272,6 @@ html {
     right: 2rem;
   }
 
-  /* Mobile Hero Section */
   .hero-container {
     height: auto;
   }

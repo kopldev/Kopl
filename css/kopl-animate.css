@@ -1,4 +1,4 @@
-body, html {
+/* body, html {
   height: 100%;
 }
 .kopl-fs-anim {
@@ -73,9 +73,9 @@ body, html {
 }
 
 /* Ny klasse til at flytte logoet til center */
-.kopl-fs-anim.kopl-fs-center-logo .kopl-fs-main {
+/* .kopl-fs-anim.kopl-fs-center-logo .kopl-fs-main {
   transform: translateY(-250px); /* Justér dette tal for at flytte logoet op/ned */
-  transition: transform 1.5s cubic-bezier(.16,.84,.44,1);
+  /* transition: transform 1.5s cubic-bezier(.16,.84,.44,1);
 }
 
 @media (max-width: 600px) {
@@ -84,7 +84,8 @@ body, html {
     width: 60vw;
     min-width: 80px;
   }
-  .kopl-fs-word{
-    font-size: 10vw;
+  .kopl-fs-word{ */
+    /* font-size: 10vw;
   }
-} 
+}   */
+   
