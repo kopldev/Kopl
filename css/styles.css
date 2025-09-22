@@ -582,6 +582,7 @@ body.slide-left {
   font-size: 0.9rem;
   color: #666;
   margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .footer-section ul {
@@ -629,6 +630,7 @@ body.slide-left {
     text-align: center;
     justify-items: start;
     gap: 0rem;
+    padding: 0;
   }
 
   .footer-section {
@@ -636,6 +638,7 @@ body.slide-left {
     width: 100%;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #eee;
   }
 
   .footer-section ul,
@@ -643,35 +646,54 @@ body.slide-left {
   .footer-section span,
   .footer-section a:not(h3) {
     display: none;
+  }
 
+  .footer-section span a {
+    white-space: nowrap;
+  }
+
+  .footer-section ul {
+    flex-direction: column;
   }
 
   .footer-section.open ul,
   .footer-section.open p,
   .footer-section.open span,
   .footer-section.open a:not(h3) {
-    display: block;
+    display: flex;
 
   }
 
   .footer-section h3 {
     cursor: pointer;
     position: relative;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 0.9;
+    color: #222;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    font-family: system-ui, Arial, sans-serif;
+    padding-left: 3.5rem;
   }
 
   .footer-section h3::after {
     content: '⌄';
     position: absolute;
-    /* top: 0%;
-    left: 110%; */
+    left: 85%;
     transform: translateY(-50%) rotate(0deg);
     transition: transform 0.3s ease;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
+    font-family: system-ui, Arial, sans-serif;
     color: #222;
   }
 
   .footer-section.open h3::after {
     transform: translateY(-50%) rotate(180deg);
+  }
+
+  .footer-bottom {
+    border: none;
   }
 
 
