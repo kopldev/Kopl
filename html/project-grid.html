@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/project-grid.css">
   <link rel="icon" type="image/jpg" href="https://kopl.dk/onewebmedia/k%20sort_Tegnebr%C3%A6t%201.jpg">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 </head>
 
 <body>
@@ -37,8 +39,6 @@
             <li><a href="contact.html">Projekter</a></li>
             <li><a href="job.html">Job</a></li>
           </ul>
-          <img src="https://kopl.dk/onewebmedia/logo%20sort.png" alt="KOPL logo" class="kopl-burger-menu-logo"
-            id="koplBurgerMenuLogo">
         </div>
         <div class="kopl-mobile-overlay" id="koplMobileOverlay"></div>
       </nav>
@@ -48,6 +48,13 @@
         <div class="headline-content">
           <h1 class="page-title">Projekter</h1>
         </div>
+
+        <div class="veiw-selector">
+          <button class="veiw-selector-button" id="veiwSelectorgridButton">Gitter</button>
+          <p> / </p>
+          <button class="veiw-selector-button" id="veiwSelectorMapButton">Kort</button>
+        </div>
+
         <div class="filter-row">
           <div class="custom-select-wrapper">
             <div id="service-dropdown" class="custom-select">
@@ -82,7 +89,8 @@
           </div>
         </div>
       </div>
-      <div class="projects-grid" id="projects-grid"></div>
+      <div class="projects-grid" id="projectsGrid"></div>
+      <div class="projects-map" id="map"></div>
     </main>
   </div>
   <footer class="kopl-footer">
@@ -152,7 +160,7 @@
         filterProjectsByService(option.dataset.value);
       });
     });
-    const grid = document.getElementById('projects-grid');
+    const grid = document.getElementById('projectsGrid');
     const serviceFilter = document.getElementById('service-filter');
 
     function renderProjects(filteredProjects) {
@@ -219,6 +227,9 @@
       filterProjectsByService(this.value);
     });
   </script>
+  <script src="../js/project-grid.js"></script>
 </body>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
 </html>
