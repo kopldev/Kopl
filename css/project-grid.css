@@ -295,8 +295,8 @@ body {
 
   .projects-map {
     display: none;
-    width: 100vw;
-    height: 80vh;
+    width: 90vw;
+    height: 90vh;
     margin-top: 2rem;
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);

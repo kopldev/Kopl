@@ -67,7 +67,7 @@ mobileOverlay.addEventListener('click', function () {
 });
 
 document.querySelectorAll('.footer-section h3').forEach(header => {
-    header.addEventListener('click', (event) => {
+    header.addEventListener('click', () => {
         const section = header.parentElement;
         section.classList.toggle('open');
     });

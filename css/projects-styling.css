@@ -621,5 +621,9 @@ body {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+  .notes-and-rulings {
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
 
 }

@@ -17,7 +17,7 @@ mapButton.addEventListener("click", () => {
     projectsGrid.style.display = "none";
     projectsMap.style.display = "block";
 
-    let map = L.map("map").setView([56.2639, 9.5018], 6); // Danmark midtpunkt
+    let map = L.map("map").setView([56.2639, 9.5018], 7.5);
 
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
@@ -25,4 +25,25 @@ mapButton.addEventListener("click", () => {
         maxZoom: 19
     }).addTo(map);
 
+    populateMap(map);
+
 });
+
+
+function populateMap(map) {
+
+    let koplIcon = L.icon({
+        iconUrl: 'https://kopl.dk/onewebmedia/logo%20sort.png',
+        iconSize: [25, 15],
+        iconAnchor: [12, 15],
+        popupAnchor: [0, -41]
+    });
+
+    let marker = L.marker([55.88674254744028, 12.455233680229968], { icon: koplIcon }).addTo(map);
+
+    marker.bindPopup(`<div style="min-width:200px">
+      <h3 style="margin:0; font-size:1.1rem;">Landskabsanalyse Hørsholm Kommune</h3>
+      <a style="text-decoration: none;" href="project.html?id=240040">Se projektet</a>
+    </div>`);
+
+}
