@@ -5,7 +5,7 @@ const projects = [
         year: 2025,
         location: 'Ringsted',
         services: ['Lokalplan', 'Klagenævnspraksis'],
-        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/250013%2C%20h%C3%B8m%20m%C3%B8lle/h%C3%B8m%20m%C3%B8lle%20cover%20billede.jpg',
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/250013%2C%20h%C3%B8m%20m%C3%B8lle/H%C3%B8m%20M%C3%B8lle%20projekt%20cover.jpg',
         description: 'I Ringsted Kommune har vi bestået ejerne af Høm Mølle og kommunen med udarbejdelse af en ny lokalplan i landzone. Den kommende lokaplan overfører dele af området til byzone og indeholder dispensationer fra beskyttelseslinjer. Som et led i planlægningen er der indledningsvist udarbejdet et forudsætningsnotat med relevant klagenævnspraksis for at afveje konktrete ønsker med afgørelser på området. \n' +
             'Høm Mølle ligger i et område med store beskyttelsesinteresser, herunder beskyttede naturtyper, åbeskyttelseslinje og bevaringsværdige landskaber. Planlægningen er derfor sket med stor respekt for områdets natur- og landskab, så nye aktiviteter kan indpasses uden forringelse af de eksisterende kvaliteter. \n' +
             'KOPL har rådgivet om hele plan -og miljøvurderingsprocessen – fra afgrænsning af de ønskede aktiviteter i forhold til lovgivningen, til håndtering af dispensationer, naturhensyn og trafikforhold. \n' +
@@ -40,7 +40,7 @@ const projects = [
         year: 2025,
         location: 'Horsens Kommune',
         services: ['Lokalplan', 'Bebyggelsesplan', 'Projektudvikling', 'Regnvandshåndtering', 'kommuneplantillæg'],
-        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/250014%20Monbjergvej%20%C3%98stbirk/thumbnail_Kortbilag%204%20Illustrationsplan.jpg',
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/250014%20Monbjergvej%20%C3%98stbirk/%C3%98stbrink%20projekt%20cover.jpg',
         description: 'KOPL har bistået Horsens Kommune med at udvikle et nyt boligområde i Østbirk. KOPL har stået for udarbejdelse af bebyggelsesplanen, hvor en lang række bindinger skulle afvejes og indarbejdes. Boligområdet er delvist omfattet af en større skråning indeholdende et beskyttet overdrev og beskyttet jorddige, og der er forskellige miljømæssige aspekter som støj fra skydebane samt emmisioner fra et nærtliggende svinebrug, som er afklaret i planprocessen. Ligeledes har KOPL stået for regnvandshåndteringen i dialog med myndighed og forsyning samt udarbejdet lokalplan og kommuneplantillæg for området.',
         images: [
             'https://kopl.dk/onewebmedia/ProjectImages/250014%20Monbjergvej%20%C3%98stbirk/kopl%20kort%20billede.jpg',
@@ -165,7 +165,7 @@ const projects = [
         year: 2024,
         location: 'Vejen Kommune',
         services: ['Planrådgivning', 'Afgrænsningsnotat', 'Miljøvurdering'],
-        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/240058%2C%20Milj%C3%B8vurdering%20Energiparker%20Vejen/Milj%C3%B8rapport%201.E.25%20og%201.E.26%20-%20Forsiden.jpg',
+        heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/240058%2C%20Milj%C3%B8vurdering%20Energiparker%20Vejen/Vejen%20projekt%20cover.jpg',
         description: 'KOPL har bistået Vejen Kommune med miljøvurdering af to kommuneplantillæg med et samlet omfang på ca. 2000 ha energipark, som skal muliggøre kommunens planer for den grønne omstilling. Kommuneplantillæggene udlægger rammeområder til en bred vifte af anvendelsesformål bl.a. solcelleanlæg, vindmøller, PtX-anlæg og erhverv. Grundet tilpasning af planprocessen til den sideløbende planlægning for de statslige energiparker, som kommunen skal følge, blev kommuneplantillæggene i første omgang reduceret til et mindre omfang, imens resten afventer statens planlægning. Vurderingen af de forventede miljøpåvirkninger er udført med fokus på natur, vand, klima, forsyningssikkerhed, landskab og kulturarv og ledte frem til en række anbefalinger til den videre planlægning.',
         images: ['https://kopl.dk/onewebmedia/ProjectImages/240058%2C%20Milj%C3%B8vurdering%20Energiparker%20Vejen/Milj%C3%B8vurdering%20Vejen.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/240058%2C%20Milj%C3%B8vurdering%20Energiparker%20Vejen/IMG_0288%20kopier.jpg',
