@@ -65,8 +65,8 @@ const projects = [
         contact: ['frederik-arskov-nannestad', "mette-brix-hedegaard"],
         notesAndRulings: [
             {
-                file: 'https://kopl.dk/onewebmedia/notes/notes-pdf/250014-Horsens/Regnvandsh%C3%A5ndteringsplan%20Monbjergvej%2C%20%C3%98stbirk%20v4.pdf',
-                image: 'https://kopl.dk/onewebmedia/notes/notes-images/250014-Horsens/Regnvandsh%C3%A5ndteringsplan-Monbjergvej-%C3%98stbirk-v4.png' 
+                file: 'https://kopl.dk/onewebmedia/notes/250014-Horsens/Regnvandsh%C3%A5ndteringsplan%20Monbjergvej%2C%20%C3%98stbirk%20v4.pdf',
+                image: 'https://kopl.dk/onewebmedia/notes/250014-Horsens/Regnvandsh%C3%A5ndteringsplan-Monbjergvej-%C3%98stbirk-v4.png'
             }
         ]
     },
@@ -165,12 +165,12 @@ const projects = [
         contact: ['gitte-oestergard-samson'],
         notesAndRulings: [
             {
-                file: 'https://kopl.dk/onewebmedia/notes/notes-pdf/250023-Gerbredg%C3%A5rd/20250526%20Naturnotat%2C%20Gerbredg%C3%A5rd.pdf',
-                image: 'https://kopl.dk/onewebmedia/notes/notes-images/250023-Gerbredg%C3%A5rd/Naturnotat-gerbredg%C3%A5rd.png'
+                file: 'https://kopl.dk/onewebmedia/notes/250023-Gerbredg%C3%A5rd/20250526%20Naturnotat%2C%20Gerbredg%C3%A5rd.pdf',
+                image: 'https://kopl.dk/onewebmedia/notes/250023-Gerbredg%C3%A5rd/Naturnotat-gerbredg%C3%A5rd.png'
             },
             {
-                file: 'https://kopl.dk/onewebmedia/notes/notes-pdf/250023-Gerbredg%C3%A5rd/Regler%20vedr.%20planloven%20og%20sommerhusloven.pdf',
-                image: 'https://kopl.dk/onewebmedia/notes/notes-images/250023-Gerbredg%C3%A5rd/regler-vedr.-planloven-og-sommerhusloven-billede.png'
+                file: 'https://kopl.dk/onewebmedia/notes/250023-Gerbredg%C3%A5rd/Regler%20vedr.%20planloven%20og%20sommerhusloven.pdf',
+                image: 'https://kopl.dk/onewebmedia/notes/250023-Gerbredg%C3%A5rd/regler-vedr.-planloven-og-sommerhusloven-billede.png'
             }
         ]
     },
@@ -226,7 +226,16 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/250001%2C%20Milj%C3%B8vurdering%20H%C3%B8rsholm%20Kommuneplan/250001%20H%C3%B8rsholm%20Milij%C3%B8vurdering-Gr%C3%B8nzone%20for%20teknisk%20anl%C3%A6g%20figur%20kopier.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/250001%2C%20Milj%C3%B8vurdering%20H%C3%B8rsholm%20Kommuneplan/250001%20H%C3%B8rsholm%20Milij%C3%B8vurdering-Drikkevand%20%2B%20BNBO%20kopier.jpg'],
         contact: ['nynne-joergensen', 'tobias-filskov-petersen', 'anne-hinge'],
-        notesAndRulings: []
+        notesAndRulings: [
+            {
+                file: 'https://kopl.dk/onewebmedia/notes/250001-milj%C3%B8vurdering%20H%C3%B8rsholm-kp/Afgr%C3%A6nsningsnotat%20Potentialeomr%C3%A5de.pdf',
+                image: 'https://kopl.dk/onewebmedia/notes/250001-milj%C3%B8vurdering%20H%C3%B8rsholm-kp/Afgr%C3%A6nsningsnotat-potientialeomr%C3%A5de.png'
+            },
+            {
+                file: 'https://kopl.dk/onewebmedia/notes/250001-milj%C3%B8vurdering%20H%C3%B8rsholm-kp/Milj%C3%B8rapport%20-%20Gr%C3%B8n%20Zone%2027022025.pdf',
+                image: 'https://kopl.dk/onewebmedia/notes/250001-milj%C3%B8vurdering%20H%C3%B8rsholm-kp/Milj%C3%B8rapport-gr%C3%B8n-zone.png'
+            }
+        ]
     },
     {
         id: '240058',
@@ -245,7 +254,16 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/240058%2C%20Milj%C3%B8vurdering%20Energiparker%20Vejen/elmast2.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/240058%2C%20Milj%C3%B8vurdering%20Energiparker%20Vejen/IMG_0365%20kopier.jpg'],
         contact: ['pernille-birkenfeldt-petersen', 'nynne-joergensen', 'tobias-filskov-petersen'],
-        notesAndRulings: []
+        notesAndRulings: [
+            {
+                file: 'https://kopl.dk/onewebmedia/notes/240058-vejen/20250313%20Milj%C3%B8rapport%20-%20Kommuneplantill%C3%A6g%2043.pdf',
+                image: 'https://kopl.dk/onewebmedia/notes/240058-vejen/milj%C3%B8rapport-kommuneplantill%C3%A6g.png'
+            },
+            {
+                file: 'https://kopl.dk/onewebmedia/notes/240058-vejen/20250602%20Sammenfattende%20redeg%C3%B8relse.pdff',
+                image: 'https://kopl.dk/onewebmedia/notes/240058-vejen/Sammenfattende-redeg%C3%B8relse.png'
+            }
+        ]
     },
     {
         id: '240040',
@@ -266,12 +284,12 @@ const projects = [
         contact: ['nynne-joergensen'],
         notesAndRulings: [
             {
-                file: 'https://kopl.dk/onewebmedia/notes/notes-pdf/Landskabsanalyse%20H%C3%B8rsholm_Del%202_rettet_2025.pdf',
-                image: 'https://kopl.dk/onewebmedia/notes/notes-images/Sk%C3%A6rmbillede%202025-09-22%20133124.png'
+                file: 'https://kopl.dk/onewebmedia/notes/240040-Landskabsanalyse-H%C3%B8rsholm-Kommune/Landskabsanalyse%20H%C3%B8rsholm_Del%202_rettet_2025.pdf',
+                image: 'https://kopl.dk/onewebmedia/notes/240040-Landskabsanalyse-H%C3%B8rsholm-Kommune/landskabsanalyse-del-2.png'
             },
             {
-                file: 'https://kopl.dk/onewebmedia/notes/notes-pdf/Landskabsanalyse%20H%C3%B8rsholm_2025.pdf',
-                image: 'https://kopl.dk/onewebmedia/notes/notes-images/Sk%C3%A6rmbillede%202025-09-22%20143755.png'
+                file: 'https://kopl.dk/onewebmedia/notes/240040-Landskabsanalyse-H%C3%B8rsholm-Kommune/Landskabsanalyse%20H%C3%B8rsholm_2025.pdf',
+                image: 'https://kopl.dk/onewebmedia/notes/240040-Landskabsanalyse-H%C3%B8rsholm-Kommune/Landskabsanalyse-del1.png'
             }]
     },
     {
