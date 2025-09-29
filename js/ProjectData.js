@@ -63,7 +63,12 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/250014%20Monbjergvej%20%C3%98stbirk/thumbnail_Korrekt%20afgr%C3%A6nsning.png'
         ],
         contact: ['frederik-arskov-nannestad', "mette-brix-hedegaard"],
-        notesAndRulings: []
+        notesAndRulings: [
+            {
+                file: 'https://kopl.dk/onewebmedia/notes/notes-pdf/250014-Horsens/Regnvandsh%C3%A5ndteringsplan%20Monbjergvej%2C%20%C3%98stbirk%20v4.pdf',
+                image: 'https://kopl.dk/onewebmedia/notes/notes-images/250014-Horsens/Regnvandsh%C3%A5ndteringsplan-Monbjergvej-%C3%98stbirk-v4.png' 
+            }
+        ]
     },
     {
         id: '240016',
@@ -158,7 +163,16 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/250023%20Gerbredg%C3%A5rd%2C%20Feriecenter%20p%C3%A5%20En%C3%B8/kort.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/250023%20Gerbredg%C3%A5rd%2C%20Feriecenter%20p%C3%A5%20En%C3%B8/strand.jpg'],
         contact: ['gitte-oestergard-samson'],
-        notesAndRulings: []
+        notesAndRulings: [
+            {
+                file: 'https://kopl.dk/onewebmedia/notes/notes-pdf/250023-Gerbredg%C3%A5rd/20250526%20Naturnotat%2C%20Gerbredg%C3%A5rd.pdf',
+                image: 'https://kopl.dk/onewebmedia/notes/notes-images/250023-Gerbredg%C3%A5rd/Naturnotat-gerbredg%C3%A5rd.png'
+            },
+            {
+                file: 'https://kopl.dk/onewebmedia/notes/notes-pdf/250023-Gerbredg%C3%A5rd/Regler%20vedr.%20planloven%20og%20sommerhusloven.pdf',
+                image: 'https://kopl.dk/onewebmedia/notes/notes-images/250023-Gerbredg%C3%A5rd/regler-vedr.-planloven-og-sommerhusloven-billede.png'
+            }
+        ]
     },
     {
         id: '250024',

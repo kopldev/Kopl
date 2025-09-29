@@ -5,6 +5,7 @@ let services = document.getElementById("project-detail-value-services");
 let heroImage = document.getElementById("hero-image");
 let projectDescription = document.getElementById("overview-desc");
 let notesAndRulingsGrid = document.getElementById("notesAndRulings");
+let notesAndRulingsSectionTitle = document.getElementById("notesAndRulingsSectionTitle"); // temporary - needs to be wrapped together with the grid
 
 const projectId = new URLSearchParams(window.location.search).get('id');
 const project = projects.find(p => p.id === projectId);
@@ -147,6 +148,9 @@ function populateProject(project) {
             div.appendChild(a);
             notesAndRulingsGrid.appendChild(div);
         }
+    } else {
+        notesAndRulingsGrid.style.display = 'none';
+        notesAndRulingsSectionTitle.style.display = 'none';
     }
 }
 
