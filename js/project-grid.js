@@ -32,18 +32,27 @@ mapButton.addEventListener("click", () => {
 
 function populateMap(map) {
 
-    let koplIcon = L.icon({
-        iconUrl: 'https://kopl.dk/onewebmedia/logo%20sort.png',
-        iconSize: [25, 15],
-        iconAnchor: [12, 15],
-        popupAnchor: [0, -41]
+
+    // Only populates map if the project has coordinates - check ProjectData.js for coordinates
+    const projectWithCoordinates = projects.filter(project => project.coordinates.latitude !== null && project.coordinates.longitude !== null);
+    console.log(projectWithCoordinates);
+
+
+
+    projectWithCoordinates.forEach(project => {
+        let koplIcon = L.icon({
+            iconUrl: 'https://kopl.dk/onewebmedia/logo%20sort.png',
+            iconSize: [25, 15],
+            iconAnchor: [12, 15],
+            popupAnchor: [0, -41]
+        });
+
+        let marker = L.marker([project.coordinates.latitude, project.coordinates.longitude], { icon: koplIcon }).addTo(map);
+
+        marker.bindPopup(`<div style="min-width:200px">
+            <h3 style="margin:0; font-size:1.1rem;">${project.title}</h3>
+            <a style="text-decoration: none;" href="project.html?id=${project.id}">Se projektet</a>
+        </div>`);
     });
-
-    let marker = L.marker([55.88674254744028, 12.455233680229968], { icon: koplIcon }).addTo(map);
-
-    marker.bindPopup(`<div style="min-width:200px">
-      <h3 style="margin:0; font-size:1.1rem;">Landskabsanalyse Hørsholm Kommune</h3>
-      <a style="text-decoration: none;" href="project.html?id=240040">Se projektet</a>
-    </div>`);
 
 }

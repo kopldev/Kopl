@@ -9,10 +9,6 @@ const projectId = new URLSearchParams(window.location.search).get('id');
 const project = projects.find(p => p.id === projectId);
 const contactsContainer = document.getElementById("contacts-container");
 
-// const lightbox = document.getElementById("lightbox");
-// const lightboxImg = document.querySelector(".lightbox-img");
-// const lightboxClose = document.querySelector(".lightbox .close");
-
 
 if (project) {
     populateProject(project);
@@ -99,42 +95,6 @@ function populateProject(project) {
     });
 
     showHeroImage();
-
-
-
-    // const galleryImages = document.getElementById("gallery-scroll");
-    // galleryImages.innerHTML = "";
-
-    // if (project.images && project.images.length > 0) {
-    //     project.images.forEach((imgSrc, index) => {
-    //         const img = document.createElement("img");
-    //         img.src = imgSrc;
-    //         img.classList.add("gallery-image");
-    //         img.id = `gallery-image-${index}`;
-    //         galleryImages.appendChild(img);
-
-    //         img.addEventListener('click', () => {
-    //             lightbox.style.display = "flex";
-    //             lightboxImg.src = img.src;
-    //         });
-    //     });
-    // } else {
-    //     document.getElementById("image-gallery").style.display = "none";
-    // }
-
-
-    // lightboxClose.addEventListener('click', () => {
-    //     lightbox.style.display = "none";
-    // });
-
-
-    // lightbox.addEventListener('click', (e) => {
-    //     if (e.target === lightbox) {
-    //         lightbox.style.display = "none";
-    //     }
-    // });
-
-
 
 
     const projectContacts = contacts.filter(c => project.contact.includes(c.id));
