@@ -4,6 +4,7 @@ let projectLocation = document.getElementById("project-detail-value-location");
 let services = document.getElementById("project-detail-value-services");
 let heroImage = document.getElementById("hero-image");
 let projectDescription = document.getElementById("overview-desc");
+let notesAndRulingsGrid = document.getElementById("notesAndRulings");
 
 const projectId = new URLSearchParams(window.location.search).get('id');
 const project = projects.find(p => p.id === projectId);
@@ -124,7 +125,31 @@ function populateProject(project) {
     } else {
         console.warn("projectContacts er ikke et array!");
     }
+
+
+    if (project.notesAndRulings && project.notesAndRulings.length > 0) {
+        project.notesAndRulings.forEach(notesAndRulings => {
+            createRulingOrNoteElement(notesAndRulings);
+        });
+
+        function createRulingOrNoteElement(notesAndRulings) {
+            const div = document.createElement("div");
+            div.classList.add("note");
+
+            const a = document.createElement("a");
+            a.href = notesAndRulings.file;
+
+            const image = document.createElement("img");
+            image.classList.add("note-image");
+            image.src = notesAndRulings.image;
+
+            a.appendChild(image);
+            div.appendChild(a);
+            notesAndRulingsGrid.appendChild(div);
+        }
+    }
 }
+
 
 
 

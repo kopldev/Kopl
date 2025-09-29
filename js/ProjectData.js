@@ -20,7 +20,8 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/250013%2C%20h%C3%B8m%20m%C3%B8lle/22052025%20Figur_Kort%20med%20Skovrejsning.jpeg',
             'https://kopl.dk/onewebmedia/ProjectImages/250013%2C%20h%C3%B8m%20m%C3%B8lle/02062025%20Oversigtskort%20med%20eksisterende%20forhold%20over%20H%C3%B8m%20M%C3%B8lle%2C%20Ringsted%20-%20Kulturhistoriske%20bevaringsv%C3%A6rdier-01.jpeg'
         ],
-        contact: ['muzdah-fallah']
+        contact: ['muzdah-fallah'],
+        notesAndRulings: []
     },
     {
         id: '230050',
@@ -29,7 +30,7 @@ const projects = [
         location: 'Egedal Kommune',
         coordinates: {
             latitude: 55.72909971386028,
-            longitude:  12.299954906459469
+            longitude: 12.299954906459469
         },
         services: ['Landsplanlægning', 'Fingerplan'],
         heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/230050%20Skebjergvej%2044%20-%20Sm%C3%B8rum/fingerplanenkort14.jpg',
@@ -40,7 +41,8 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/230050%20Skebjergvej%2044%20-%20Sm%C3%B8rum/fingerplanenkort3.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/230050%20Skebjergvej%2044%20-%20Sm%C3%B8rum/fingerplanenkort5.jpg'
         ],
-        contact: ['muzdah-fallah']
+        contact: ['muzdah-fallah'],
+        notesAndRulings: []
     },
     {
         id: '250014',
@@ -60,7 +62,8 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/250014%20Monbjergvej%20%C3%98stbirk/Udsigt_mod%20syd%C3%B8st.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/250014%20Monbjergvej%20%C3%98stbirk/thumbnail_Korrekt%20afgr%C3%A6nsning.png'
         ],
-        contact: ['frederik-arskov-nannestad', "mette-brix-hedegaard"]
+        contact: ['frederik-arskov-nannestad', "mette-brix-hedegaard"],
+        notesAndRulings: []
     },
     {
         id: '240016',
@@ -68,7 +71,7 @@ const projects = [
         year: 2024,
         location: 'Kalundborg Kommune',
         coordinates: {
-            latitude: 55.671612381650334, 
+            latitude: 55.671612381650334,
             longitude: 11.141587600349046
         },
         services: ['Lokalplan'],
@@ -80,7 +83,8 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/240016%2C%20warehouse%20novo/fra%20siden.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/240016%2C%20warehouse%20novo/kirke.jpg'
         ],
-        contact: ['tobias-filskov-petersen', 'anne-hinge', 'nynne-joergensen']
+        contact: ['tobias-filskov-petersen', 'anne-hinge', 'nynne-joergensen'],
+        notesAndRulings: []
     },
     {
         id: '250025',
@@ -88,14 +92,15 @@ const projects = [
         year: 2025,
         location: 'Tårnby Kommune og Dragør Kommune',
         coordinates: {
-            latitude: 55.614758046248056, 
+            latitude: 55.614758046248056,
             longitude: 12.644964179673483
         },
         services: ['Myndighedsrådgivning'],
         heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/250025%2C%20CPH%20lufthavn/Signaturforklaring.jpg',
         description: 'Plan- og Landdistriksstyrelsen har gennem et call-in overtaget planlægningen for Københavns Lufthavn. KOPL har bistået Københavns Lufthavne A/S i arbejdet med det nye plangrundlag, herunder forbredelse af temamøder om centrale planteamer såsom trafik, parkering, detailhandel mv. Vi har leveret faglig sparring, mødefacilitering og koordination mellem statslige og kommunale myndigheder. Med vores erfarning inden for byplanlægning, myndighedsprocesser og tekniske analyser har vi sikret at planlægningen sker på et solidt vidensgrundlag og understøtter lufthavnens rolle som internationalt trafikknudepunkt - med respekt for de miljømæssige og lokale rammer.',
         images: [],
-        contact: ['muzdah-fallah']
+        contact: ['muzdah-fallah'],
+        notesAndRulings: []
     },
     {
         id: '240010',
@@ -103,7 +108,7 @@ const projects = [
         year: 2024,
         location: 'Herlev Kommune',
         coordinates: {
-            latitude: 55.75165605566671, 
+            latitude: 55.75165605566671,
             longitude: 12.420468161730973
         },
         services: ['Landzone', ' Mulighedsnotat'],
@@ -114,7 +119,8 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/240010%2C%20notat%20landzone/oversigtbillede%202.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/240010%2C%20notat%20landzone/oversigtskort.jpg',
         ],
-        contact: ['anne-hinge']
+        contact: ['anne-hinge'],
+        notesAndRulings: []
     },
     {
         id: '240012',
@@ -122,7 +128,7 @@ const projects = [
         year: 2024,
         location: 'Lyngby Taarbæk kommune',
         coordinates: {
-            latitude: 55.769535701963285, 
+            latitude: 55.769535701963285,
             longitude: 12.519858431173569
         },
         services: ['Lokalplan', 'Miljøvurdering', 'Kommuneplantillæg'],
@@ -132,7 +138,8 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/240012%2C%20Firskovvej/togbane.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/240012%2C%20Firskovvej/Landskab%204.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/240012%2C%20Firskovvej/tr%C3%A6er.jpg'],
-        contact: ['anne-hinge', 'tobias-filskov-petersen', 'gitte-oestergard-samson', 'muzdah-fallah']
+        contact: ['anne-hinge', 'tobias-filskov-petersen', 'gitte-oestergard-samson', 'muzdah-fallah'],
+        notesAndRulings: []
     },
     {
         id: '250023',
@@ -140,7 +147,7 @@ const projects = [
         year: 2025,
         location: 'Næstved Kommune',
         coordinates: {
-            latitude: 55.16717274335234, 
+            latitude: 55.16717274335234,
             longitude: 11.65687274627918
         },
         services: ['Lokalplan', 'kommuneplantillæg', 'Kystnærhedszonen', 'regnvandshåndtering', 'Miljøvurdering', 'Miljøkonsekvensvurdering', 'Sommerhusloven', 'projektudvikling'],
@@ -150,7 +157,8 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/250023%20Gerbredg%C3%A5rd%2C%20Feriecenter%20p%C3%A5%20En%C3%B8/have%20og%20s%C3%B8.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/250023%20Gerbredg%C3%A5rd%2C%20Feriecenter%20p%C3%A5%20En%C3%B8/kort.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/250023%20Gerbredg%C3%A5rd%2C%20Feriecenter%20p%C3%A5%20En%C3%B8/strand.jpg'],
-        contact: ['gitte-oestergard-samson']
+        contact: ['gitte-oestergard-samson'],
+        notesAndRulings: []
     },
     {
         id: '250024',
@@ -158,14 +166,15 @@ const projects = [
         year: 2025,
         location: 'Fanø Kommune',
         coordinates: {
-            latitude: 55.34234845551603, 
+            latitude: 55.34234845551603,
             longitude: 8.45060586777414
         },
         services: ['Kvalitetssikring af Lokalplan', 'Rådgivning og kvalitetssikring af lokalplan'],
         heroImage: 'https://kopl.dk/onewebmedia/ProjectImages/250024%2C%20kvalitetssikring%20LP%20Fan%C3%B8/oversigtsbillede.png',
         description: 'KOPL har bistået Fanø Kommune med kvalitetssikring af Lokalplan 138 for Sønderho. Lokalplanen indeholder et nyt krav om, at alle nye sommerhuse skal opføres på skruefundamenter. Tiltaget forebygger problemer med vand og erosion, skåner natur og landskab, samt reducerer CO2 - udledningen. Planen er den første af seks lokalplaner, der tilsammen skal dække alle øens sommerhusområder, hvor samme krav forventes indført. KOPL har foretaget en juridisk og planfaglig gennemgang af bestemmelserne for at sikre præcise bestemmelser, der kan håndhæves, og som er i overensstemmelse med planloven.',
         images: [],
-        contact: ['muzdah-fallah']
+        contact: ['muzdah-fallah'],
+        notesAndRulings: []
     },
     {
         id: '250009',
@@ -173,7 +182,7 @@ const projects = [
         year: 2025,
         location: 'Rudersdal Kommune',
         coordinates: {
-            latitude: 55.87310951644177, 
+            latitude: 55.87310951644177,
             longitude: 12.496218068047833
         },
         services: ['Planrådgivning', 'klagepraksis'],
@@ -183,7 +192,8 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/250009%2C%20Parkeringsnotat/figur.png',
             'https://kopl.dk/onewebmedia/ProjectImages/250009%2C%20Parkeringsnotat/s%C3%B8.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/250009%2C%20Parkeringsnotat/250009%20DTU%20Science%20Park_2.jpg'],
-        contact: ['nynne-joergensen', 'anne-hinge']
+        contact: ['nynne-joergensen', 'anne-hinge'],
+        notesAndRulings: []
     },
     {
         id: '250001',
@@ -191,7 +201,7 @@ const projects = [
         year: 2025,
         location: 'Hørsholm Kommune',
         coordinates: {
-            latitude: 55.87492407204549, 
+            latitude: 55.87492407204549,
             longitude: 12.447015392356333
         },
         services: ['Afgrænsningsnotat', 'Miljøvurdering'],
@@ -201,7 +211,8 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/Milj%C3%B8vurdering%20af%20H%C3%B8rsholm%20Kommuneplan.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/250001%2C%20Milj%C3%B8vurdering%20H%C3%B8rsholm%20Kommuneplan/250001%20H%C3%B8rsholm%20Milij%C3%B8vurdering-Gr%C3%B8nzone%20for%20teknisk%20anl%C3%A6g%20figur%20kopier.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/250001%2C%20Milj%C3%B8vurdering%20H%C3%B8rsholm%20Kommuneplan/250001%20H%C3%B8rsholm%20Milij%C3%B8vurdering-Drikkevand%20%2B%20BNBO%20kopier.jpg'],
-        contact: ['nynne-joergensen', 'tobias-filskov-petersen', 'anne-hinge']
+        contact: ['nynne-joergensen', 'tobias-filskov-petersen', 'anne-hinge'],
+        notesAndRulings: []
     },
     {
         id: '240058',
@@ -209,7 +220,7 @@ const projects = [
         year: 2024,
         location: 'Vejen Kommune',
         coordinates: {
-            latitude: 55.502364889698256, 
+            latitude: 55.502364889698256,
             longitude: 9.170976375259363
         },
         services: ['Planrådgivning', 'Afgrænsningsnotat', 'Miljøvurdering'],
@@ -219,7 +230,8 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/240058%2C%20Milj%C3%B8vurdering%20Energiparker%20Vejen/IMG_0288%20kopier.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/240058%2C%20Milj%C3%B8vurdering%20Energiparker%20Vejen/elmast2.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/240058%2C%20Milj%C3%B8vurdering%20Energiparker%20Vejen/IMG_0365%20kopier.jpg'],
-        contact: ['pernille-birkenfeldt-petersen', 'nynne-joergensen', 'tobias-filskov-petersen']
+        contact: ['pernille-birkenfeldt-petersen', 'nynne-joergensen', 'tobias-filskov-petersen'],
+        notesAndRulings: []
     },
     {
         id: '240040',
@@ -237,7 +249,16 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/240040%2C%20Landskabsanalyse%20H%C3%B8rsholm%20Kommune/H%C3%B8rsholm%20Kommune-Arealanvendelse%20v5.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/240040%2C%20Landskabsanalyse%20H%C3%B8rsholm%20Kommune/Heste%20kopier.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/240040%2C%20Landskabsanalyse%20H%C3%B8rsholm%20Kommune/Opslag%20B.jpg'],
-        contact: ['nynne-joergensen']
+        contact: ['nynne-joergensen'],
+        notesAndRulings: [
+            {
+                file: 'https://kopl.dk/onewebmedia/notes/notes-pdf/Landskabsanalyse%20H%C3%B8rsholm_Del%202_rettet_2025.pdf',
+                image: 'https://kopl.dk/onewebmedia/notes/notes-images/Sk%C3%A6rmbillede%202025-09-22%20133124.png'
+            },
+            {
+                file: 'https://kopl.dk/onewebmedia/notes/notes-pdf/Landskabsanalyse%20H%C3%B8rsholm_2025.pdf',
+                image: 'https://kopl.dk/onewebmedia/notes/notes-images/Sk%C3%A6rmbillede%202025-09-22%20143755.png'
+            }]
     },
     {
         id: '240014',
@@ -245,7 +266,7 @@ const projects = [
         year: 2024,
         location: 'Gribskov Kommune',
         coordinates: {
-            latitude: 56.03086164499468, 
+            latitude: 56.03086164499468,
             longitude: 12.184221393389999
         },
         services: ['miljøvurdering', 'afgrænsningsnotat', 'landskabsvurdering'],
@@ -255,6 +276,7 @@ const projects = [
             'https://kopl.dk/onewebmedia/ProjectImages/Regnvandsh%C3%A5ndtering%20for%20Troldebakkerne.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/240014%2C%20Troldebakkerne%20milj%C3%B8vurdering/Kulturarv%20figur.jpg',
             'https://kopl.dk/onewebmedia/ProjectImages/240014%2C%20Troldebakkerne%20milj%C3%B8vurdering/Foto%201.jpg'],
-        contact: ['tobias-filskov-petersen', 'nynne-joergensen', 'pernille-birkenfeldt-petersen', 'anne-hinge']
+        contact: ['tobias-filskov-petersen', 'nynne-joergensen', 'pernille-birkenfeldt-petersen', 'anne-hinge'],
+        notesAndRulings: []
     }
 ];

@@ -27,6 +27,7 @@ mapButton.addEventListener("click", () => {
 
     populateMap(map);
 
+    testingPolygon(map); //only for test purpose
 });
 
 
@@ -54,5 +55,21 @@ function populateMap(map) {
             <a style="text-decoration: none;" href="project.html?id=${project.id}">Se projektet</a>
         </div>`);
     });
+}
 
+function testingPolygon(map) {
+     const polygonCoords = [
+      [54.774, 11.880],
+      [54.774, 11.890],
+      [54.765, 11.890],
+      [54.765, 11.880],
+      [54.774, 11.880] // luk polygonen
+  ];
+
+  L.polygon(polygonCoords, {
+      color: 'green',       // kantfarve
+      fillColor: 'green',   // fyldfarve
+      fillOpacity: 0.3
+  }).addTo(map)
+    .bindPopup('Eksempel på grøn polygon: Nykøbing Falster');
 }
