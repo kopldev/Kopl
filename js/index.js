@@ -10,19 +10,6 @@ if (scrollArrow) {
     });
 }
 
-// Burger menu logo
-// const burgerMenuLogo = document.getElementById('koplBurgerMenuLogo');
-// if (burgerMenuLogo) {
-//     burgerMenuLogo.addEventListener('click', (event) => {
-//         const path = window.location.pathname;
-//         if (path.endsWith("index.html") || path === "/") {
-//             window.location.href = "index.html";
-//         } else {
-//             window.location.href = "../index.html";
-//         }
-//     });
-// }
-
 const scrollArrows = document.querySelectorAll('.scroll-down-arrow');
 
 scrollArrows.forEach(arrow => {

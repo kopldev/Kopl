@@ -98,10 +98,6 @@ body {
   }
 }
 
-.project-card:hover {
-  transform: translateY(-4px) scale(1.01);
-}
-
 .project-image-wrap {
   width: 100%;
   aspect-ratio: 0.9;

@@ -1,5 +1,4 @@
-body,
-html {
+body{
   margin: 0;
   padding: 0;
   background: #fff;
@@ -7,8 +6,6 @@ html {
   font-family: system-ui, ui-sans-serif, Arial, sans-serif;
   min-height: 100vh;
 }
-
-/* Hero Container Styles */
 .hero-container {
   width: 100vw;
   height: 100vh;
