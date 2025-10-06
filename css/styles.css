@@ -7,6 +7,10 @@ body {
   min-height: 100vh;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .main-section {
   max-width: 80rem;
   margin: 0 auto;
