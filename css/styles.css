@@ -160,7 +160,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Mobile Menu Styles */
 .kopl-nav-toggle {
   display: none;
   background: none;
@@ -240,7 +239,7 @@ body {
 .kopl-mobile-close {
   position: absolute;
   top: 1.1rem;
-  right: 1.2rem;
+  right: 4.2rem;
   background: none;
   border: none;
   font-size: 2.2rem;
