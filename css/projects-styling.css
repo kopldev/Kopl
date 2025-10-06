@@ -428,7 +428,6 @@ body {
 
 .lightbox {
   display: none;
-  /* skjult som standard */
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -456,7 +455,7 @@ body {
   cursor: pointer;
 }
 
-/* Optional scrollbar styling */
+
 .gallery-scroll::-webkit-scrollbar {
   display: none;
 }
@@ -484,8 +483,6 @@ body {
     overflow: hidden;
   }
 
-
-  /* Placering af pilene til venstre og højre */
   .hero-image-wrap .arrow:first-of-type {
     left: 0px;
   }
@@ -509,7 +506,7 @@ body {
 
 @media (max-width: 767px) {
 
-  /* Wrapper/main-content får lidt padding til siderne */
+
   .main-content {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -517,13 +514,11 @@ body {
     max-width: 100%;
   }
 
-  /* Projekt titel mindre på mobil */
   .project-title {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
   }
 
-  /* Projekt detaljer bliver stablet lodret med lidt afstand */
   .project-details {
     flex-direction: row;
     gap: 0.8rem;
@@ -531,13 +526,13 @@ body {
     margin-bottom: 2rem;
   }
 
-  /* Project layout bliver lodret */
+
   .project-layout {
     flex-direction: column;
     gap: 2rem;
   }
 
-  /* Hero billede fylder 100% bredde og maks bredde fjernes */
+
   .hero-image-wrap {
     margin-bottom: 2rem;
   }
@@ -615,5 +610,4 @@ body {
   grid-template-columns: 1fr;
   gap: 3rem;
 }
-
 }

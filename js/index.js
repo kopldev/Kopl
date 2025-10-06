@@ -60,4 +60,14 @@ document.querySelectorAll('.footer-section h3').forEach(header => {
     });
 });
 
+addCurrentYEarToFooter();
+
+function addCurrentYEarToFooter () {
+    const pTag = document.querySelector(".footer-bottom p")
+    const currentYear = new Date().getFullYear();
+    pTag.textContent += ` ${currentYear}.`;
+}
+
+
+
 
