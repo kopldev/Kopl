@@ -1,6 +1,5 @@
 const notesDiv = document.getElementById("notesDiv");
 
-// Render alle noter
 notesAndRulings.forEach(note => {
     createRulingOrNoteElement(note);
 });
@@ -26,30 +25,28 @@ function createRulingOrNoteElement(notes) {
     notesDiv.appendChild(div);
 }
 
-// Dropdown
 const dropdown = document.getElementById("service-dropdown");
 const trigger = dropdown.querySelector(".custom-select-trigger");
 const optionsContainer = dropdown.querySelector(".custom-options");
 
-// Åbn/luk dropdown
+
 trigger.addEventListener("click", () => {
     dropdown.classList.toggle("opened");
 });
 
-// Luk dropdown ved klik udenfor
 document.addEventListener("click", (e) => {
     if (!dropdown.contains(e.target)) {
         dropdown.classList.remove("opened");
     }
 });
 
-// Udtræk alle unikke services
+
 const allServices = [...new Set(notesAndRulings.flatMap(n => n.services))];
 
-// Tilføj "Alle ydelser"
+
 optionsContainer.innerHTML = `<span class="custom-option" data-value="">Alle ydelser</span>`;
 
-// Generér hver service som option
+
 allServices.forEach(service => {
     const span = document.createElement("span");
     span.classList.add("custom-option");
@@ -58,10 +55,10 @@ allServices.forEach(service => {
     optionsContainer.appendChild(span);
 });
 
-// Nu kan vi fange alle .custom-option efter de er genereret
+
 const options = optionsContainer.querySelectorAll(".custom-option");
 
-// Tilføj eventlisteners
+
 options.forEach(option => {
     option.addEventListener("click", () => {
         trigger.textContent = option.textContent;
@@ -70,7 +67,7 @@ options.forEach(option => {
     });
 });
 
-// Filterfunktion
+
 function filterProjectsByService(service) {
     const notes = document.querySelectorAll(".note");
 
