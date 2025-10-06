@@ -36,9 +36,6 @@ function populateMap(map) {
 
     // Only populates map if the project has coordinates - check ProjectData.js for coordinates
     const projectWithCoordinates = projects.filter(project => project.coordinates.latitude !== null && project.coordinates.longitude !== null);
-    console.log(projectWithCoordinates);
-
-
 
     projectWithCoordinates.forEach(project => {
         let koplIcon = L.icon({
@@ -58,18 +55,18 @@ function populateMap(map) {
 }
 
 function testingPolygon(map) {
-     const polygonCoords = [
-      [54.774, 11.880],
-      [54.774, 11.890],
-      [54.765, 11.890],
-      [54.765, 11.880],
-      [54.774, 11.880] // luk polygonen
-  ];
+    const polygonCoords = [
+        [54.774, 11.880],
+        [54.774, 11.890],
+        [54.765, 11.890],
+        [54.765, 11.880],
+        [54.774, 11.880] // luk polygonen
+    ];
 
-  L.polygon(polygonCoords, {
-      color: 'green',       // kantfarve
-      fillColor: 'green',   // fyldfarve
-      fillOpacity: 0.3
-  }).addTo(map)
-    .bindPopup('Eksempel på grøn polygon: Nykøbing Falster');
+    L.polygon(polygonCoords, {
+        color: 'green',       // kantfarve
+        fillColor: 'green',   // fyldfarve
+        fillOpacity: 0.3
+    }).addTo(map)
+        .bindPopup('Eksempel på grøn polygon: Nykøbing Falster');
 }

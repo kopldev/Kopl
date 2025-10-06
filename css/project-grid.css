@@ -1,4 +1,4 @@
-html,
+/* html,
 body {
   margin: 0;
   padding: 0;
@@ -6,11 +6,11 @@ body {
   color: #222;
   font-family: system-ui, Arial, sans-serif;
   min-height: 100vh;
-}
-.header-inner {
+} */
+/* .header-inner {
   max-width: 80rem;
   margin: 0 auto;
-}
+} */
 
 .studio-title {
   font-size: 1rem;
@@ -245,8 +245,8 @@ body {
 
 .projects-map {
   display: none;
-  width: 80rem;
-  height: 600px;
+  max-width: 80rem;
+  height: 90vh;
   margin-top: 2rem;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
