@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   padding: 0;
   background: #fff;
@@ -6,6 +6,22 @@ body{
   font-family: system-ui, ui-sans-serif, Arial, sans-serif;
   min-height: 100vh;
 }
+
+.main-section {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 3rem 1rem 2rem 1rem;
+}
+
+.main-title {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 0.9;
+  color: #222;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
 .hero-container {
   width: 100vw;
   height: 100vh;

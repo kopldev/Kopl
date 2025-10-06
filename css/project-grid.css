@@ -7,14 +7,6 @@ body {
   font-family: system-ui, Arial, sans-serif;
   min-height: 100vh;
 }
-
-.page-root {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-}
-
 .header-inner {
   max-width: 80rem;
   margin: 0 auto;
@@ -29,7 +21,7 @@ body {
   margin: 0;
 }
 
-.main-content {
+/* .main-content {
   max-width: 80rem;
   margin: 0 auto;
   padding: 4rem 1.5rem 0 1rem;
@@ -37,7 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 25px;
-}
+} */
 
 .page-title {
   font-size: 3rem;
