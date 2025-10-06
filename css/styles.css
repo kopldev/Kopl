@@ -634,7 +634,7 @@ body.slide-left {
 
 @media (max-width: 767px) {
   .footer-content {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr;
     text-align: center;
     justify-items: start;
     gap: 0rem;
@@ -669,7 +669,6 @@ body.slide-left {
   .footer-section.open span,
   .footer-section.open a:not(h3) {
     display: flex;
-
   }
 
   .footer-section h3 {
@@ -686,18 +685,19 @@ body.slide-left {
   }
 
   .footer-section h3::after {
-    content: '⌄';
+    content: "";
     position: absolute;
     left: 85%;
-    transform: translateY(-50%) rotate(0deg);
-    transition: transform 0.3s ease;
-    font-size: 1.5rem;
-    font-family: system-ui, Arial, sans-serif;
-    color: #222;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #555;
+    border-bottom: 2px solid #555;
+    transform: translateY(-50%) rotate(45deg);
+    transition: transform 0.25s ease;
   }
 
   .footer-section.open h3::after {
-    transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(-135deg);
   }
 
   .footer-bottom {

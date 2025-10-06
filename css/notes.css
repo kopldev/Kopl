@@ -44,4 +44,9 @@
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+
+    .note {
+        width: 80%;
+        height: 90%;
+    }
 }
